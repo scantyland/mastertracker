@@ -73,17 +73,17 @@ try:
         
     # THE FIX: Forcefully strip invisible spaces from the GeoJSON map file too!
     for feature in uk_geojson['features']:
-        if 'name' in feature['properties']:
-            raw_name = str(feature['properties']['name'])
+        if 'Area' in feature['properties']:
+            raw_name = str(feature['properties']['Area'])
             # Replace invisible web spaces with normal spaces, then strip the edges
             clean_name = raw_name.replace('\xa0', ' ').strip()
-            feature['properties']['name'] = clean_name
+            feature['properties']['Area'] = clean_name
         
     fig_map = px.choropleth_mapbox(
         map_filtered_df,
         geojson=uk_geojson,
         locations="Region",
-        featureidkey="properties.name", # Ensure this is the exact column name in the GeoJSON
+        featureidkey="properties.Area", # Ensure this is the exact column name in the GeoJSON
         color="Cost Value",
         color_continuous_scale="YlOrRd", # NEW COLOR SCALE: Yellow (Low) to Red (High)
         mapbox_style="carto-positron",
