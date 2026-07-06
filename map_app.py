@@ -43,7 +43,6 @@ map_filtered_df = history_df[
 ].copy()
 
 # --- THE TRANSLATION DICTIONARY ---
-# Translating Ofgem's regulatory names to match the GeoJSON map boundaries
 region_mapping = {
     "Eastern": "East England",
     "East Midlands": "East Midlands",
@@ -63,28 +62,33 @@ region_mapping = {
 
 # Apply the translation to the filtered data
 map_filtered_df["Region"] = map_filtered_df["Region"].replace(region_mapping)
-# ----------------------------------
+
+# THE FIX: Forcefully strip normal spaces AND invisible non-breaking spaces (\xa0) from our data
+map_filtered_df["Region"] = map_filtered_df["Region"].str.replace(r'\xa0', ' ', regex=True).str.strip()
 
 # 5. Load the GeoJSON Digital Stencil and Build the Map
 try:
     with open("uk_regions.geojson", "r") as f:
         uk_geojson = json.load(f)
         
-    # Strip any accidental hidden spaces from the GeoJSON region names just to be incredibly safe
+    # THE FIX: Forcefully strip invisible spaces from the GeoJSON map file too!
     for feature in uk_geojson['features']:
         if 'name' in feature['properties']:
-            feature['properties']['name'] = feature['properties']['name'].strip()
+            raw_name = str(feature['properties']['name'])
+            # Replace invisible web spaces with normal spaces, then strip the edges
+            clean_name = raw_name.replace('\xa0', ' ').strip()
+            feature['properties']['name'] = clean_name
         
     fig_map = px.choropleth_mapbox(
         map_filtered_df,
         geojson=uk_geojson,
         locations="Region",
-        featureidkey="properties.name", # Tells Plotly to look at the 'name' property inside the GeoJSON
+        featureidkey="properties.name", # Ensure this is the exact column name in the GeoJSON
         color="Cost Value",
-        color_continuous_scale="Viridis",
+        color_continuous_scale="YlOrRd", # NEW COLOR SCALE: Yellow (Low) to Red (High)
         mapbox_style="carto-positron",
         zoom=4.5,
-        center={"lat": 54.5, "lon": -2.0}, # Centers the map perfectly over the UK
+        center={"lat": 54.5, "lon": -2.0},
         opacity=0.7,
         labels={"Cost Value": "Cap Value (£)"}
     )
