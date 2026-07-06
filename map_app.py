@@ -9,8 +9,8 @@ st.set_page_config(page_title="Regional Price Cap Map", layout="wide")
 # Check for the hidden URL password
 # url_password = st.query_params.get("pwd", "")
 # if url_password != st.secrets["app_password"]:
-    st.error("🔒 Unauthorized Access. Please view this dashboard through the secure internal company portal.")
-    st.stop()
+  #  st.error("🔒 Unauthorized Access. Please view this dashboard through the secure internal company portal.")
+  #  st.stop()
 
 st.title("🗺️ Regional Price Cap Tracker")
 st.write("Interactive view of standing charges and unit rates across UK regions.")
