@@ -6,10 +6,13 @@ import numpy as np
 # 1. Page Configuration & Password Protection
 st.set_page_config(page_title="Price Cap Component Tracker", layout="wide")
 
-password = st.text_input("Enter password to view tracker:", type="password")
-if password != st.secrets["app_password"]:
-    st.warning("Please enter the correct password to view the dashboard.")
-    st.stop()
+# 1. Page Configuration & Hidden URL Password
+st.set_page_config(page_title="Price Cap Component Tracker", layout="wide")
+
+# The app now looks for "?pwd=..." in the web address
+if "pwd" not in st.query_params or st.query_params["pwd"] != st.secrets["app_password"]:
+    st.error("🔒 Unauthorized Access. Please view this dashboard through the secure internal company portal.")
+    st.stop() # Stops the data from loading if the URL doesn't have the password
 
 st.title("⚡ Dynamic UK Energy Price Cap Tracker")
 st.write("Percentage breakdown of the Standing Charge and Unit Rate cost stacks.")
