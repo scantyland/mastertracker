@@ -1,0 +1,144 @@
+Period,Fuel,Charge Type,Component,Cost Value
+Apr-Jun 26,Electricity,Standing Charge,"Direct Fuel (inc. Shaping, Forecast, Imbalance, Transaction Costs & Additional risk allowance)",0.00%
+Apr-Jun 26,Electricity,Standing Charge,CM,0.00%
+Apr-Jun 26,Electricity,Standing Charge,CFD,0.00%
+Apr-Jun 26,Electricity,Standing Charge,Backwardation,0.00%
+Apr-Jun 26,Electricity,Standing Charge,TNUoS,9.75%
+Apr-Jun 26,Electricity,Standing Charge,DUoS,5.09%
+Apr-Jun 26,Electricity,Standing Charge,BSUoS,0.00%
+Apr-Jun 26,Electricity,Standing Charge,RO,0.00%
+Apr-Jun 26,Electricity,Standing Charge,FiT,0.00%
+Apr-Jun 26,Electricity,Standing Charge,ECO,0.00%
+Apr-Jun 26,Electricity,Standing Charge,AAHEDC,0.00%
+Apr-Jun 26,Electricity,Standing Charge,WHD,0.41%
+Apr-Jun 26,Electricity,Standing Charge,NCC,0.00%
+Apr-Jun 26,Electricity,Standing Charge,nRAB,0.00%
+Apr-Jun 26,Electricity,Standing Charge,SMNCC,-0.25%
+Apr-Jun 26,Electricity,Standing Charge,IC,1.13%
+Apr-Jun 26,Electricity,Standing Charge,CO,5.69%
+Apr-Jun 26,Electricity,Standing Charge,DRC,0.75%
+Apr-Jun 26,Electricity,Standing Charge,EBIT,0.62%
+Apr-Jun 26,Electricity,Standing Charge,HAP,0.12%
+Apr-Jun 26,Electricity,Standing Charge,Levelisation,0.57%
+Apr-Jun 26,Electricity,Unit rate,"Direct Fuel (inc. Shaping, Forecast, Imbalance, Transaction Costs & Additional risk allowance)",30.18%
+Apr-Jun 26,Electricity,Unit rate,CM,5.12%
+Apr-Jun 26,Electricity,Unit rate,CFD,4.70%
+Apr-Jun 26,Electricity,Unit rate,Backwardation,0.93%
+Apr-Jun 26,Electricity,Unit rate,TNUoS,0.24%
+Apr-Jun 26,Electricity,Unit rate,DUoS,8.78%
+Apr-Jun 26,Electricity,Unit rate,BSUoS,5.04%
+Apr-Jun 26,Electricity,Unit rate,RO,2.65%
+Apr-Jun 26,Electricity,Unit rate,FiT,2.49%
+Apr-Jun 26,Electricity,Unit rate,ECO,0.00%
+Apr-Jun 26,Electricity,Unit rate,AAHEDC,0.16%
+Apr-Jun 26,Electricity,Unit rate,WHD,1.62%
+Apr-Jun 26,Electricity,Unit rate,NCC,0.42%
+Apr-Jun 26,Electricity,Unit rate,nRAB,1.61%
+Apr-Jun 26,Electricity,Unit rate,SMNCC,-0.11%
+Apr-Jun 26,Electricity,Unit rate,IC,1.10%
+Apr-Jun 26,Electricity,Unit rate,CO,5.92%
+Apr-Jun 26,Electricity,Unit rate,DRC,2.39%
+Apr-Jun 26,Electricity,Unit rate,EBIT,2.01%
+Apr-Jun 26,Electricity,Unit rate,HAP,0.90%
+Apr-Jun 26,Gas,Standing Charge,"Direct Fuel (inc. Shaping, Forecast, Imbalance, Transaction Costs & Additional risk allowance)",0.00%
+Apr-Jun 26,Gas,Standing Charge,Backwardation,0.00%
+Apr-Jun 26,Gas,Standing Charge,Gas Transmission,0.00%
+Apr-Jun 26,Gas,Standing Charge,Gas Distribution,0.00%
+Apr-Jun 26,Gas,Standing Charge,ECO,0.00%
+Apr-Jun 26,Gas,Standing Charge,AAHEDC,0.00%
+Apr-Jun 26,Gas,Standing Charge,WHD,0.47%
+Apr-Jun 26,Gas,Standing Charge,GGL,0.52%
+Apr-Jun 26,Gas,Standing Charge,SMNCC,-0.56%
+Apr-Jun 26,Gas,Standing Charge,IC,1.54%
+Apr-Jun 26,Gas,Standing Charge,CO,10.26%
+Apr-Jun 26,Gas,Standing Charge,DRC,0.43%
+Apr-Jun 26,Gas,Standing Charge,EBIT,0.37%
+Apr-Jun 26,Gas,Standing Charge,HAP,0.19%
+Apr-Jun 26,Gas,Standing Charge,Levelisation,0.63%
+Apr-Jun 26,Gas,Unit rate,"Direct Fuel (inc. Shaping, Forecast, Imbalance, Transaction Costs & Additional risk allowance)",42.63%
+Apr-Jun 26,Gas,Unit rate,Backwardation,0.00%
+Apr-Jun 26,Gas,Unit rate,Gas Transmission,2.29%
+Apr-Jun 26,Gas,Unit rate,Gas Distribution,28.19%
+Apr-Jun 26,Gas,Unit rate,ECO,0.00%
+Apr-Jun 26,Gas,Unit rate,AAHEDC,0.00%
+Apr-Jun 26,Gas,Unit rate,WHD,2.85%
+Apr-Jun 26,Gas,Unit rate,GGL,0.00%
+Apr-Jun 26,Gas,Unit rate,SMNCC,-0.25%
+Apr-Jun 26,Gas,Unit rate,IC,0.58%
+Apr-Jun 26,Gas,Unit rate,CO,3.96%
+Apr-Jun 26,Gas,Unit rate,DRC,2.65%
+Apr-Jun 26,Gas,Unit rate,EBIT,2.43%
+Apr-Jun 26,Gas,Unit rate,HAP,0.80%
+Apr-Jun 26,Gas,Unit rate,Levelisation,0.00%
+Jul-Sep 2026,Electricity,Standing Charge,"Direct Fuel (inc. Shaping, Forecast, Imbalance, Transaction Costs & Additional risk allowance)",0.00%
+Jul-Sep 2026,Electricity,Standing Charge,CM,0.00%
+Jul-Sep 2026,Electricity,Standing Charge,CFD,0.00%
+Jul-Sep 2026,Electricity,Standing Charge,Backwardation,0.00%
+Jul-Sep 2026,Electricity,Standing Charge,TNUoS,9.90%
+Jul-Sep 2026,Electricity,Standing Charge,DUoS,5.17%
+Jul-Sep 2026,Electricity,Standing Charge,BSUoS,0.00%
+Jul-Sep 2026,Electricity,Standing Charge,RO,0.00%
+Jul-Sep 2026,Electricity,Standing Charge,FiT,0.00%
+Jul-Sep 2026,Electricity,Standing Charge,ECO,0.00%
+Jul-Sep 2026,Electricity,Standing Charge,AAHEDC,0.00%
+Jul-Sep 2026,Electricity,Standing Charge,WHD,0.42%
+Jul-Sep 2026,Electricity,Standing Charge,NCC,0.00%
+Jul-Sep 2026,Electricity,Standing Charge,nRAB,0.00%
+Jul-Sep 2026,Electricity,Standing Charge,SMNCC,-0.26%
+Jul-Sep 2026,Electricity,Standing Charge,IC,1.15%
+Jul-Sep 2026,Electricity,Standing Charge,CO,5.78%
+Jul-Sep 2026,Electricity,Standing Charge,DRC,0.76%
+Jul-Sep 2026,Electricity,Standing Charge,EBIT,0.63%
+Jul-Sep 2026,Electricity,Standing Charge,HAP,0.12%
+Jul-Sep 2026,Electricity,Standing Charge,Levelisation,0.56%
+Jul-Sep 2026,Electricity,Unit rate,"Direct Fuel (inc. Shaping, Forecast, Imbalance, Transaction Costs & Additional risk allowance)",33.99%
+Jul-Sep 2026,Electricity,Unit rate,CM,4.73%
+Jul-Sep 2026,Electricity,Unit rate,CFD,3.21%
+Jul-Sep 2026,Electricity,Unit rate,Backwardation,-0.03%
+Jul-Sep 2026,Electricity,Unit rate,TNUoS,0.23%
+Jul-Sep 2026,Electricity,Unit rate,DUoS,8.26%
+Jul-Sep 2026,Electricity,Unit rate,BSUoS,4.74%
+Jul-Sep 2026,Electricity,Unit rate,RO,2.49%
+Jul-Sep 2026,Electricity,Unit rate,FiT,2.35%
+Jul-Sep 2026,Electricity,Unit rate,ECO,0.00%
+Jul-Sep 2026,Electricity,Unit rate,AAHEDC,0.15%
+Jul-Sep 2026,Electricity,Unit rate,WHD,1.53%
+Jul-Sep 2026,Electricity,Unit rate,NCC,0.39%
+Jul-Sep 2026,Electricity,Unit rate,nRAB,1.44%
+Jul-Sep 2026,Electricity,Unit rate,SMNCC,-0.12%
+Jul-Sep 2026,Electricity,Unit rate,IC,1.12%
+Jul-Sep 2026,Electricity,Unit rate,CO,6.01%
+Jul-Sep 2026,Electricity,Unit rate,DRC,2.38%
+Jul-Sep 2026,Electricity,Unit rate,EBIT,2.01%
+Jul-Sep 2026,Electricity,Unit rate,HAP,0.90%
+Jul-Sep 2026,Electricity,Unit rate,Levelisation,0.00%
+Jul-Sep 2026,Gas,Standing Charge,"Direct Fuel (inc. Shaping, Forecast, Imbalance, Transaction Costs & Additional risk allowance)",0.00%
+Jul-Sep 2026,Gas,Standing Charge,Backwardation,0.00%
+Jul-Sep 2026,Gas,Standing Charge,Gas Transmission,0.00%
+Jul-Sep 2026,Gas,Standing Charge,Gas Distribution,0.00%
+Jul-Sep 2026,Gas,Standing Charge,ECO,0.00%
+Jul-Sep 2026,Gas,Standing Charge,AAHEDC,0.00%
+Jul-Sep 2026,Gas,Standing Charge,WHD,0.45%
+Jul-Sep 2026,Gas,Standing Charge,GGL,0.50%
+Jul-Sep 2026,Gas,Standing Charge,SMNCC,-0.54%
+Jul-Sep 2026,Gas,Standing Charge,IC,1.48%
+Jul-Sep 2026,Gas,Standing Charge,CO,9.80%
+Jul-Sep 2026,Gas,Standing Charge,DRC,0.41%
+Jul-Sep 2026,Gas,Standing Charge,EBIT,0.35%
+Jul-Sep 2026,Gas,Standing Charge,HAP,0.18%
+Jul-Sep 2026,Gas,Standing Charge,Levelisation,0.58%
+Jul-Sep 2026,Gas,Unit rate,"Direct Fuel (inc. Shaping, Forecast, Imbalance, Transaction Costs & Additional risk allowance)",50.33%
+Jul-Sep 2026,Gas,Unit rate,Backwardation,0.07%
+Jul-Sep 2026,Gas,Unit rate,Gas Transmission,1.81%
+Jul-Sep 2026,Gas,Unit rate,Gas Distribution,22.25%
+Jul-Sep 2026,Gas,Unit rate,ECO,0.00%
+Jul-Sep 2026,Gas,Unit rate,AAHEDC,0.00%
+Jul-Sep 2026,Gas,Unit rate,WHD,2.25%
+Jul-Sep 2026,Gas,Unit rate,GGL,0.00%
+Jul-Sep 2026,Gas,Unit rate,SMNCC,-0.24%
+Jul-Sep 2026,Gas,Unit rate,IC,0.55%
+Jul-Sep 2026,Gas,Unit rate,CO,3.79%
+Jul-Sep 2026,Gas,Unit rate,DRC,2.67%
+Jul-Sep 2026,Gas,Unit rate,EBIT,2.39%
+Jul-Sep 2026,Gas,Unit rate,HAP,0.90%
+Jul-Sep 2026,Gas,Unit rate,Levelisation,0.00%
