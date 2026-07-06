@@ -1,0 +1,34 @@
+name: Update Ofgem Data
+
+# Runs every Tuesday at 8 AM, and allows you to run it manually
+on:
+  schedule:
+    - cron: '0 8 * * 2'
+  workflow_dispatch: 
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install libraries
+      run: pip install requests beautifulsoup4 pandas openpyxl
+
+    - name: Run the Scraper
+      run: python scraper.py
+
+    - name: Save updated history.csv to GitHub
+      run: |
+        git config --global user.name 'GitHub Action Bot'
+        git config --global user.email 'action@github.com'
+        git add history.csv
+        git commit -m "Automated data update from Ofgem" || exit 0
+        git push
