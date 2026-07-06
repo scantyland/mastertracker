@@ -9,8 +9,8 @@ st.set_page_config(page_title="Regional Price Cap Map", layout="wide")
 # Check for the hidden URL password
 # url_password = st.query_params.get("pwd", "")
 # if url_password != st.secrets["app_password"]:
-  #  st.error("🔒 Unauthorized Access. Please view this dashboard through the secure internal company portal.")
-  #  st.stop()
+#     st.error("🔒 Unauthorized Access. Please view this dashboard through the secure internal company portal.")
+#     st.stop()
 
 st.title("🗺️ Regional Price Cap Tracker")
 st.write("Interactive view of standing charges and unit rates across UK regions.")
@@ -68,7 +68,8 @@ map_filtered_df["Region"] = map_filtered_df["Region"].str.replace(r'\xa0', ' ', 
 
 # 5. Load the GeoJSON Digital Stencil and Build the Map
 try:
-    with open("uk_regions.geojson", "r") as f:
+    # Added encoding="utf-8" to prevent Windows/Linux text-reading mismatches
+    with open("uk_regions.geojson", "r", encoding="utf-8") as f:
         uk_geojson = json.load(f)
         
     # THE FIX: Forcefully strip invisible spaces from the GeoJSON map file too!
@@ -104,4 +105,3 @@ try:
 except FileNotFoundError:
     st.warning("⚠️ uk_regions.geojson file not found. Please upload the spatial boundaries to GitHub to render the map.")
     st.dataframe(map_filtered_df)
-
