@@ -42,21 +42,49 @@ map_filtered_df = history_df[
     (history_df["Charge Type"] == map_charge)
 ].copy()
 
+# --- THE TRANSLATION DICTIONARY ---
+# Translating Ofgem's regulatory names to match the GeoJSON map boundaries
+region_mapping = {
+    "Eastern": "East England",
+    "East Midlands": "East Midlands",
+    "London": "London",
+    "N Wales and Mersey": "North Wales, Merseyside, and Cheshire",
+    "Midlands": "West Midlands",
+    "Northern": "North East England",
+    "North West": "North West England",
+    "Southern": "Southern England",
+    "South East": "South East England",
+    "South Wales": "South Wales",
+    "Southern Western": "South West England",
+    "Yorkshire": "Yorkshire",
+    "Southern Scotland": "South and Central Scotland",
+    "Northern Scotland": "North Scotland"
+}
+
+# Apply the translation to the filtered data
+map_filtered_df["Region"] = map_filtered_df["Region"].replace(region_mapping)
+# ----------------------------------
+
 # 5. Load the GeoJSON Digital Stencil and Build the Map
 try:
     with open("uk_regions.geojson", "r") as f:
         uk_geojson = json.load(f)
         
+    # Strip any accidental hidden spaces from the GeoJSON region names just to be incredibly safe
+    for feature in uk_geojson['features']:
+        if 'name' in feature['properties']:
+            feature['properties']['name'] = feature['properties']['name'].strip()
+        
     fig_map = px.choropleth_mapbox(
         map_filtered_df,
         geojson=uk_geojson,
         locations="Region",
-        featureidkey="properties.name", # Ensure this matches the property name in your GeoJSON
+        featureidkey="properties.name", # Tells Plotly to look at the 'name' property inside the GeoJSON
         color="Cost Value",
         color_continuous_scale="Viridis",
         mapbox_style="carto-positron",
         zoom=4.5,
-        center={"lat": 54.5, "lon": -2.0},
+        center={"lat": 54.5, "lon": -2.0}, # Centers the map perfectly over the UK
         opacity=0.7,
         labels={"Cost Value": "Cap Value (£)"}
     )
@@ -71,4 +99,5 @@ try:
 
 except FileNotFoundError:
     st.warning("⚠️ uk_regions.geojson file not found. Please upload the spatial boundaries to GitHub to render the map.")
-    st.dataframe(map_filtered_df) # Show the raw data table as a fallback
+    st.dataframe(map_filtered_df)
+
