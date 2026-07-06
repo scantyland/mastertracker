@@ -1,94 +1,26 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
-import numpy as np
 
-# 1. Page Configuration & Password Protection
-st.set_page_config(page_title="Price Cap Component Tracker", layout="wide")
+st.set_page_config(layout="wide")
+st.title("Data Detective Mode 🕵️‍♂️")
 
-password = st.text_input("Enter password to view tracker:", type="password")
-if password != st.secrets["app_password"]:
-    st.warning("Please enter the correct password to view the dashboard.")
-    st.stop()
+st.write("Let's look at exactly what Python sees in this file before we do any cleaning or math.")
 
-st.title("⚡ Dynamic UK Energy Price Cap Tracker")
-st.write("Percentage breakdown of the Standing Charge and Unit Rate cost stacks.")
-
-# 2. Fetch Local Data from GitHub
-@st.cache_data
-def load_data():
-    data = pd.read_csv("Dashboard_Data - Sheet1.csv")
+try:
+    # Read the raw file
+    raw_data = pd.read_csv("Dashboard_Data - Sheet1.csv")
     
-    # AGGRESSIVE CLEANING STEP:
-    # 1. Convert to string
-    data['Cost Value'] = data['Cost Value'].astype(str)
-    # 2. Strip out spaces, £ signs, commas, and replace Excel dashes with 0
-    data['Cost Value'] = data['Cost Value'].str.replace('£', '', regex=False)
-    data['Cost Value'] = data['Cost Value'].str.replace(',', '', regex=False)
-    data['Cost Value'] = data['Cost Value'].str.replace(' ', '', regex=False)
-    data['Cost Value'] = data['Cost Value'].replace('-', '0')
+    st.markdown("### 1. The Raw Table")
+    st.write("Look at the Cost Value column. Are there numbers, blanks, formulas, or weird symbols?")
+    st.dataframe(raw_data)
     
-    # 3. Convert to numbers
-    data['Cost Value'] = pd.to_numeric(data['Cost Value'], errors='coerce').fillna(0)
+    st.markdown("### 2. The Column Names")
+    st.write("Are there any hidden spaces at the start or end of these names?")
+    st.write(raw_data.columns.tolist())
     
-    return data.dropna(subset=["Period"])
+    st.markdown("### 3. The Data Types")
+    st.write("If Cost Value says 'object', Python thinks it's text. If it says 'float64', Python knows it's a number.")
+    st.write(raw_data.dtypes.astype(str))
 
-df = load_data()
-
-# 3. Create the Interactive Slider
-periods = df["Period"].unique().tolist()
-selected_period = st.select_slider("Select Price Cap Period:", options=periods)
-
-filtered_df = df[df["Period"] == selected_period].copy()
-
-# 4. Data Preparation for a 100% Stacked Bar Chart
-filtered_df['Category'] = filtered_df['Fuel'] + " - " + filtered_df['Charge Type']
-
-# Calculate the total sum for each Category
-category_totals = filtered_df.groupby('Category')['Cost Value'].transform('sum')
-
-# Calculate the percentage, safely handling divide-by-zero errors
-# If the total is 0, we temporarily replace it with NaN to prevent a crash, then fill the result with 0%
-filtered_df['Percentage'] = (filtered_df['Cost Value'] / category_totals.replace(0, np.nan)) * 100
-filtered_df['Percentage'] = filtered_df['Percentage'].fillna(0)
-
-# 5. Build the 100% Stacked Column Chart
-st.markdown("### Component Breakdown: Percentage of Total")
-
-fig = px.bar(
-    filtered_df, 
-    x="Category", 
-    y="Percentage", 
-    color="Component",       
-    barmode="stack",         
-    title=f"Cost Stack Breakdown ({selected_period})",
-    labels={"Percentage": "Percentage of Total (%)", "Category": "Fuel & Charge Type"},
-    color_discrete_sequence=px.colors.qualitative.Pastel,
-    custom_data=["Cost Value"] 
-)
-
-fig.update_traces(
-    hovertemplate="<b>%{color}</b><br>" +
-                  "Share of Stack: %{y:.1f}%<br>" +
-                  "Absolute Value: %{customdata[0]:.4f}<extra></extra>"
-)
-
-fig.update_layout(
-    xaxis_title="", 
-    yaxis_title="Percentage (%)", 
-    yaxis_range=[0, 100],
-    legend_title_text="Allowance Component", 
-    plot_bgcolor="rgba(0,0,0,0)"
-)
-
-st.plotly_chart(fig, use_container_width=True)
-
-# 6. Add Data Table for Transparency
-st.markdown("### Underlying Data Figures (Absolute Values)")
-
-# Add a toggle so you can debug the exact data Python is seeing
-if st.checkbox("Show Raw Diagnostic Data (Tick to Debug)"):
-    st.write(filtered_df)
-
-display_df = filtered_df.pivot_table(index=["Fuel", "Charge Type", "Component"], values="Cost Value", aggfunc="sum").reset_index()
-st.dataframe(display_df, use_container_width=True)
+except Exception as e:
+    st.error(f"Error reading the file: {e}")
