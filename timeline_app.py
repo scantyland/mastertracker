@@ -108,3 +108,15 @@ for index, row in df_timeline.iterrows():
         st.markdown(badge_html, unsafe_allow_html=True)
         
     with col_line:
+        # Renders the literal physical track down the page
+        st.markdown(
+            '<div style="border-left: 3px solid #34495e; height: 140px; margin-left: 20px; opacity: 0.6;"></div>', 
+            unsafe_allow_html=True
+        )
+        
+    with col_content:
+        st.markdown(f"### {row['Version_Title']}")
+        st.write(row['Key_Changes'])
+        st.markdown(f"[🔗 Open Official Ofgem PDF Artifact]({row['PDF_URL']})")
+        
+    st.markdown("<br>", unsafe_allow_html=True)
