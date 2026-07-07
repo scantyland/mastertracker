@@ -8,7 +8,7 @@ st.write("Deep dive into the underlying costs making up the price cap.")
 # 1. Load the cleaned long-form data
 @st.cache_data
 def load_allowances():
-    return pd.read_csv("clean_allowances.csv")
+    return pd.read_csv("Cleaned_Price_Cap_Data.csv")
 
 allowances_df = load_allowances()
 
