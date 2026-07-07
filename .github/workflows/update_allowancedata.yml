@@ -1,0 +1,38 @@
+name: Weekly Ofgem Data Scraper
+
+# This triggers the script every Monday at 8:00 AM UTC
+on:
+  schedule:
+    - cron: '0 8 * * 1'
+  # This allows you to also click a button to run it manually on GitHub anytime
+  workflow_dispatch: 
+
+jobs:
+  scrape-and-clean:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout the repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install required libraries
+      run: |
+        pip install requests beautifulsoup4 pandas numpy openpyxl
+
+    - name: Run the Scraper Script
+      run: |
+        python allowancescraper.py
+
+    - name: Commit and Push the updated CSV to GitHub
+      run: |
+        git config --global user.name "GitHub Action Bot"
+        git config --global user.email "action@github.com"
+        git add Cleaned_Price_Cap_Data.csv
+        # Only commit if the file has actually changed to prevent empty commits
+        git diff --quiet && git diff --staged --quiet || git commit -m "Automated data update from Ofgem"
+        git push
