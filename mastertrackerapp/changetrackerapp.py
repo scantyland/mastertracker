@@ -114,12 +114,6 @@ def load_and_combine_data(folder_path):
         if os.path.exists(filepath):
             df = pd.read_csv(filepath)
             
-            # A. SCRUB WHITESPACES FIRST: Strip hidden spaces from key columns
-            for col in ['Fuel Type', 'Charge Type', 'Payment Method', 'Allowance']:
-                if col in df.columns:
-                    df[col] = df[col].astype(str).str.strip()
-            
-            # B. Apply Standardization Mappings
             if 'Fuel Type' in df.columns:
                 df['Fuel Type'] = df['Fuel Type'].replace(FUEL_MAPPING)
                 
@@ -136,8 +130,7 @@ def load_and_combine_data(folder_path):
             if 'Allowance' in df.columns:
                 df['Allowance_Full'] = df['Allowance'].map(ALLOWANCE_DICT).fillna(df['Allowance'])
                 
-            # If payment method is entirely missing or was converted to string 'nan', set to 'All'
-            if 'Payment Method' not in df.columns or df['Payment Method'].isnull().all() or (df['Payment Method'] == 'nan').all():
+            if 'Payment Method' not in df.columns or df['Payment Method'].isnull().all():
                 df['Payment Method'] = 'All' 
                 
             dfs.append(df)
@@ -153,12 +146,6 @@ def load_benchmark(folder_path):
     filepath = os.path.join(folder_path, 'total_bill_cleaned.csv')
     if os.path.exists(filepath):
         df = pd.read_csv(filepath)
-        
-        # Scrub whitespaces here too
-        for col in ['Fuel Type', 'Charge Type', 'Payment Method']:
-            if col in df.columns:
-                df[col] = df[col].astype(str).str.strip()
-                
         if 'Fuel Type' in df.columns:
             df['Fuel Type'] = df['Fuel Type'].replace(FUEL_MAPPING)
         df['Start Date'] = pd.to_datetime(df['Start Date'], errors='coerce')
@@ -168,6 +155,7 @@ def load_benchmark(folder_path):
 folder_path = 'mastertrackerapp/'
 df_master = load_and_combine_data(folder_path)
 df_bench = load_benchmark(folder_path)
+
 # ==========================================
 # 4. GLOBAL SIDEBAR CONTROLS
 # ==========================================
