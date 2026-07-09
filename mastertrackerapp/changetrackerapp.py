@@ -47,7 +47,6 @@ ALLOWANCE_DICT = {
     'Levelisation': 'Levelisation'
 }
 
-# ALL_TABS helper variable for events that span across the whole dashboard
 ALL_TABS = ["Wholesale", "Policy", "Network", "OPEX", "Other Costs"]
 
 POLICY_EVENTS = [
@@ -83,7 +82,7 @@ TAB_GROUPINGS = {
     "Other Costs": ['Adjustment Allowance', 'Payment Method Uplift (Fixed)', 'Payment Method Uplift (Variable)', 'Levelisation']
 }
 
-# Standardize messy fuel names across all datasets to prevent jagged line graphs
+# Standardize messy fuel names across all datasets
 FUEL_MAPPING = {
     'Electricity Single Rate': 'Electricity Single-Rate',
     'Electricity- Single-Rate': 'Electricity Single-Rate',
@@ -114,12 +113,11 @@ def load_and_combine_data(folder_path):
         if os.path.exists(filepath):
             df = pd.read_csv(filepath)
             
-            # A. SCRUB WHITESPACES FIRST: Strip hidden spaces from key columns
+            # Scrub Whitespaces
             for col in ['Fuel Type', 'Charge Type', 'Payment Method', 'Allowance']:
                 if col in df.columns:
                     df[col] = df[col].astype(str).str.strip()
             
-            # B. Apply Standardization Mappings
             if 'Fuel Type' in df.columns:
                 df['Fuel Type'] = df['Fuel Type'].replace(FUEL_MAPPING)
                 
@@ -136,7 +134,6 @@ def load_and_combine_data(folder_path):
             if 'Allowance' in df.columns:
                 df['Allowance_Full'] = df['Allowance'].map(ALLOWANCE_DICT).fillna(df['Allowance'])
                 
-            # If payment method is entirely missing or was converted to string 'nan', set to 'All'
             if 'Payment Method' not in df.columns or df['Payment Method'].isnull().all() or (df['Payment Method'] == 'nan').all():
                 df['Payment Method'] = 'All' 
                 
@@ -154,7 +151,7 @@ def load_benchmark(folder_path):
     if os.path.exists(filepath):
         df = pd.read_csv(filepath)
         
-        # Scrub whitespaces here too
+        # Scrub Whitespaces
         for col in ['Fuel Type', 'Charge Type', 'Payment Method']:
             if col in df.columns:
                 df[col] = df[col].astype(str).str.strip()
@@ -199,11 +196,11 @@ def render_tab_content(tab_title):
     # 1. Filter by Fuel Type
     filtered = df_master[df_master['Fuel Type'] == selected_fuel]
     
-    # 2. Filter by Charge Type (Bypass this if "Total (Both)" is selected)
+    # 2. Filter by Charge Type (Bypass if "Total (Both)" is selected)
     if selected_charge != "Total (Both)":
         filtered = filtered[filtered['Charge Type'] == selected_charge]
         
-    # 3. Filter by Payment Method (allowing for datasets that didn't specify one)
+    # 3. Filter by Payment Method (allowing for 'All')
     filtered = filtered[(filtered['Payment Method'] == selected_payment) | (filtered['Payment Method'] == 'All')]
     
     # 4. Filter by the specific tab's allowances
@@ -215,7 +212,6 @@ def render_tab_content(tab_title):
         return
 
     # --- UI: Check and Uncheck Allowances ---
-    # We use 'Allowance_Full' here so the dropdown remains clean and deduplicated
     available_allowances = sorted(filtered['Allowance_Full'].unique())
     selected_allowances = st.multiselect(
         f"Select {tab_title} Allowances to view:", 
@@ -248,11 +244,11 @@ def render_tab_content(tab_title):
         start_date = unique_dates[0]
         end_date = unique_dates[0]
 
-    chart_data = filtered[filtered['Allowance_Full'].isin(selected_allowances)]
+    chart_data = filtered[filtered['Allowance_Full'].isin(selected_allowances)].copy()
     chart_data = chart_data[(chart_data['Start Date'] >= start_date) & (chart_data['Start Date'] <= end_date)]
     chart_data = chart_data.sort_values('Start Date')
 
-    # DYNAMIC LABELING: If "Total" is selected, append the charge type so Plotly doesn't overlap them
+    # DYNAMIC LABELING: Split SC and UR natively in the graph if "Total" is selected
     if selected_charge == "Total (Both)":
         chart_data['Plot_Label'] = chart_data['Allowance_Full'] + " (" + chart_data['Charge Type'] + ")"
     else:
@@ -269,7 +265,7 @@ def render_tab_content(tab_title):
     # --- Build Plotly Figure with Secondary Y-Axis ---
     fig = make_subplots(specs=[[{"secondary_y": True}]])
     
-    # Iterate through the dynamically created labels
+    # Add Allowances (Primary Y-Axis)
     for label in chart_data['Plot_Label'].unique():
         allowance_data = chart_data[chart_data['Plot_Label'] == label]
         custom_hover = "<b>%{customdata}</b><br>Value: £%{y:.2f}<extra></extra>"
@@ -298,7 +294,7 @@ def render_tab_content(tab_title):
     elif chart_style == "Grouped Bar":
         fig.update_layout(barmode='group')
 
-    # --- Benchmark Overlay ---
+    # --- Benchmark Overlay (Secondary Y-Axis) ---
     if selected_benchmark != "None" and not df_bench.empty:
         bench_data = df_bench[(df_bench['Fuel Type'] == selected_fuel) & 
                               (df_bench['Payment Method'] == selected_payment) & 
@@ -354,6 +350,7 @@ def render_tab_content(tab_title):
                 secondary_y=False
             )
     
+    # Improve Axes & Layout
     fig.update_xaxes(title_text="Timeline", tickformat="%b %Y", dtick="M3")
     fig.update_yaxes(title_text="Allowance Value (£)", secondary_y=False)
     
@@ -368,6 +365,7 @@ def render_tab_content(tab_title):
     
     st.plotly_chart(fig, use_container_width=True)
 
+    # --- Data Download Button ---
     csv_data = chart_data.to_csv(index=False).encode('utf-8')
     st.download_button(
         label=f"📥 Download Filtered {tab_title} Data (CSV)",
