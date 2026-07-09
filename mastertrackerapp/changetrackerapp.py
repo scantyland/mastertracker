@@ -66,23 +66,41 @@ POLICY_EVENTS = {
 # ==========================================
 @st.cache_data
 def load_data(filename):
+    import os
+    if not os.path.exists(filename):
+        st.sidebar.error(f"File not found: {filename}")
+        return pd.DataFrame()
+        
     try:
         df = pd.read_csv(filename)
-        # Ensure Start Date is a datetime object for plotting timelines
+        
+        # FIX: If 'Start Date' is missing (like in the OPEX file), create it dynamically
+        if 'Start Date' not in df.columns and 'Cap Period' in df.columns:
+            # Grab the text before the hyphen (e.g., "Oct 2022" from "Oct 2022 - Dec 2022")
+            df['Start'] = df['Cap Period'].astype(str).str.split('-').str[0].str.strip()
+            df['Start Date'] = pd.to_datetime(df['Start'], errors='coerce')
+
+        # Ensure Start Date is properly formatted as a datetime object
         if 'Start Date' in df.columns:
-            df['Start Date'] = pd.to_datetime(df['Start Date'])
+            df['Start Date'] = pd.to_datetime(df['Start Date'], errors='coerce')
+            
         # Translate allowances using the dictionary
         if 'Allowance' in df.columns:
             df['Allowance_Full'] = df['Allowance'].map(ALLOWANCE_DICT).fillna(df['Allowance'])
+            
         return df
     except Exception as e:
-        return pd.DataFrame() # Return empty df if file is missing
+        st.sidebar.error(f"Error reading {filename}: {e}")
+        return pd.DataFrame()
 
-df_opex = load_data('Cleaned_Price_Cap_Data.csv')
-df_whole = load_data('wholesale_allowances_cleaned.csv')
-df_policy = load_data('policy_costs_cleaned.csv')
-df_net = load_data('network_costs_cleaned.csv')
-df_bench = load_data('total_bill_cleaned.csv')
+# Tell Streamlit to look inside the specific folder
+folder_path = 'mastertrackerapp/'
+
+df_opex = load_data(folder_path + 'Cleaned_Price_Cap_Data.csv')
+df_whole = load_data(folder_path + 'wholesale_allowances_cleaned.csv')
+df_policy = load_data(folder_path + 'policy_costs_cleaned.csv')
+df_net = load_data(folder_path + 'network_costs_cleaned.csv')
+df_bench = load_data(folder_path + 'total_bill_cleaned.csv')
 
 # ==========================================
 # 4. GLOBAL SIDEBAR CONTROLS
