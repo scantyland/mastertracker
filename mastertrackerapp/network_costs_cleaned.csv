@@ -1,0 +1,163 @@
+Payment Method,Fuel Type,Charge Type,Allowance,Cap Period,Start Date,End Date,Cost Value
+All,Gas,UR,Gas Transmission ,October 2022 - December 2022,2022-10-01,2022-12-01,0.0
+All,Gas,UR,Gas Distribution ,October 2022 - December 2022,2022-10-01,2022-12-01,0.0
+All,Gas,UR,Gas Transmission ,January 2023 - March 2023,2023-01-01,2023-03-01,0.0
+All,Gas,UR,Gas Distribution ,January 2023 - March 2023,2023-01-01,2023-03-01,0.0
+All,Gas,UR,Gas Transmission ,April 2023 - June 2023,2023-04-01,2023-06-01,0.0
+All,Gas,UR,Gas Distribution ,April 2023 - June 2023,2023-04-01,2023-06-01,0.0
+All,Gas,UR,Gas Transmission ,July 2023 - September 2023,2023-07-01,2023-09-01,11.224859841051341
+All,Gas,UR,Gas Distribution ,July 2023 - September 2023,2023-07-01,2023-09-01,147.20393098136236
+All,Electricity - Single-Rate,SC,TNUoS,July 2023 - September 2023,2023-07-01,2023-09-01,43.53135999999999
+All,Electricity - Single-Rate,UR,TNUoS,July 2023 - September 2023,2023-07-01,2023-09-01,1.6992154562979849
+All,Electricity - Multi-Register,SC,TNUoS,July 2023 - September 2023,2023-07-01,2023-09-01,43.53135999999999
+All,Electricity - Multi-Register,UR,TNUoS,July 2023 - September 2023,2023-07-01,2023-09-01,1.7516798285691095
+All,Electricity - Single Rate,SC,DUoS,July 2023 - September 2023,2023-07-01,2023-09-01,59.612321428571434
+All,Electricity - Single Rate,UR,DUoS,July 2023 - September 2023,2023-07-01,2023-09-01,58.77302116697119
+All,Electricity - Multi-Register,SC,DUoS,July 2023 - September 2023,2023-07-01,2023-09-01,59.612321428571434
+All,Electricity - Multi-Register,UR,DUoS,July 2023 - September 2023,2023-07-01,2023-09-01,63.49294426979215
+All,Electricity - Single Rate,UR,BSUoS,July 2023 - September 2023,2023-07-01,2023-09-01,68.58256857795335
+All,Electricity - Multi-Register,UR,BSUoS,July 2023 - September 2023,2023-07-01,2023-09-01,91.79350671669974
+All,Gas,UR,Gas Transmission ,October 2023 - December 2023,2023-10-01,2023-12-01,13.504859817596701
+All,Gas,UR,Gas Distribution ,October 2023 - December 2023,2023-10-01,2023-12-01,147.20393098136236
+All,Electricity - Single-Rate,SC,TNUoS,October 2023 - December 2023,2023-10-01,2023-12-01,43.53135999999999
+All,Electricity - Single-Rate,UR,TNUoS,October 2023 - December 2023,2023-10-01,2023-12-01,1.6468572799779722
+All,Electricity - Multi-Register,SC,TNUoS,October 2023 - December 2023,2023-10-01,2023-12-01,43.53135999999999
+All,Electricity - Multi-Register,UR,TNUoS,October 2023 - December 2023,2023-10-01,2023-12-01,1.7803657777948985
+All,Electricity - Single Rate,SC,DUoS,October 2023 - December 2023,2023-10-01,2023-12-01,59.612321428571434
+All,Electricity - Single Rate,UR,DUoS,October 2023 - December 2023,2023-10-01,2023-12-01,57.71056923786327
+All,Electricity - Multi-Register,SC,DUoS,October 2023 - December 2023,2023-10-01,2023-12-01,59.612321428571434
+All,Electricity - Multi-Register,UR,DUoS,October 2023 - December 2023,2023-10-01,2023-12-01,64.48537630199304
+All,Electricity - Single Rate,UR,BSUoS,October 2023 - December 2023,2023-10-01,2023-12-01,70.68975060443543
+All,Electricity - Multi-Register,UR,BSUoS,October 2023 - December 2023,2023-10-01,2023-12-01,94.6644866647347
+All,Gas,UR,Gas Transmission ,January 2024 - March 2024,2024-01-01,2024-03-01,13.504859817596701
+All,Gas,UR,Gas Distribution ,January 2024 - March 2024,2024-01-01,2024-03-01,147.20393098136236
+All,Electricity - Single-Rate,SC,TNUoS,January 2024 - March 2024,2024-01-01,2024-03-01,43.53135999999999
+All,Electricity - Single-Rate,UR,TNUoS,January 2024 - March 2024,2024-01-01,2024-03-01,1.6468572799779722
+All,Electricity - Multi-Register,SC,TNUoS,January 2024 - March 2024,2024-01-01,2024-03-01,43.53135999999999
+All,Electricity - Multi-Register,UR,TNUoS,January 2024 - March 2024,2024-01-01,2024-03-01,1.7803657777948985
+All,Electricity - Single Rate,SC,DUoS,January 2024 - March 2024,2024-01-01,2024-03-01,59.612321428571434
+All,Electricity - Single Rate,UR,DUoS,January 2024 - March 2024,2024-01-01,2024-03-01,57.71056923786327
+All,Electricity - Multi-Register,SC,DUoS,January 2024 - March 2024,2024-01-01,2024-03-01,59.612321428571434
+All,Electricity - Multi-Register,UR,DUoS,January 2024 - March 2024,2024-01-01,2024-03-01,64.48537630199304
+All,Electricity - Single Rate,UR,BSUoS,January 2024 - March 2024,2024-01-01,2024-03-01,70.68975060443543
+All,Electricity - Multi-Register,UR,BSUoS,January 2024 - March 2024,2024-01-01,2024-03-01,94.6644866647347
+All,Gas,UR,Gas Transmission ,April 2024 - June 2024,2024-04-01,2024-06-01,12.676408068634846
+All,Gas,UR,Gas Distribution ,April 2024 - June 2024,2024-04-01,2024-06-01,150.4446210624382
+All,Electricity - Single-Rate,SC,TNUoS,April 2024 - June 2024,2024-04-01,2024-06-01,38.173890000000014
+All,Electricity - Single-Rate,UR,TNUoS,April 2024 - June 2024,2024-04-01,2024-06-01,1.7649160696241992
+All,Electricity - Multi-Register,SC,TNUoS,April 2024 - June 2024,2024-04-01,2024-06-01,38.173890000000014
+All,Electricity - Multi-Register,UR,TNUoS,April 2024 - June 2024,2024-04-01,2024-06-01,1.9079893200230131
+All,Electricity - Single Rate,SC,DUoS,April 2024 - June 2024,2024-04-01,2024-06-01,82.41178571428573
+All,Electricity - Single Rate,UR,DUoS,April 2024 - June 2024,2024-04-01,2024-06-01,62.17504900250454
+All,Electricity - Multi-Register,SC,DUoS,April 2024 - June 2024,2024-04-01,2024-06-01,82.41178571428573
+All,Electricity - Multi-Register,UR,DUoS,April 2024 - June 2024,2024-04-01,2024-06-01,69.58715040972162
+All,Electricity - Single Rate,UR,BSUoS,April 2024 - June 2024,2024-04-01,2024-06-01,32.36216949301111
+All,Electricity - Multi-Register,UR,BSUoS,April 2024 - June 2024,2024-04-01,2024-06-01,43.28287023064704
+All,Gas,UR,Gas Transmission ,July 2024 - September 2024,2024-07-01,2024-09-01,12.676408068634846
+All,Gas,UR,Gas Distribution ,July 2024 - September 2024,2024-07-01,2024-09-01,150.4446210624382
+All,Electricity - Single-Rate,SC,TNUoS,July 2024 - September 2024,2024-07-01,2024-09-01,38.173890000000014
+All,Electricity - Single-Rate,UR,TNUoS,July 2024 - September 2024,2024-07-01,2024-09-01,1.7649160696241992
+All,Electricity - Multi-Register,SC,TNUoS,July 2024 - September 2024,2024-07-01,2024-09-01,38.173890000000014
+All,Electricity - Multi-Register,UR,TNUoS,July 2024 - September 2024,2024-07-01,2024-09-01,1.9079893200230131
+All,Electricity - Single Rate,SC,DUoS,July 2024 - September 2024,2024-07-01,2024-09-01,82.41178571428573
+All,Electricity - Single Rate,UR,DUoS,July 2024 - September 2024,2024-07-01,2024-09-01,62.17504900250454
+All,Electricity - Multi-Register,SC,DUoS,July 2024 - September 2024,2024-07-01,2024-09-01,82.41178571428573
+All,Electricity - Multi-Register,UR,DUoS,July 2024 - September 2024,2024-07-01,2024-09-01,69.58715040972162
+All,Electricity - Single Rate,UR,BSUoS,July 2024 - September 2024,2024-07-01,2024-09-01,26.10716130701133
+All,Electricity - Multi-Register,UR,BSUoS,July 2024 - September 2024,2024-07-01,2024-09-01,35.32518945438796
+All,Gas,UR,Gas Transmission ,October 2024 - December 2024,2024-10-01,2024-12-01,7.180408125172879
+All,Gas,UR,Gas Distribution ,October 2024 - December 2024,2024-10-01,2024-12-01,150.4446210624382
+All,Electricity - Single-Rate,SC,TNUoS,October 2024 - December 2024,2024-10-01,2024-12-01,38.173890000000014
+All,Electricity - Single-Rate,UR,TNUoS,October 2024 - December 2024,2024-10-01,2024-12-01,1.7164334940335664
+All,Electricity - Multi-Register,SC,TNUoS,October 2024 - December 2024,2024-10-01,2024-12-01,38.173890000000014
+All,Electricity - Multi-Register,UR,TNUoS,October 2024 - December 2024,2024-10-01,2024-12-01,1.9167885133337492
+All,Electricity - Single Rate,SC,DUoS,October 2024 - December 2024,2024-10-01,2024-12-01,82.41178571428573
+All,Electricity - Single Rate,UR,DUoS,October 2024 - December 2024,2024-10-01,2024-12-01,60.98051027690899
+All,Electricity - Multi-Register,SC,DUoS,October 2024 - December 2024,2024-10-01,2024-12-01,82.41178571428573
+All,Electricity - Multi-Register,UR,DUoS,October 2024 - December 2024,2024-10-01,2024-12-01,69.38794152267316
+All,Electricity - Single Rate,UR,BSUoS,October 2024 - December 2024,2024-10-01,2024-12-01,41.70828792241064
+All,Electricity - Multi-Register,UR,BSUoS,October 2024 - December 2024,2024-10-01,2024-12-01,56.428940479451015
+All,Gas,UR,Gas Transmission ,January 2025 - March 2025,2025-01-01,2025-03-01,7.180408125172879
+All,Gas,UR,Gas Distribution ,January 2025 - March 2025,2025-01-01,2025-03-01,150.4446210624382
+All,Electricity - Single-Rate,SC,TNUoS,January 2025 - March 2025,2025-01-01,2025-03-01,38.173890000000014
+All,Electricity - Single-Rate,UR,TNUoS,January 2025 - March 2025,2025-01-01,2025-03-01,1.7164334940335664
+All,Electricity - Multi-Register,SC,TNUoS,January 2025 - March 2025,2025-01-01,2025-03-01,38.173890000000014
+All,Electricity - Multi-Register,UR,TNUoS,January 2025 - March 2025,2025-01-01,2025-03-01,1.9167885133337492
+All,Electricity - Single Rate,SC,DUoS,January 2025 - March 2025,2025-01-01,2025-03-01,82.41178571428573
+All,Electricity - Single Rate,UR,DUoS,January 2025 - March 2025,2025-01-01,2025-03-01,60.98051027690899
+All,Electricity - Multi-Register,SC,DUoS,January 2025 - March 2025,2025-01-01,2025-03-01,82.41178571428573
+All,Electricity - Multi-Register,UR,DUoS,January 2025 - March 2025,2025-01-01,2025-03-01,69.38794152267316
+All,Electricity - Single Rate,UR,BSUoS,January 2025 - March 2025,2025-01-01,2025-03-01,41.70828792241064
+All,Electricity - Multi-Register,UR,BSUoS,January 2025 - March 2025,2025-01-01,2025-03-01,56.428940479451015
+All,Gas,UR,Gas Transmission ,April 2025 - June 2025,2025-04-01,2025-06-01,12.531597940228385
+All,Gas,UR,Gas Distribution ,April 2025 - June 2025,2025-04-01,2025-06-01,163.1177511682951
+All,Electricity - Single-Rate,SC,TNUoS,April 2025 - June 2025,2025-04-01,2025-06-01,49.290695000000014
+All,Electricity - Single-Rate,UR,TNUoS,April 2025 - June 2025,2025-04-01,2025-06-01,2.1847168608350884
+All,Electricity - Multi-Register,SC,TNUoS,April 2025 - June 2025,2025-04-01,2025-06-01,49.290695000000014
+All,Electricity - Multi-Register,UR,TNUoS,April 2025 - June 2025,2025-04-01,2025-06-01,2.439739242142956
+All,Electricity - Single Rate,SC,DUoS,April 2025 - June 2025,2025-04-01,2025-06-01,45.91178571428571
+All,Electricity - Single Rate,UR,DUoS,April 2025 - June 2025,2025-04-01,2025-06-01,78.95641817016654
+All,Electricity - Multi-Register,SC,DUoS,April 2025 - June 2025,2025-04-01,2025-06-01,45.91178571428571
+All,Electricity - Multi-Register,UR,DUoS,April 2025 - June 2025,2025-04-01,2025-06-01,90.02116030277148
+All,Electricity - Single Rate,UR,BSUoS,April 2025 - June 2025,2025-04-01,2025-06-01,37.06802367175529
+All,Electricity - Multi-Register,UR,BSUoS,April 2025 - June 2025,2025-04-01,2025-06-01,50.144003331642985
+All,Gas,UR,Gas Transmission ,July 2025 - September 2025,2025-07-01,2025-09-01,12.531597940228385
+All,Gas,UR,Gas Distribution ,July 2025 - September 2025,2025-07-01,2025-09-01,163.1177511682951
+All,Electricity - Single-Rate,SC,TNUoS,July 2025 - September 2025,2025-07-01,2025-09-01,49.290695000000014
+All,Electricity - Single-Rate,UR,TNUoS,July 2025 - September 2025,2025-07-01,2025-09-01,2.1847168608350884
+All,Electricity - Multi-Register,SC,TNUoS,July 2025 - September 2025,2025-07-01,2025-09-01,49.290695000000014
+All,Electricity - Multi-Register,UR,TNUoS,July 2025 - September 2025,2025-07-01,2025-09-01,2.439739242142956
+All,Electricity - Single Rate,SC,DUoS,July 2025 - September 2025,2025-07-01,2025-09-01,45.91178571428571
+All,Electricity - Single Rate,UR,DUoS,July 2025 - September 2025,2025-07-01,2025-09-01,78.95641817016654
+All,Electricity - Multi-Register,SC,DUoS,July 2025 - September 2025,2025-07-01,2025-09-01,45.91178571428571
+All,Electricity - Multi-Register,UR,DUoS,July 2025 - September 2025,2025-07-01,2025-09-01,90.02116030277148
+All,Electricity - Single Rate,UR,BSUoS,July 2025 - September 2025,2025-07-01,2025-09-01,37.06802367175529
+All,Electricity - Multi-Register,UR,BSUoS,July 2025 - September 2025,2025-07-01,2025-09-01,50.144003331642985
+All,Gas,UR,Gas Transmission ,October 2025 - December 2025,2025-10-01,2025-12-01,14.633461716131071
+All,Gas,UR,Gas Distribution ,October 2025 - December 2025,2025-10-01,2025-12-01,170.49643952738285
+All,Electricity - Single-Rate,SC,TNUoS,October 2025 - December 2025,2025-10-01,2025-12-01,49.290695000000014
+All,Electricity - Single-Rate,UR,TNUoS,October 2025 - December 2025,2025-10-01,2025-12-01,2.2133881081401583
+All,Electricity - Multi-Register,SC,TNUoS,October 2025 - December 2025,2025-10-01,2025-12-01,49.290695000000014
+All,Electricity - Multi-Register,UR,TNUoS,October 2025 - December 2025,2025-10-01,2025-12-01,2.4623494473577026
+All,Electricity - Single Rate,SC,DUoS,October 2025 - December 2025,2025-10-01,2025-12-01,45.91178571428571
+All,Electricity - Single Rate,UR,DUoS,October 2025 - December 2025,2025-10-01,2025-12-01,79.63596679849918
+All,Electricity - Multi-Register,SC,DUoS,October 2025 - December 2025,2025-10-01,2025-12-01,45.91178571428571
+All,Electricity - Multi-Register,UR,DUoS,October 2025 - December 2025,2025-10-01,2025-12-01,91.02401879069086
+All,Electricity - Single Rate,UR,BSUoS,October 2025 - December 2025,2025-10-01,2025-12-01,54.02609393815754
+All,Electricity - Multi-Register,UR,BSUoS,October 2025 - December 2025,2025-10-01,2025-12-01,73.08948816317901
+All,Gas,UR,Gas Transmission ,January 2026 - March 2026,2026-01-01,2026-03-01,14.02373414462561
+All,Gas,UR,Gas Distribution ,January 2026 - March 2026,2026-01-01,2026-03-01,163.39242121374193
+All,Electricity - Single-Rate,SC,TNUoS,January 2026 - March 2026,2026-01-01,2026-03-01,49.290695000000014
+All,Electricity - Single-Rate,UR,TNUoS,January 2026 - March 2026,2026-01-01,2026-03-01,1.961113758542261
+All,Electricity - Multi-Register,SC,TNUoS,January 2026 - March 2026,2026-01-01,2026-03-01,49.290695000000014
+All,Electricity - Multi-Register,UR,TNUoS,January 2026 - March 2026,2026-01-01,2026-03-01,2.325988781376708
+All,Electricity - Single Rate,SC,DUoS,January 2026 - March 2026,2026-01-01,2026-03-01,45.91178571428571
+All,Electricity - Single Rate,UR,DUoS,January 2026 - March 2026,2026-01-01,2026-03-01,69.360358179338
+All,Electricity - Multi-Register,SC,DUoS,January 2026 - March 2026,2026-01-01,2026-03-01,45.91178571428571
+All,Electricity - Multi-Register,UR,DUoS,January 2026 - March 2026,2026-01-01,2026-03-01,84.52230316278437
+All,Electricity - Single Rate,UR,BSUoS,January 2026 - March 2026,2026-01-01,2026-03-01,47.84760564491075
+All,Electricity - Multi-Register,UR,BSUoS,January 2026 - March 2026,2026-01-01,2026-03-01,69.01370686234785
+All,Gas,UR,Gas Transmission ,April 2026 - June 2026,2026-04-01,2026-06-01,16.282039112217547
+All,Gas,UR,Gas Distribution ,April 2026 - June 2026,2026-04-01,2026-06-01,200.00416391720987
+All,Electricity - Single-Rate,SC,TNUoS,April 2026 - June 2026,2026-04-01,2026-06-01,81.23658999999999
+All,Electricity - Single-Rate,UR,TNUoS,April 2026 - June 2026,2026-04-01,2026-06-01,2.038227075148697
+All,Electricity - Multi-Register,SC,TNUoS,April 2026 - June 2026,2026-04-01,2026-06-01,81.23658999999999
+All,Electricity - Multi-Register,UR,TNUoS,April 2026 - June 2026,2026-04-01,2026-06-01,2.417428993514818
+All,Electricity - Single Rate,SC,DUoS,April 2026 - June 2026,2026-04-01,2026-06-01,42.38692857142858
+All,Electricity - Single Rate,UR,DUoS,April 2026 - June 2026,2026-04-01,2026-06-01,73.19590249637471
+All,Electricity - Multi-Register,SC,DUoS,April 2026 - June 2026,2026-04-01,2026-06-01,42.38692857142858
+All,Electricity - Multi-Register,UR,DUoS,April 2026 - June 2026,2026-04-01,2026-06-01,88.95289549167393
+All,Electricity - Single Rate,UR,BSUoS,April 2026 - June 2026,2026-04-01,2026-06-01,42.00214855747904
+All,Electricity - Multi-Register,UR,BSUoS,April 2026 - June 2026,2026-04-01,2026-06-01,60.57656050242355
+All,Gas,UR,Gas Transmission ,July 2026 - September 2026,2026-07-01,2026-09-01,13.450380136179708
+All,Gas,UR,Gas Distribution ,July 2026 - September 2026,2026-07-01,2026-09-01,165.22083106204292
+All,Electricity - Single-Rate,SC,TNUoS,July 2026 - September 2026,2026-07-01,2026-09-01,81.23658999999999
+All,Electricity - Single-Rate,UR,TNUoS,July 2026 - September 2026,2026-07-01,2026-09-01,1.887247291804357
+All,Electricity - Multi-Register,SC,TNUoS,July 2026 - September 2026,2026-07-01,2026-09-01,81.23658999999999
+All,Electricity - Multi-Register,UR,TNUoS,July 2026 - September 2026,2026-07-01,2026-09-01,2.107502199474453
+All,Electricity - Single Rate,SC,DUoS,July 2026 - September 2026,2026-07-01,2026-09-01,42.38692857142858
+All,Electricity - Single Rate,UR,DUoS,July 2026 - September 2026,2026-07-01,2026-09-01,67.77398379293953
+All,Electricity - Multi-Register,SC,DUoS,July 2026 - September 2026,2026-07-01,2026-09-01,42.38692857142858
+All,Electricity - Multi-Register,UR,DUoS,July 2026 - September 2026,2026-07-01,2026-09-01,77.54867812094648
+All,Electricity - Single Rate,UR,BSUoS,July 2026 - September 2026,2026-07-01,2026-09-01,38.890878293962075
+All,Electricity - Multi-Register,UR,BSUoS,July 2026 - September 2026,2026-07-01,2026-09-01,52.810334796984634

@@ -1,0 +1,315 @@
+Payment Method,Fuel Type,Charge Type,Allowance,Cap Period,Start Date,End Date,Cost Value
+All,Electricity - Single-Rate ,UR,RO,October 2022 - December 2022,2022-10-01,2022-12-01,25.96408
+All,Electricity - Single-Rate ,UR,FiT,October 2022 - December 2022,2022-10-01,2022-12-01,5.6258217510753665
+All,Electricity - Single-Rate ,UR,ECO,October 2022 - December 2022,2022-10-01,2022-12-01,5.24117789946601
+All,Electricity - Single-Rate ,SC,WHD,October 2022 - December 2022,2022-10-01,2022-12-01,9.950486379774244
+All,Electricity - Single-Rate ,UR,WHD (unit rate),October 2022 - December 2022,2022-10-01,2022-12-01,0.0
+All,Electricity - Single-Rate ,UR,AAHEDC,October 2022 - December 2022,2022-10-01,2022-12-01,0.40669999999999995
+All,Electricity - Single-Rate ,UR,NCC,October 2022 - December 2022,2022-10-01,2022-12-01,0.0
+All,Electricity - Single-Rate ,UR,nRAB,October 2022 - December 2022,2022-10-01,2022-12-01,0.0
+All,Electricity - Multi-Register ,UR,RO,October 2022 - December 2022,2022-10-01,2022-12-01,25.96408
+All,Electricity - Multi-Register ,UR,FiT,October 2022 - December 2022,2022-10-01,2022-12-01,5.6258217510753665
+All,Electricity - Multi-Register ,UR,ECO,October 2022 - December 2022,2022-10-01,2022-12-01,5.24117789946601
+All,Electricity - Multi-Register ,SC,WHD,October 2022 - December 2022,2022-10-01,2022-12-01,9.950486379774244
+All,Electricity - Multi-Register ,UR,WHD (unit rate),October 2022 - December 2022,2022-10-01,2022-12-01,0.0
+All,Electricity - Multi-Register ,UR,AAHEDC,October 2022 - December 2022,2022-10-01,2022-12-01,0.40669999999999995
+All,Electricity - Multi-Register ,UR,NCC,October 2022 - December 2022,2022-10-01,2022-12-01,0.0
+All,Electricity - Multi-Register ,UR,nRAB,October 2022 - December 2022,2022-10-01,2022-12-01,0.0
+All,Gas,UR,ECO,October 2022 - December 2022,2022-10-01,2022-12-01,1.7360420655827042
+All,Gas,SC,WHD,October 2022 - December 2022,2022-10-01,2022-12-01,9.950486379774244
+All,Gas,UR,WHD (unit rate),October 2022 - December 2022,2022-10-01,2022-12-01,0.0
+All,Gas,SC,GGL,October 2022 - December 2022,2022-10-01,2022-12-01,2.6928799999999997
+All,Electricity - Single-Rate ,UR,RO,January 2023 - March 2023,2023-01-01,2023-03-01,25.96408
+All,Electricity - Single-Rate ,UR,FiT,January 2023 - March 2023,2023-01-01,2023-03-01,5.6258217510753665
+All,Electricity - Single-Rate ,UR,ECO,January 2023 - March 2023,2023-01-01,2023-03-01,5.24117789946601
+All,Electricity - Single-Rate ,SC,WHD,January 2023 - March 2023,2023-01-01,2023-03-01,9.950486379774244
+All,Electricity - Single-Rate ,UR,WHD (unit rate),January 2023 - March 2023,2023-01-01,2023-03-01,0.0
+All,Electricity - Single-Rate ,UR,AAHEDC,January 2023 - March 2023,2023-01-01,2023-03-01,0.40669999999999995
+All,Electricity - Single-Rate ,UR,NCC,January 2023 - March 2023,2023-01-01,2023-03-01,0.0
+All,Electricity - Single-Rate ,UR,nRAB,January 2023 - March 2023,2023-01-01,2023-03-01,0.0
+All,Electricity - Multi-Register ,UR,RO,January 2023 - March 2023,2023-01-01,2023-03-01,25.96408
+All,Electricity - Multi-Register ,UR,FiT,January 2023 - March 2023,2023-01-01,2023-03-01,5.6258217510753665
+All,Electricity - Multi-Register ,UR,ECO,January 2023 - March 2023,2023-01-01,2023-03-01,5.24117789946601
+All,Electricity - Multi-Register ,SC,WHD,January 2023 - March 2023,2023-01-01,2023-03-01,9.950486379774244
+All,Electricity - Multi-Register ,UR,WHD (unit rate),January 2023 - March 2023,2023-01-01,2023-03-01,0.0
+All,Electricity - Multi-Register ,UR,AAHEDC,January 2023 - March 2023,2023-01-01,2023-03-01,0.40669999999999995
+All,Electricity - Multi-Register ,UR,NCC,January 2023 - March 2023,2023-01-01,2023-03-01,0.0
+All,Electricity - Multi-Register ,UR,nRAB,January 2023 - March 2023,2023-01-01,2023-03-01,0.0
+All,Gas,UR,ECO,January 2023 - March 2023,2023-01-01,2023-03-01,1.7360420655827042
+All,Gas,SC,WHD,January 2023 - March 2023,2023-01-01,2023-03-01,9.950486379774244
+All,Gas,UR,WHD (unit rate),January 2023 - March 2023,2023-01-01,2023-03-01,0.0
+All,Gas,SC,GGL,January 2023 - March 2023,2023-01-01,2023-03-01,2.6928799999999997
+All,Electricity - Single-Rate ,UR,RO,April 2023 - June 2023,2023-04-01,2023-06-01,27.675689999999996
+All,Electricity - Single-Rate ,UR,FiT,April 2023 - June 2023,2023-04-01,2023-06-01,6.449515199834506
+All,Electricity - Single-Rate ,UR,ECO,April 2023 - June 2023,2023-04-01,2023-06-01,7.123925238994195
+All,Electricity - Single-Rate ,SC,WHD,April 2023 - June 2023,2023-04-01,2023-06-01,10.2986378209065
+All,Electricity - Single-Rate ,UR,WHD (unit rate),April 2023 - June 2023,2023-04-01,2023-06-01,0.0
+All,Electricity - Single-Rate ,UR,AAHEDC,April 2023 - June 2023,2023-04-01,2023-06-01,0.45951829137287103
+All,Electricity - Single-Rate ,UR,NCC,April 2023 - June 2023,2023-04-01,2023-06-01,0.0
+All,Electricity - Single-Rate ,UR,nRAB,April 2023 - June 2023,2023-04-01,2023-06-01,0.0
+All,Electricity - Multi-Register ,UR,RO,April 2023 - June 2023,2023-04-01,2023-06-01,27.675689999999996
+All,Electricity - Multi-Register ,UR,FiT,April 2023 - June 2023,2023-04-01,2023-06-01,6.449515199834506
+All,Electricity - Multi-Register ,UR,ECO,April 2023 - June 2023,2023-04-01,2023-06-01,7.123925238994195
+All,Electricity - Multi-Register ,SC,WHD,April 2023 - June 2023,2023-04-01,2023-06-01,10.2986378209065
+All,Electricity - Multi-Register ,UR,WHD (unit rate),April 2023 - June 2023,2023-04-01,2023-06-01,0.0
+All,Electricity - Multi-Register ,UR,AAHEDC,April 2023 - June 2023,2023-04-01,2023-06-01,0.45951829137287103
+All,Electricity - Multi-Register ,UR,NCC,April 2023 - June 2023,2023-04-01,2023-06-01,0.0
+All,Electricity - Multi-Register ,UR,nRAB,April 2023 - June 2023,2023-04-01,2023-06-01,0.0
+All,Gas,UR,ECO,April 2023 - June 2023,2023-04-01,2023-06-01,1.933978746453737
+All,Gas,SC,WHD,April 2023 - June 2023,2023-04-01,2023-06-01,10.2986378209065
+All,Gas,UR,WHD (unit rate),April 2023 - June 2023,2023-04-01,2023-06-01,0.0
+All,Gas,SC,GGL,April 2023 - June 2023,2023-04-01,2023-06-01,0.44530000000000003
+All,Electricity - Single-Rate ,UR,RO,July 2023 - September 2023,2023-07-01,2023-09-01,27.675689999999996
+All,Electricity - Single-Rate ,UR,FiT,July 2023 - September 2023,2023-07-01,2023-09-01,6.449515199834506
+All,Electricity - Single-Rate ,UR,ECO,July 2023 - September 2023,2023-07-01,2023-09-01,7.123925238994195
+All,Electricity - Single-Rate ,SC,WHD,July 2023 - September 2023,2023-07-01,2023-09-01,10.2986378209065
+All,Electricity - Single-Rate ,UR,WHD (unit rate),July 2023 - September 2023,2023-07-01,2023-09-01,0.0
+All,Electricity - Single-Rate ,UR,AAHEDC,July 2023 - September 2023,2023-07-01,2023-09-01,0.45951829137287103
+All,Electricity - Single-Rate ,UR,NCC,July 2023 - September 2023,2023-07-01,2023-09-01,0.0
+All,Electricity - Single-Rate ,UR,nRAB,July 2023 - September 2023,2023-07-01,2023-09-01,0.0
+All,Electricity - Multi-Register ,UR,RO,July 2023 - September 2023,2023-07-01,2023-09-01,27.675689999999996
+All,Electricity - Multi-Register ,UR,FiT,July 2023 - September 2023,2023-07-01,2023-09-01,6.449515199834506
+All,Electricity - Multi-Register ,UR,ECO,July 2023 - September 2023,2023-07-01,2023-09-01,7.123925238994195
+All,Electricity - Multi-Register ,SC,WHD,July 2023 - September 2023,2023-07-01,2023-09-01,10.2986378209065
+All,Electricity - Multi-Register ,UR,WHD (unit rate),July 2023 - September 2023,2023-07-01,2023-09-01,0.0
+All,Electricity - Multi-Register ,UR,AAHEDC,July 2023 - September 2023,2023-07-01,2023-09-01,0.45951829137287103
+All,Electricity - Multi-Register ,UR,NCC,July 2023 - September 2023,2023-07-01,2023-09-01,0.0
+All,Electricity - Multi-Register ,UR,nRAB,July 2023 - September 2023,2023-07-01,2023-09-01,0.0
+All,Gas,UR,ECO,July 2023 - September 2023,2023-07-01,2023-09-01,1.933978746453737
+All,Gas,SC,WHD,July 2023 - September 2023,2023-07-01,2023-09-01,10.2986378209065
+All,Gas,UR,WHD (unit rate),July 2023 - September 2023,2023-07-01,2023-09-01,0.0
+All,Gas,SC,GGL,July 2023 - September 2023,2023-07-01,2023-09-01,0.44530000000000003
+All,Electricity - Single-Rate ,UR,RO,October 2023 - December 2023,2023-10-01,2023-12-01,27.675689999999996
+All,Electricity - Single-Rate ,UR,FiT,October 2023 - December 2023,2023-10-01,2023-12-01,7.033266728028733
+All,Electricity - Single-Rate ,UR,ECO,October 2023 - December 2023,2023-10-01,2023-12-01,7.123270099736199
+All,Electricity - Single-Rate ,SC,WHD,October 2023 - December 2023,2023-10-01,2023-12-01,10.2986378209065
+All,Electricity - Single-Rate ,UR,WHD (unit rate),October 2023 - December 2023,2023-10-01,2023-12-01,0.0
+All,Electricity - Single-Rate ,UR,AAHEDC,October 2023 - December 2023,2023-10-01,2023-12-01,0.42038
+All,Electricity - Single-Rate ,UR,NCC,October 2023 - December 2023,2023-10-01,2023-12-01,0.0
+All,Electricity - Single-Rate ,UR,nRAB,October 2023 - December 2023,2023-10-01,2023-12-01,0.0
+All,Electricity - Multi-Register ,UR,RO,October 2023 - December 2023,2023-10-01,2023-12-01,27.675689999999996
+All,Electricity - Multi-Register ,UR,FiT,October 2023 - December 2023,2023-10-01,2023-12-01,7.033266728028733
+All,Electricity - Multi-Register ,UR,ECO,October 2023 - December 2023,2023-10-01,2023-12-01,7.123270099736199
+All,Electricity - Multi-Register ,SC,WHD,October 2023 - December 2023,2023-10-01,2023-12-01,10.2986378209065
+All,Electricity - Multi-Register ,UR,WHD (unit rate),October 2023 - December 2023,2023-10-01,2023-12-01,0.0
+All,Electricity - Multi-Register ,UR,AAHEDC,October 2023 - December 2023,2023-10-01,2023-12-01,0.42038
+All,Electricity - Multi-Register ,UR,NCC,October 2023 - December 2023,2023-10-01,2023-12-01,0.0
+All,Electricity - Multi-Register ,UR,nRAB,October 2023 - December 2023,2023-10-01,2023-12-01,0.0
+All,Gas,UR,ECO,October 2023 - December 2023,2023-10-01,2023-12-01,1.9338008914989997
+All,Gas,SC,WHD,October 2023 - December 2023,2023-10-01,2023-12-01,10.2986378209065
+All,Gas,UR,WHD (unit rate),October 2023 - December 2023,2023-10-01,2023-12-01,0.0
+All,Gas,SC,GGL,October 2023 - December 2023,2023-10-01,2023-12-01,0.44530000000000003
+All,Electricity - Single-Rate ,UR,RO,January 2024 - March 2024,2024-01-01,2024-03-01,27.675689999999996
+All,Electricity - Single-Rate ,UR,FiT,January 2024 - March 2024,2024-01-01,2024-03-01,7.033266728028733
+All,Electricity - Single-Rate ,UR,ECO,January 2024 - March 2024,2024-01-01,2024-03-01,7.123270099736199
+All,Electricity - Single-Rate ,SC,WHD,January 2024 - March 2024,2024-01-01,2024-03-01,10.2986378209065
+All,Electricity - Single-Rate ,UR,WHD (unit rate),January 2024 - March 2024,2024-01-01,2024-03-01,0.0
+All,Electricity - Single-Rate ,UR,AAHEDC,January 2024 - March 2024,2024-01-01,2024-03-01,0.42038
+All,Electricity - Single-Rate ,UR,NCC,January 2024 - March 2024,2024-01-01,2024-03-01,0.0
+All,Electricity - Single-Rate ,UR,nRAB,January 2024 - March 2024,2024-01-01,2024-03-01,0.0
+All,Electricity - Multi-Register ,UR,RO,January 2024 - March 2024,2024-01-01,2024-03-01,27.675689999999996
+All,Electricity - Multi-Register ,UR,FiT,January 2024 - March 2024,2024-01-01,2024-03-01,7.033266728028733
+All,Electricity - Multi-Register ,UR,ECO,January 2024 - March 2024,2024-01-01,2024-03-01,7.123270099736199
+All,Electricity - Multi-Register ,SC,WHD,January 2024 - March 2024,2024-01-01,2024-03-01,10.2986378209065
+All,Electricity - Multi-Register ,UR,WHD (unit rate),January 2024 - March 2024,2024-01-01,2024-03-01,0.0
+All,Electricity - Multi-Register ,UR,AAHEDC,January 2024 - March 2024,2024-01-01,2024-03-01,0.42038
+All,Electricity - Multi-Register ,UR,NCC,January 2024 - March 2024,2024-01-01,2024-03-01,0.0
+All,Electricity - Multi-Register ,UR,nRAB,January 2024 - March 2024,2024-01-01,2024-03-01,0.0
+All,Gas,UR,ECO,January 2024 - March 2024,2024-01-01,2024-03-01,1.9338008914989997
+All,Gas,SC,WHD,January 2024 - March 2024,2024-01-01,2024-03-01,10.2986378209065
+All,Gas,UR,WHD (unit rate),January 2024 - March 2024,2024-01-01,2024-03-01,0.0
+All,Gas,SC,GGL,January 2024 - March 2024,2024-01-01,2024-03-01,0.44530000000000003
+All,Electricity - Single-Rate ,UR,RO,April 2024 - June 2024,2024-04-01,2024-06-01,31.78243
+All,Electricity - Single-Rate ,UR,FiT,April 2024 - June 2024,2024-04-01,2024-06-01,7.639091705649225
+All,Electricity - Single-Rate ,UR,ECO,April 2024 - June 2024,2024-04-01,2024-06-01,8.699329123454325
+All,Electricity - Single-Rate ,SC,WHD,April 2024 - June 2024,2024-04-01,2024-06-01,10.909265371253545
+All,Electricity - Single-Rate ,UR,WHD (unit rate),April 2024 - June 2024,2024-04-01,2024-06-01,0.0
+All,Electricity - Single-Rate ,UR,AAHEDC,April 2024 - June 2024,2024-04-01,2024-06-01,0.4551192437813739
+All,Electricity - Single-Rate ,UR,NCC,April 2024 - June 2024,2024-04-01,2024-06-01,0.0
+All,Electricity - Single-Rate ,UR,nRAB,April 2024 - June 2024,2024-04-01,2024-06-01,0.0
+All,Electricity - Multi-Register ,UR,RO,April 2024 - June 2024,2024-04-01,2024-06-01,31.78243
+All,Electricity - Multi-Register ,UR,FiT,April 2024 - June 2024,2024-04-01,2024-06-01,7.639091705649225
+All,Electricity - Multi-Register ,UR,ECO,April 2024 - June 2024,2024-04-01,2024-06-01,8.699329123454325
+All,Electricity - Multi-Register ,SC,WHD,April 2024 - June 2024,2024-04-01,2024-06-01,10.909265371253545
+All,Electricity - Multi-Register ,UR,WHD (unit rate),April 2024 - June 2024,2024-04-01,2024-06-01,0.0
+All,Electricity - Multi-Register ,UR,AAHEDC,April 2024 - June 2024,2024-04-01,2024-06-01,0.4551192437813739
+All,Electricity - Multi-Register ,UR,NCC,April 2024 - June 2024,2024-04-01,2024-06-01,0.0
+All,Electricity - Multi-Register ,UR,nRAB,April 2024 - June 2024,2024-04-01,2024-06-01,0.0
+All,Gas,UR,ECO,April 2024 - June 2024,2024-04-01,2024-06-01,2.9941074517373605
+All,Gas,SC,WHD,April 2024 - June 2024,2024-04-01,2024-06-01,10.909265371253545
+All,Gas,UR,WHD (unit rate),April 2024 - June 2024,2024-04-01,2024-06-01,0.0
+All,Gas,SC,GGL,April 2024 - June 2024,2024-04-01,2024-06-01,0.38325
+All,Electricity - Single-Rate ,UR,RO,July 2024 - September 2024,2024-07-01,2024-09-01,31.78243
+All,Electricity - Single-Rate ,UR,FiT,July 2024 - September 2024,2024-07-01,2024-09-01,7.639091705649225
+All,Electricity - Single-Rate ,UR,ECO,July 2024 - September 2024,2024-07-01,2024-09-01,8.699329123454325
+All,Electricity - Single-Rate ,SC,WHD,July 2024 - September 2024,2024-07-01,2024-09-01,10.909265371253545
+All,Electricity - Single-Rate ,UR,WHD (unit rate),July 2024 - September 2024,2024-07-01,2024-09-01,0.0
+All,Electricity - Single-Rate ,UR,AAHEDC,July 2024 - September 2024,2024-07-01,2024-09-01,0.4551192437813739
+All,Electricity - Single-Rate ,UR,NCC,July 2024 - September 2024,2024-07-01,2024-09-01,0.0
+All,Electricity - Single-Rate ,UR,nRAB,July 2024 - September 2024,2024-07-01,2024-09-01,0.0
+All,Electricity - Multi-Register ,UR,RO,July 2024 - September 2024,2024-07-01,2024-09-01,31.78243
+All,Electricity - Multi-Register ,UR,FiT,July 2024 - September 2024,2024-07-01,2024-09-01,7.639091705649225
+All,Electricity - Multi-Register ,UR,ECO,July 2024 - September 2024,2024-07-01,2024-09-01,8.699329123454325
+All,Electricity - Multi-Register ,SC,WHD,July 2024 - September 2024,2024-07-01,2024-09-01,10.909265371253545
+All,Electricity - Multi-Register ,UR,WHD (unit rate),July 2024 - September 2024,2024-07-01,2024-09-01,0.0
+All,Electricity - Multi-Register ,UR,AAHEDC,July 2024 - September 2024,2024-07-01,2024-09-01,0.4551192437813739
+All,Electricity - Multi-Register ,UR,NCC,July 2024 - September 2024,2024-07-01,2024-09-01,0.0
+All,Electricity - Multi-Register ,UR,nRAB,July 2024 - September 2024,2024-07-01,2024-09-01,0.0
+All,Gas,UR,ECO,July 2024 - September 2024,2024-07-01,2024-09-01,2.9941074517373605
+All,Gas,SC,WHD,July 2024 - September 2024,2024-07-01,2024-09-01,10.909265371253545
+All,Gas,UR,WHD (unit rate),July 2024 - September 2024,2024-07-01,2024-09-01,0.0
+All,Gas,SC,GGL,July 2024 - September 2024,2024-07-01,2024-09-01,0.38325
+All,Electricity - Single-Rate ,UR,RO,October 2024 - December 2024,2024-10-01,2024-12-01,31.78243
+All,Electricity - Single-Rate ,UR,FiT,October 2024 - December 2024,2024-10-01,2024-12-01,7.31667345560668
+All,Electricity - Single-Rate ,UR,ECO,October 2024 - December 2024,2024-10-01,2024-12-01,8.68652948434914
+All,Electricity - Single-Rate ,SC,WHD,October 2024 - December 2024,2024-10-01,2024-12-01,10.909265371253545
+All,Electricity - Single-Rate ,UR,WHD (unit rate),October 2024 - December 2024,2024-10-01,2024-12-01,0.0
+All,Electricity - Single-Rate ,UR,AAHEDC,October 2024 - December 2024,2024-10-01,2024-12-01,0.42145
+All,Electricity - Single-Rate ,UR,NCC,October 2024 - December 2024,2024-10-01,2024-12-01,0.0
+All,Electricity - Single-Rate ,UR,nRAB,October 2024 - December 2024,2024-10-01,2024-12-01,0.0
+All,Electricity - Multi-Register ,UR,RO,October 2024 - December 2024,2024-10-01,2024-12-01,31.78243
+All,Electricity - Multi-Register ,UR,FiT,October 2024 - December 2024,2024-10-01,2024-12-01,7.31667345560668
+All,Electricity - Multi-Register ,UR,ECO,October 2024 - December 2024,2024-10-01,2024-12-01,8.68652948434914
+All,Electricity - Multi-Register ,SC,WHD,October 2024 - December 2024,2024-10-01,2024-12-01,10.909265371253545
+All,Electricity - Multi-Register ,UR,WHD (unit rate),October 2024 - December 2024,2024-10-01,2024-12-01,0.0
+All,Electricity - Multi-Register ,UR,AAHEDC,October 2024 - December 2024,2024-10-01,2024-12-01,0.42145
+All,Electricity - Multi-Register ,UR,NCC,October 2024 - December 2024,2024-10-01,2024-12-01,0.0
+All,Electricity - Multi-Register ,UR,nRAB,October 2024 - December 2024,2024-10-01,2024-12-01,0.0
+All,Gas,UR,ECO,October 2024 - December 2024,2024-10-01,2024-12-01,2.989702112626663
+All,Gas,SC,WHD,October 2024 - December 2024,2024-10-01,2024-12-01,10.909265371253545
+All,Gas,UR,WHD (unit rate),October 2024 - December 2024,2024-10-01,2024-12-01,0.0
+All,Gas,SC,GGL,October 2024 - December 2024,2024-10-01,2024-12-01,0.38325
+All,Electricity - Single-Rate ,UR,RO,January 2025 - March 2025,2025-01-01,2025-03-01,31.78243
+All,Electricity - Single-Rate ,UR,FiT,January 2025 - March 2025,2025-01-01,2025-03-01,7.31667345560668
+All,Electricity - Single-Rate ,UR,ECO,January 2025 - March 2025,2025-01-01,2025-03-01,8.68652948434914
+All,Electricity - Single-Rate ,SC,WHD,January 2025 - March 2025,2025-01-01,2025-03-01,10.909265371253545
+All,Electricity - Single-Rate ,UR,WHD (unit rate),January 2025 - March 2025,2025-01-01,2025-03-01,0.0
+All,Electricity - Single-Rate ,UR,AAHEDC,January 2025 - March 2025,2025-01-01,2025-03-01,0.42145
+All,Electricity - Single-Rate ,UR,NCC,January 2025 - March 2025,2025-01-01,2025-03-01,0.0
+All,Electricity - Single-Rate ,UR,nRAB,January 2025 - March 2025,2025-01-01,2025-03-01,0.0
+All,Electricity - Multi-Register ,UR,RO,January 2025 - March 2025,2025-01-01,2025-03-01,31.78243
+All,Electricity - Multi-Register ,UR,FiT,January 2025 - March 2025,2025-01-01,2025-03-01,7.31667345560668
+All,Electricity - Multi-Register ,UR,ECO,January 2025 - March 2025,2025-01-01,2025-03-01,8.68652948434914
+All,Electricity - Multi-Register ,SC,WHD,January 2025 - March 2025,2025-01-01,2025-03-01,10.909265371253545
+All,Electricity - Multi-Register ,UR,WHD (unit rate),January 2025 - March 2025,2025-01-01,2025-03-01,0.0
+All,Electricity - Multi-Register ,UR,AAHEDC,January 2025 - March 2025,2025-01-01,2025-03-01,0.42145
+All,Electricity - Multi-Register ,UR,NCC,January 2025 - March 2025,2025-01-01,2025-03-01,0.0
+All,Electricity - Multi-Register ,UR,nRAB,January 2025 - March 2025,2025-01-01,2025-03-01,0.0
+All,Gas,UR,ECO,January 2025 - March 2025,2025-01-01,2025-03-01,2.989702112626663
+All,Gas,SC,WHD,January 2025 - March 2025,2025-01-01,2025-03-01,10.909265371253545
+All,Gas,UR,WHD (unit rate),January 2025 - March 2025,2025-01-01,2025-03-01,0.0
+All,Gas,SC,GGL,January 2025 - March 2025,2025-01-01,2025-03-01,0.38325
+All,Electricity - Single-Rate ,UR,RO,April 2025 - June 2025,2025-04-01,2025-06-01,33.06058
+All,Electricity - Single-Rate ,UR,FiT,April 2025 - June 2025,2025-04-01,2025-06-01,7.532858091399762
+All,Electricity - Single-Rate ,UR,ECO,April 2025 - June 2025,2025-04-01,2025-06-01,8.737701246393105
+All,Electricity - Single-Rate ,SC,WHD,April 2025 - June 2025,2025-04-01,2025-06-01,10.979819636605352
+All,Electricity - Single-Rate ,UR,WHD (unit rate),April 2025 - June 2025,2025-04-01,2025-06-01,0.0
+All,Electricity - Single-Rate ,UR,AAHEDC,April 2025 - June 2025,2025-04-01,2025-06-01,0.4355925993650476
+All,Electricity - Single-Rate ,UR,NCC,April 2025 - June 2025,2025-04-01,2025-06-01,0.927551988981379
+All,Electricity - Single-Rate ,UR,nRAB,April 2025 - June 2025,2025-04-01,2025-06-01,0.0
+All,Electricity - Multi-Register ,UR,RO,April 2025 - June 2025,2025-04-01,2025-06-01,33.06058
+All,Electricity - Multi-Register ,UR,FiT,April 2025 - June 2025,2025-04-01,2025-06-01,7.532858091399762
+All,Electricity - Multi-Register ,UR,ECO,April 2025 - June 2025,2025-04-01,2025-06-01,8.737701246393105
+All,Electricity - Multi-Register ,SC,WHD,April 2025 - June 2025,2025-04-01,2025-06-01,10.979819636605352
+All,Electricity - Multi-Register ,UR,WHD (unit rate),April 2025 - June 2025,2025-04-01,2025-06-01,0.0
+All,Electricity - Multi-Register ,UR,AAHEDC,April 2025 - June 2025,2025-04-01,2025-06-01,0.4355925993650476
+All,Electricity - Multi-Register ,UR,NCC,April 2025 - June 2025,2025-04-01,2025-06-01,0.927551988981379
+All,Electricity - Multi-Register ,UR,nRAB,April 2025 - June 2025,2025-04-01,2025-06-01,0.0
+All,Gas,UR,ECO,April 2025 - June 2025,2025-04-01,2025-06-01,3.0884931685270325
+All,Gas,SC,WHD,April 2025 - June 2025,2025-04-01,2025-06-01,10.979819636605352
+All,Gas,UR,WHD (unit rate),April 2025 - June 2025,2025-04-01,2025-06-01,0.0
+All,Gas,SC,GGL,April 2025 - June 2025,2025-04-01,2025-06-01,2.99665
+All,Electricity - Single-Rate ,UR,RO,July 2025 - September 2025,2025-07-01,2025-09-01,33.06058
+All,Electricity - Single-Rate ,UR,FiT,July 2025 - September 2025,2025-07-01,2025-09-01,7.532858091399762
+All,Electricity - Single-Rate ,UR,ECO,July 2025 - September 2025,2025-07-01,2025-09-01,8.737701246393105
+All,Electricity - Single-Rate ,SC,WHD,July 2025 - September 2025,2025-07-01,2025-09-01,10.979819636605352
+All,Electricity - Single-Rate ,UR,WHD (unit rate),July 2025 - September 2025,2025-07-01,2025-09-01,0.0
+All,Electricity - Single-Rate ,UR,AAHEDC,July 2025 - September 2025,2025-07-01,2025-09-01,0.4355925993650476
+All,Electricity - Single-Rate ,UR,NCC,July 2025 - September 2025,2025-07-01,2025-09-01,0.927551988981379
+All,Electricity - Single-Rate ,UR,nRAB,July 2025 - September 2025,2025-07-01,2025-09-01,0.0
+All,Electricity - Multi-Register ,UR,RO,July 2025 - September 2025,2025-07-01,2025-09-01,33.06058
+All,Electricity - Multi-Register ,UR,FiT,July 2025 - September 2025,2025-07-01,2025-09-01,7.532858091399762
+All,Electricity - Multi-Register ,UR,ECO,July 2025 - September 2025,2025-07-01,2025-09-01,8.737701246393105
+All,Electricity - Multi-Register ,SC,WHD,July 2025 - September 2025,2025-07-01,2025-09-01,10.979819636605352
+All,Electricity - Multi-Register ,UR,WHD (unit rate),July 2025 - September 2025,2025-07-01,2025-09-01,0.0
+All,Electricity - Multi-Register ,UR,AAHEDC,July 2025 - September 2025,2025-07-01,2025-09-01,0.4355925993650476
+All,Electricity - Multi-Register ,UR,NCC,July 2025 - September 2025,2025-07-01,2025-09-01,0.927551988981379
+All,Electricity - Multi-Register ,UR,nRAB,July 2025 - September 2025,2025-07-01,2025-09-01,0.0
+All,Gas,UR,ECO,July 2025 - September 2025,2025-07-01,2025-09-01,3.0884931685270325
+All,Gas,SC,WHD,July 2025 - September 2025,2025-07-01,2025-09-01,10.979819636605352
+All,Gas,UR,WHD (unit rate),July 2025 - September 2025,2025-07-01,2025-09-01,0.0
+All,Gas,SC,GGL,July 2025 - September 2025,2025-07-01,2025-09-01,2.99665
+All,Electricity - Single-Rate ,UR,RO,October 2025 - December 2025,2025-10-01,2025-12-01,33.06058
+All,Electricity - Single-Rate ,UR,FiT,October 2025 - December 2025,2025-10-01,2025-12-01,7.141389693677252
+All,Electricity - Single-Rate ,UR,ECO,October 2025 - December 2025,2025-10-01,2025-12-01,8.905061303840878
+All,Electricity - Single-Rate ,SC,WHD,October 2025 - December 2025,2025-10-01,2025-12-01,19.505362726406553
+All,Electricity - Single-Rate ,UR,WHD (unit rate),October 2025 - December 2025,2025-10-01,2025-12-01,0.0
+All,Electricity - Single-Rate ,UR,AAHEDC,October 2025 - December 2025,2025-10-01,2025-12-01,0.40984
+All,Electricity - Single-Rate ,UR,NCC,October 2025 - December 2025,2025-10-01,2025-12-01,0.9245527805406587
+All,Electricity - Single-Rate ,UR,nRAB,October 2025 - December 2025,2025-10-01,2025-12-01,0.0
+All,Electricity - Multi-Register ,UR,RO,October 2025 - December 2025,2025-10-01,2025-12-01,33.06058
+All,Electricity - Multi-Register ,UR,FiT,October 2025 - December 2025,2025-10-01,2025-12-01,7.141389693677252
+All,Electricity - Multi-Register ,UR,ECO,October 2025 - December 2025,2025-10-01,2025-12-01,8.905061303840878
+All,Electricity - Multi-Register ,SC,WHD,October 2025 - December 2025,2025-10-01,2025-12-01,19.505362726406553
+All,Electricity - Multi-Register ,UR,WHD (unit rate),October 2025 - December 2025,2025-10-01,2025-12-01,0.0
+All,Electricity - Multi-Register ,UR,AAHEDC,October 2025 - December 2025,2025-10-01,2025-12-01,0.40984
+All,Electricity - Multi-Register ,UR,NCC,October 2025 - December 2025,2025-10-01,2025-12-01,0.9245527805406587
+All,Electricity - Multi-Register ,UR,nRAB,October 2025 - December 2025,2025-10-01,2025-12-01,0.0
+All,Gas,UR,ECO,October 2025 - December 2025,2025-10-01,2025-12-01,3.147649504906135
+All,Gas,SC,WHD,October 2025 - December 2025,2025-10-01,2025-12-01,19.505362726406553
+All,Gas,UR,WHD (unit rate),October 2025 - December 2025,2025-10-01,2025-12-01,0.0
+All,Gas,SC,GGL,October 2025 - December 2025,2025-10-01,2025-12-01,2.99665
+All,Electricity - Single-Rate ,UR,RO,January 2026 - March 2026,2026-01-01,2026-03-01,33.06058
+All,Electricity - Single-Rate ,UR,FiT,January 2026 - March 2026,2026-01-01,2026-03-01,7.141389693677252
+All,Electricity - Single-Rate ,UR,ECO,January 2026 - March 2026,2026-01-01,2026-03-01,8.905061303840878
+All,Electricity - Single-Rate ,SC,WHD,January 2026 - March 2026,2026-01-01,2026-03-01,22.915579962327037
+All,Electricity - Single-Rate ,UR,WHD (unit rate),January 2026 - March 2026,2026-01-01,2026-03-01,0.0
+All,Electricity - Single-Rate ,UR,AAHEDC,January 2026 - March 2026,2026-01-01,2026-03-01,0.40984
+All,Electricity - Single-Rate ,UR,NCC,January 2026 - March 2026,2026-01-01,2026-03-01,0.9245527805406587
+All,Electricity - Single-Rate ,UR,nRAB,January 2026 - March 2026,2026-01-01,2026-03-01,4.718798737085214
+All,Electricity - Multi-Register ,UR,RO,January 2026 - March 2026,2026-01-01,2026-03-01,33.06058
+All,Electricity - Multi-Register ,UR,FiT,January 2026 - March 2026,2026-01-01,2026-03-01,7.141389693677252
+All,Electricity - Multi-Register ,UR,ECO,January 2026 - March 2026,2026-01-01,2026-03-01,8.905061303840878
+All,Electricity - Multi-Register ,SC,WHD,January 2026 - March 2026,2026-01-01,2026-03-01,22.915579962327037
+All,Electricity - Multi-Register ,UR,WHD (unit rate),January 2026 - March 2026,2026-01-01,2026-03-01,0.0
+All,Electricity - Multi-Register ,UR,AAHEDC,January 2026 - March 2026,2026-01-01,2026-03-01,0.40984
+All,Electricity - Multi-Register ,UR,NCC,January 2026 - March 2026,2026-01-01,2026-03-01,0.9245527805406587
+All,Electricity - Multi-Register ,UR,nRAB,January 2026 - March 2026,2026-01-01,2026-03-01,4.718798737085214
+All,Gas,UR,ECO,January 2026 - March 2026,2026-01-01,2026-03-01,3.147649504906135
+All,Gas,SC,WHD,January 2026 - March 2026,2026-01-01,2026-03-01,22.915579962327037
+All,Gas,UR,WHD (unit rate),January 2026 - March 2026,2026-01-01,2026-03-01,0.0
+All,Gas,SC,GGL,January 2026 - March 2026,2026-01-01,2026-03-01,2.99665
+All,Electricity - Single-Rate ,UR,RO,April 2026 - June 2026,2026-04-01,2026-06-01,8.18212
+All,Electricity - Single-Rate ,UR,FiT,April 2026 - June 2026,2026-04-01,2026-06-01,7.698273952389116
+All,Electricity - Single-Rate ,SC,WHD,April 2026 - June 2026,2026-04-01,2026-06-01,3.4102172359204843
+All,Electricity - Single-Rate ,UR,WHD (unit rate),April 2026 - June 2026,2026-04-01,2026-06-01,5.006199122053527
+All,Electricity - Single-Rate ,UR,AAHEDC,April 2026 - June 2026,2026-04-01,2026-06-01,0.4285477083002436
+All,Electricity - Single-Rate ,UR,NCC,April 2026 - June 2026,2026-04-01,2026-06-01,1.1378363640056073
+All,Electricity - Single-Rate ,UR,nRAB,April 2026 - June 2026,2026-04-01,2026-06-01,4.381708630683944
+All,Electricity - Multi-Register ,UR,RO,April 2026 - June 2026,2026-04-01,2026-06-01,8.18212
+All,Electricity - Multi-Register ,UR,FiT,April 2026 - June 2026,2026-04-01,2026-06-01,7.698273952389116
+All,Electricity - Multi-Register ,SC,WHD,April 2026 - June 2026,2026-04-01,2026-06-01,3.4102172359204843
+All,Electricity - Multi-Register ,UR,WHD (unit rate),April 2026 - June 2026,2026-04-01,2026-06-01,5.006199122053527
+All,Electricity - Multi-Register ,UR,AAHEDC,April 2026 - June 2026,2026-04-01,2026-06-01,0.4285477083002436
+All,Electricity - Multi-Register ,UR,NCC,April 2026 - June 2026,2026-04-01,2026-06-01,1.1378363640056073
+All,Electricity - Multi-Register ,UR,nRAB,April 2026 - June 2026,2026-04-01,2026-06-01,4.3794605180731745
+All,Gas,SC,WHD,April 2026 - June 2026,2026-04-01,2026-06-01,3.4102172359204843
+All,Gas,UR,WHD (unit rate),April 2026 - June 2026,2026-04-01,2026-06-01,1.8135405223791567
+All,Gas,SC,GGL,April 2026 - June 2026,2026-04-01,2026-06-01,3.8179000000000003
+All,Electricity - Single-Rate ,UR,RO,July 2026 - September 2026,2026-07-01,2026-09-01,8.18212
+All,Electricity - Single-Rate ,UR,FiT,July 2026 - September 2026,2026-07-01,2026-09-01,7.698273952389116
+All,Electricity - Single-Rate ,SC,WHD,July 2026 - September 2026,2026-07-01,2026-09-01,3.4102172359204843
+All,Electricity - Single-Rate ,UR,WHD (unit rate),July 2026 - September 2026,2026-07-01,2026-09-01,5.006199122053527
+All,Electricity - Single-Rate ,UR,AAHEDC,July 2026 - September 2026,2026-07-01,2026-09-01,0.4285477083002436
+All,Electricity - Single-Rate ,UR,NCC,July 2026 - September 2026,2026-07-01,2026-09-01,1.1378363640056073
+All,Electricity - Single-Rate ,UR,nRAB,July 2026 - September 2026,2026-07-01,2026-09-01,4.161139474291021
+All,Electricity - Multi-Register ,UR,RO,July 2026 - September 2026,2026-07-01,2026-09-01,8.18212
+All,Electricity - Multi-Register ,UR,FiT,July 2026 - September 2026,2026-07-01,2026-09-01,7.698273952389116
+All,Electricity - Multi-Register ,SC,WHD,July 2026 - September 2026,2026-07-01,2026-09-01,3.4102172359204843
+All,Electricity - Multi-Register ,UR,WHD (unit rate),July 2026 - September 2026,2026-07-01,2026-09-01,5.006199122053527
+All,Electricity - Multi-Register ,UR,AAHEDC,July 2026 - September 2026,2026-07-01,2026-09-01,0.4285477083002436
+All,Electricity - Multi-Register ,UR,NCC,July 2026 - September 2026,2026-07-01,2026-09-01,1.1378363640056073
+All,Electricity - Multi-Register ,UR,nRAB,July 2026 - September 2026,2026-07-01,2026-09-01,4.139913023034191
+All,Gas,SC,WHD,July 2026 - September 2026,2026-07-01,2026-09-01,3.4102172359204843
+All,Gas,UR,WHD (unit rate),July 2026 - September 2026,2026-07-01,2026-09-01,1.8135405223791567
+All,Gas,SC,GGL,July 2026 - September 2026,2026-07-01,2026-09-01,3.8179000000000003

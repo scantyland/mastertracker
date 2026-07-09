@@ -1,0 +1,577 @@
+Payment Method,Fuel Type,Charge Type,Allowance,Cap Period,Start Date,End Date,Cost Value
+Direct Debit,Electricity Single Rate,Total SC,Total,October 2022 - December 2022,2022-10-01,2022-12-01,161.14204259689222
+Standard Credit,Electricity Single Rate,Total SC,Total,October 2022 - December 2022,2022-10-01,2022-12-01,182.1478421922848
+PPM,Electricity Single Rate,Total SC,Total,October 2022 - December 2022,2022-10-01,2022-12-01,178.7098686130055
+Direct Debit,Electricity - Multi-Register,Total SC,Total,October 2022 - December 2022,2022-10-01,2022-12-01,161.46021534776852
+Standard Credit,Electricity - Multi-Register,Total SC,Total,October 2022 - December 2022,2022-10-01,2022-12-01,182.42892712636078
+PPM,Electricity - Multi-Register,Total SC,Total,October 2022 - December 2022,2022-10-01,2022-12-01,179.03718071727954
+Direct Debit,Gas,Total SC,Total,October 2022 - December 2022,2022-10-01,2022-12-01,99.01993273246715
+Standard Credit,Gas,Total SC,Total,October 2022 - December 2022,2022-10-01,2022-12-01,116.5835314884523
+PPM,Gas,Total SC,Total,October 2022 - December 2022,2022-10-01,2022-12-01,130.38649111959694
+Direct Debit,Dual Fuel,Total SC,Total,October 2022 - December 2022,2022-10-01,2022-12-01,273.1700740958274
+Standard Credit,Dual Fuel,Total SC,Total,October 2022 - December 2022,2022-10-01,2022-12-01,313.6679423647739
+PPM,Dual Fuel,Total SC,Total,October 2022 - December 2022,2022-10-01,2022-12-01,324.55117771923256
+Direct Debit,Electricity Single Rate,Total UR,Total,October 2022 - December 2022,2022-10-01,2022-12-01,1531.877230049641
+Standard Credit,Electricity Single Rate,Total UR,Total,October 2022 - December 2022,2022-10-01,2022-12-01,1613.4775018726407
+PPM,Electricity Single Rate,Total UR,Total,October 2022 - December 2022,2022-10-01,2022-12-01,1503.5129870970911
+Direct Debit,Electricity - Multi-Register,Total UR,Total,October 2022 - December 2022,2022-10-01,2022-12-01,1961.9010807692162
+Standard Credit,Electricity - Multi-Register,Total UR,Total,October 2022 - December 2022,2022-10-01,2022-12-01,2065.723396004856
+PPM,Electricity - Multi-Register,Total UR,Total,October 2022 - December 2022,2022-10-01,2022-12-01,1931.6202266983823
+Direct Debit,Gas,Total UR,Total,October 2022 - December 2022,2022-10-01,2022-12-01,1686.636675554519
+Standard Credit,Gas,Total UR,Total,October 2022 - December 2022,2022-10-01,2022-12-01,1776.4513109587651
+PPM,Gas,Total UR,Total,October 2022 - December 2022,2022-10-01,2022-12-01,1720.8940683568026
+Direct Debit,Dual Fuel,Total UR,Total,October 2022 - December 2022,2022-10-01,2022-12-01,3379.4396008843682
+Standard Credit,Dual Fuel,Total UR,Total,October 2022 - December 2022,2022-10-01,2022-12-01,3559.4252534729762
+PPM,Dual Fuel,Total UR,Total,October 2022 - December 2022,2022-10-01,2022-12-01,3385.627408226588
+Direct Debit,Electricity Single Rate,Total Bill,Total,October 2022 - December 2022,2022-10-01,2022-12-01,1693.0192726465332
+Standard Credit,Electricity Single Rate,Total Bill,Total,October 2022 - December 2022,2022-10-01,2022-12-01,1795.6253440649255
+PPM,Electricity Single Rate,Total Bill,Total,October 2022 - December 2022,2022-10-01,2022-12-01,1682.2228557100966
+Direct Debit,Electricity - Multi-Register,Total Bill,Total,October 2022 - December 2022,2022-10-01,2022-12-01,2123.3612961169847
+Standard Credit,Electricity - Multi-Register,Total Bill,Total,October 2022 - December 2022,2022-10-01,2022-12-01,2248.1523231312167
+PPM,Electricity - Multi-Register,Total Bill,Total,October 2022 - December 2022,2022-10-01,2022-12-01,2110.657407415662
+Direct Debit,Gas,Total Bill,Total,October 2022 - December 2022,2022-10-01,2022-12-01,1785.656608286986
+Standard Credit,Gas,Total Bill,Total,October 2022 - December 2022,2022-10-01,2022-12-01,1893.0348424472174
+PPM,Gas,Total Bill,Total,October 2022 - December 2022,2022-10-01,2022-12-01,1851.2805594763995
+Direct Debit,Dual Fuel,Total Bill,Total,October 2022 - December 2022,2022-10-01,2022-12-01,3652.6096749801955
+Standard Credit,Dual Fuel,Total Bill,Total,October 2022 - December 2022,2022-10-01,2022-12-01,3873.09319583775
+PPM,Dual Fuel,Total Bill,Total,October 2022 - December 2022,2022-10-01,2022-12-01,3710.178585945821
+Direct Debit,Electricity Single Rate,Total SC,Total,January 2023 - March 2023,2023-01-01,2023-03-01,161.14204259689222
+Standard Credit,Electricity Single Rate,Total SC,Total,January 2023 - March 2023,2023-01-01,2023-03-01,182.1478421922848
+PPM,Electricity Single Rate,Total SC,Total,January 2023 - March 2023,2023-01-01,2023-03-01,178.7098686130055
+Direct Debit,Electricity - Multi-Register,Total SC,Total,January 2023 - March 2023,2023-01-01,2023-03-01,161.46021534776852
+Standard Credit,Electricity - Multi-Register,Total SC,Total,January 2023 - March 2023,2023-01-01,2023-03-01,182.42892712636078
+PPM,Electricity - Multi-Register,Total SC,Total,January 2023 - March 2023,2023-01-01,2023-03-01,179.03718071727954
+Direct Debit,Gas,Total SC,Total,January 2023 - March 2023,2023-01-01,2023-03-01,99.01993273246715
+Standard Credit,Gas,Total SC,Total,January 2023 - March 2023,2023-01-01,2023-03-01,116.5835314884523
+PPM,Gas,Total SC,Total,January 2023 - March 2023,2023-01-01,2023-03-01,130.38649111959694
+Direct Debit,Dual Fuel,Total SC,Total,January 2023 - March 2023,2023-01-01,2023-03-01,273.1700740958274
+Standard Credit,Dual Fuel,Total SC,Total,January 2023 - March 2023,2023-01-01,2023-03-01,313.6679423647739
+PPM,Dual Fuel,Total SC,Total,January 2023 - March 2023,2023-01-01,2023-03-01,324.55117771923256
+Direct Debit,Electricity Single Rate,Total UR,Total,January 2023 - March 2023,2023-01-01,2023-03-01,1991.976896701446
+Standard Credit,Electricity Single Rate,Total UR,Total,January 2023 - March 2023,2023-01-01,2023-03-01,2098.0571114593126
+PPM,Electricity Single Rate,Total UR,Total,January 2023 - March 2023,2023-01-01,2023-03-01,1961.3901181547424
+Direct Debit,Electricity - Multi-Register,Total UR,Total,January 2023 - March 2023,2023-01-01,2023-03-01,2684.7248511994608
+Standard Credit,Electricity - Multi-Register,Total UR,Total,January 2023 - March 2023,2023-01-01,2023-03-01,2826.759236505458
+PPM,Electricity - Multi-Register,Total UR,Total,January 2023 - March 2023,2023-01-01,2023-03-01,2651.001040553516
+Direct Debit,Gas,Total UR,Total,January 2023 - March 2023,2023-01-01,2023-03-01,1951.586369193592
+Standard Credit,Gas,Total UR,Total,January 2023 - March 2023,2023-01-01,2023-03-01,2055.4886811483857
+PPM,Gas,Total UR,Total,January 2023 - March 2023,2023-01-01,2023-03-01,2006.9976098096527
+Direct Debit,Dual Fuel,Total UR,Total,January 2023 - March 2023,2023-01-01,2023-03-01,4140.74142918979
+Standard Credit,Dual Fuel,Total UR,Total,January 2023 - March 2023,2023-01-01,2023-03-01,4361.223082238083
+PPM,Dual Fuel,Total UR,Total,January 2023 - March 2023,2023-01-01,2023-03-01,4166.807114362615
+Direct Debit,Electricity Single Rate,Total Bill,Total,January 2023 - March 2023,2023-01-01,2023-03-01,2153.1189392983383
+Standard Credit,Electricity Single Rate,Total Bill,Total,January 2023 - March 2023,2023-01-01,2023-03-01,2280.2049536515974
+PPM,Electricity Single Rate,Total Bill,Total,January 2023 - March 2023,2023-01-01,2023-03-01,2140.099986767748
+Direct Debit,Electricity - Multi-Register,Total Bill,Total,January 2023 - March 2023,2023-01-01,2023-03-01,2846.1850665472293
+Standard Credit,Electricity - Multi-Register,Total Bill,Total,January 2023 - March 2023,2023-01-01,2023-03-01,3009.1881636318185
+PPM,Electricity - Multi-Register,Total Bill,Total,January 2023 - March 2023,2023-01-01,2023-03-01,2830.0382212707955
+Direct Debit,Gas,Total Bill,Total,January 2023 - March 2023,2023-01-01,2023-03-01,2050.606301926059
+Standard Credit,Gas,Total Bill,Total,January 2023 - March 2023,2023-01-01,2023-03-01,2172.072212636838
+PPM,Gas,Total Bill,Total,January 2023 - March 2023,2023-01-01,2023-03-01,2137.3841009292496
+Direct Debit,Dual Fuel,Total Bill,Total,January 2023 - March 2023,2023-01-01,2023-03-01,4413.911503285618
+Standard Credit,Dual Fuel,Total Bill,Total,January 2023 - March 2023,2023-01-01,2023-03-01,4674.891024602857
+PPM,Dual Fuel,Total Bill,Total,January 2023 - March 2023,2023-01-01,2023-03-01,4491.358292081847
+Direct Debit,Electricity Single Rate,Total SC,Total,April 2023 - June 2023,2023-04-01,2023-06-01,184.12308678550502
+Standard Credit,Electricity Single Rate,Total SC,Total,April 2023 - June 2023,2023-04-01,2023-06-01,206.85880395175917
+PPM,Electricity Single Rate,Total SC,Total,April 2023 - June 2023,2023-04-01,2023-06-01,201.90266203728615
+Direct Debit,Electricity - Multi-Register,Total SC,Total,April 2023 - June 2023,2023-04-01,2023-06-01,184.4527976265541
+Standard Credit,Electricity - Multi-Register,Total SC,Total,April 2023 - June 2023,2023-04-01,2023-06-01,207.14416932718106
+PPM,Electricity - Multi-Register,Total SC,Total,April 2023 - June 2023,2023-04-01,2023-06-01,202.24301230007077
+Direct Debit,Gas,Total SC,Total,April 2023 - June 2023,2023-04-01,2023-06-01,101.19797317121264
+Standard Credit,Gas,Total SC,Total,April 2023 - June 2023,2023-04-01,2023-06-01,119.36728340621774
+PPM,Gas,Total SC,Total,April 2023 - June 2023,2023-04-01,2023-06-01,131.39660207908494
+Direct Debit,Dual Fuel,Total SC,Total,April 2023 - June 2023,2023-04-01,2023-06-01,299.58711295455356
+Standard Credit,Dual Fuel,Total SC,Total,April 2023 - June 2023,2023-04-01,2023-06-01,342.53739172587575
+PPM,Dual Fuel,Total SC,Total,April 2023 - June 2023,2023-04-01,2023-06-01,349.9642273221897
+Direct Debit,Electricity Single Rate,Total UR,Total,April 2023 - June 2023,2023-04-01,2023-06-01,1494.02538962484
+Standard Credit,Electricity Single Rate,Total UR,Total,April 2023 - June 2023,2023-04-01,2023-06-01,1573.611800292028
+PPM,Electricity Single Rate,Total UR,Total,April 2023 - June 2023,2023-04-01,2023-06-01,1459.9296666479033
+Direct Debit,Electricity - Multi-Register,Total UR,Total,April 2023 - June 2023,2023-04-01,2023-06-01,1988.8432098064159
+Standard Credit,Electricity - Multi-Register,Total UR,Total,April 2023 - June 2023,2023-04-01,2023-06-01,2094.0988047184064
+PPM,Electricity - Multi-Register,Total UR,Total,April 2023 - June 2023,2023-04-01,2023-06-01,1952.5188967882068
+Direct Debit,Gas,Total UR,Total,April 2023 - June 2023,2023-04-01,2023-06-01,1440.7433296226661
+Standard Credit,Gas,Total UR,Total,April 2023 - June 2023,2023-04-01,2023-06-01,1517.481425219438
+PPM,Gas,Total UR,Total,April 2023 - June 2023,2023-04-01,2023-06-01,1467.407370719653
+Direct Debit,Dual Fuel,Total UR,Total,April 2023 - June 2023,2023-04-01,2023-06-01,3081.5071552098816
+Standard Credit,Dual Fuel,Total UR,Total,April 2023 - June 2023,2023-04-01,2023-06-01,3245.6478867870396
+PPM,Dual Fuel,Total UR,Total,April 2023 - June 2023,2023-04-01,2023-06-01,3073.7038892359337
+Direct Debit,Electricity Single Rate,Total Bill,Total,April 2023 - June 2023,2023-04-01,2023-06-01,1678.148476410345
+Standard Credit,Electricity Single Rate,Total Bill,Total,April 2023 - June 2023,2023-04-01,2023-06-01,1780.4706042437872
+PPM,Electricity Single Rate,Total Bill,Total,April 2023 - June 2023,2023-04-01,2023-06-01,1661.8323286851894
+Direct Debit,Electricity - Multi-Register,Total Bill,Total,April 2023 - June 2023,2023-04-01,2023-06-01,2173.29600743297
+Standard Credit,Electricity - Multi-Register,Total Bill,Total,April 2023 - June 2023,2023-04-01,2023-06-01,2301.2429740455873
+PPM,Electricity - Multi-Register,Total Bill,Total,April 2023 - June 2023,2023-04-01,2023-06-01,2154.7619090882777
+Direct Debit,Gas,Total Bill,Total,April 2023 - June 2023,2023-04-01,2023-06-01,1541.9413027938788
+Standard Credit,Gas,Total Bill,Total,April 2023 - June 2023,2023-04-01,2023-06-01,1636.8487086256557
+PPM,Gas,Total Bill,Total,April 2023 - June 2023,2023-04-01,2023-06-01,1598.803972798738
+Direct Debit,Dual Fuel,Total Bill,Total,April 2023 - June 2023,2023-04-01,2023-06-01,3381.094268164435
+Standard Credit,Dual Fuel,Total Bill,Total,April 2023 - June 2023,2023-04-01,2023-06-01,3588.1852785129154
+PPM,Dual Fuel,Total Bill,Total,April 2023 - June 2023,2023-04-01,2023-06-01,3423.6681165581235
+Direct Debit,Electricity Single Rate,Total SC,Total,July 2023 - September 2023,2023-07-01,2023-09-01,184.12308678550502
+Standard Credit,Electricity Single Rate,Total SC,Total,July 2023 - September 2023,2023-07-01,2023-09-01,206.85880395175917
+PPM,Electricity Single Rate,Total SC,Total,July 2023 - September 2023,2023-07-01,2023-09-01,201.90266203728615
+Direct Debit,Electricity - Multi-Register,Total SC,Total,July 2023 - September 2023,2023-07-01,2023-09-01,184.4527976265541
+Standard Credit,Electricity - Multi-Register,Total SC,Total,July 2023 - September 2023,2023-07-01,2023-09-01,207.14416932718106
+PPM,Electricity - Multi-Register,Total SC,Total,July 2023 - September 2023,2023-07-01,2023-09-01,202.24301230007077
+Direct Debit,Gas,Total SC,Total,July 2023 - September 2023,2023-07-01,2023-09-01,101.19797317121264
+Standard Credit,Gas,Total SC,Total,July 2023 - September 2023,2023-07-01,2023-09-01,119.36728340621774
+PPM,Gas,Total SC,Total,July 2023 - September 2023,2023-07-01,2023-09-01,131.39660207908494
+Direct Debit,Dual Fuel,Total SC,Total,July 2023 - September 2023,2023-07-01,2023-09-01,299.58711295455356
+Standard Credit,Dual Fuel,Total SC,Total,July 2023 - September 2023,2023-07-01,2023-09-01,342.53739172587575
+PPM,Dual Fuel,Total SC,Total,July 2023 - September 2023,2023-07-01,2023-09-01,349.9642273221897
+Direct Debit,Electricity Single Rate,Total UR,Total,July 2023 - September 2023,2023-07-01,2023-09-01,889.0551404518293
+Standard Credit,Electricity Single Rate,Total UR,Total,July 2023 - September 2023,2023-07-01,2023-09-01,936.4585083017696
+PPM,Electricity Single Rate,Total UR,Total,July 2023 - September 2023,2023-07-01,2023-09-01,857.881318003003
+Direct Debit,Electricity - Multi-Register,Total UR,Total,July 2023 - September 2023,2023-07-01,2023-09-01,1148.7754238160762
+Standard Credit,Electricity - Multi-Register,Total UR,Total,July 2023 - September 2023,2023-07-01,2023-09-01,1209.6269699331474
+PPM,Electricity - Multi-Register,Total UR,Total,July 2023 - September 2023,2023-07-01,2023-09-01,1116.451972606152
+Direct Debit,Gas,Total UR,Total,July 2023 - September 2023,2023-07-01,2023-09-01,857.9381786989827
+Standard Credit,Gas,Total UR,Total,July 2023 - September 2023,2023-07-01,2023-09-01,903.687861569411
+PPM,Gas,Total UR,Total,July 2023 - September 2023,2023-07-01,2023-09-01,842.5354789330166
+Direct Debit,Dual Fuel,Total UR,Total,July 2023 - September 2023,2023-07-01,2023-09-01,1834.3429851083529
+Standard Credit,Dual Fuel,Total UR,Total,July 2023 - September 2023,2023-07-01,2023-09-01,1932.15368836474
+PPM,Dual Fuel,Total UR,Total,July 2023 - September 2023,2023-07-01,2023-09-01,1785.4376367828204
+Direct Debit,Electricity Single Rate,Total Bill,Total,July 2023 - September 2023,2023-07-01,2023-09-01,1073.1782272373343
+Standard Credit,Electricity Single Rate,Total Bill,Total,July 2023 - September 2023,2023-07-01,2023-09-01,1143.3173122535288
+PPM,Electricity Single Rate,Total Bill,Total,July 2023 - September 2023,2023-07-01,2023-09-01,1059.7839800402892
+Direct Debit,Electricity - Multi-Register,Total Bill,Total,July 2023 - September 2023,2023-07-01,2023-09-01,1333.2282214426302
+Standard Credit,Electricity - Multi-Register,Total Bill,Total,July 2023 - September 2023,2023-07-01,2023-09-01,1416.7711392603285
+PPM,Electricity - Multi-Register,Total Bill,Total,July 2023 - September 2023,2023-07-01,2023-09-01,1318.6949849062228
+Direct Debit,Gas,Total Bill,Total,July 2023 - September 2023,2023-07-01,2023-09-01,959.1361518701954
+Standard Credit,Gas,Total Bill,Total,July 2023 - September 2023,2023-07-01,2023-09-01,1023.0551449756288
+PPM,Gas,Total Bill,Total,July 2023 - September 2023,2023-07-01,2023-09-01,973.9320810121015
+Direct Debit,Dual Fuel,Total Bill,Total,July 2023 - September 2023,2023-07-01,2023-09-01,2133.9300980629064
+Standard Credit,Dual Fuel,Total Bill,Total,July 2023 - September 2023,2023-07-01,2023-09-01,2274.6910800906157
+PPM,Dual Fuel,Total Bill,Total,July 2023 - September 2023,2023-07-01,2023-09-01,2135.40186410501
+Direct Debit,Electricity Single Rate,Total SC,Total,October 2023 - December 2023,2023-10-01,2023-12-01,185.51133374056386
+Standard Credit,Electricity Single Rate,Total SC,Total,October 2023 - December 2023,2023-10-01,2023-12-01,208.67378876436524
+PPM,Electricity Single Rate,Total SC,Total,October 2023 - December 2023,2023-10-01,2023-12-01,209.54836309008647
+Direct Debit,Electricity - Multi-Register,Total SC,Total,October 2023 - December 2023,2023-10-01,2023-12-01,185.48193233140805
+Standard Credit,Electricity - Multi-Register,Total SC,Total,October 2023 - December 2023,2023-10-01,2023-12-01,208.58443850008547
+PPM,Electricity - Multi-Register,Total SC,Total,October 2023 - December 2023,2023-10-01,2023-12-01,209.49153393368638
+Direct Debit,Gas,Total SC,Total,October 2023 - December 2023,2023-10-01,2023-12-01,102.96297753791782
+Standard Credit,Gas,Total SC,Total,October 2023 - December 2023,2023-10-01,2023-12-01,121.63680114837715
+PPM,Gas,Total SC,Total,October 2023 - December 2023,2023-10-01,2023-12-01,140.59565783692634
+Direct Debit,Dual Fuel,Total SC,Total,October 2023 - December 2023,2023-10-01,2023-12-01,302.8980268424058
+Standard Credit,Dual Fuel,Total SC,Total,October 2023 - December 2023,2023-10-01,2023-12-01,346.8261194083795
+PPM,Dual Fuel,Total SC,Total,October 2023 - December 2023,2023-10-01,2023-12-01,367.6512219733634
+Direct Debit,Electricity Single Rate,Total UR,Total,October 2023 - December 2023,2023-10-01,2023-12-01,807.5321350014295
+Standard Credit,Electricity Single Rate,Total UR,Total,October 2023 - December 2023,2023-10-01,2023-12-01,850.0630715459009
+PPM,Electricity Single Rate,Total UR,Total,October 2023 - December 2023,2023-10-01,2023-12-01,794.6576680001012
+Direct Debit,Electricity - Multi-Register,Total UR,Total,October 2023 - December 2023,2023-10-01,2023-12-01,1050.4269497783955
+Standard Credit,Electricity - Multi-Register,Total UR,Total,October 2023 - December 2023,2023-10-01,2023-12-01,1105.546206830302
+PPM,Electricity - Multi-Register,Total UR,Total,October 2023 - December 2023,2023-10-01,2023-12-01,1036.4870746370545
+Direct Debit,Gas,Total UR,Total,October 2023 - December 2023,2023-10-01,2023-12-01,787.6986875685982
+Standard Credit,Gas,Total UR,Total,October 2023 - December 2023,2023-10-01,2023-12-01,829.1203543464054
+PPM,Gas,Total UR,Total,October 2023 - December 2023,2023-10-01,2023-12-01,762.194332646589
+Direct Debit,Dual Fuel,Total UR,Total,October 2023 - December 2023,2023-10-01,2023-12-01,1674.992363698529
+Standard Credit,Dual Fuel,Total UR,Total,October 2023 - December 2023,2023-10-01,2023-12-01,1763.1425971869214
+PPM,Dual Fuel,Total UR,Total,October 2023 - December 2023,2023-10-01,2023-12-01,1634.6946006790247
+Direct Debit,Electricity Single Rate,Total Bill,Total,October 2023 - December 2023,2023-10-01,2023-12-01,993.0434687419934
+Standard Credit,Electricity Single Rate,Total Bill,Total,October 2023 - December 2023,2023-10-01,2023-12-01,1058.7368603102661
+PPM,Electricity Single Rate,Total Bill,Total,October 2023 - December 2023,2023-10-01,2023-12-01,1004.2060310901877
+Direct Debit,Electricity - Multi-Register,Total Bill,Total,October 2023 - December 2023,2023-10-01,2023-12-01,1235.9088821098035
+Standard Credit,Electricity - Multi-Register,Total Bill,Total,October 2023 - December 2023,2023-10-01,2023-12-01,1314.1306453303876
+PPM,Electricity - Multi-Register,Total Bill,Total,October 2023 - December 2023,2023-10-01,2023-12-01,1245.978608570741
+Direct Debit,Gas,Total Bill,Total,October 2023 - December 2023,2023-10-01,2023-12-01,890.661665106516
+Standard Credit,Gas,Total Bill,Total,October 2023 - December 2023,2023-10-01,2023-12-01,950.7571554947825
+PPM,Gas,Total Bill,Total,October 2023 - December 2023,2023-10-01,2023-12-01,902.7899904835153
+Direct Debit,Dual Fuel,Total Bill,Total,October 2023 - December 2023,2023-10-01,2023-12-01,1977.8903905409347
+Standard Credit,Dual Fuel,Total Bill,Total,October 2023 - December 2023,2023-10-01,2023-12-01,2109.968716595301
+PPM,Dual Fuel,Total Bill,Total,October 2023 - December 2023,2023-10-01,2023-12-01,2002.345822652388
+Direct Debit,Electricity Single Rate,Total SC,Total,January 2024 - March 2024,2024-01-01,2024-03-01,185.44308132774415
+Standard Credit,Electricity Single Rate,Total SC,Total,January 2024 - March 2024,2024-01-01,2024-03-01,208.60267796102917
+PPM,Electricity Single Rate,Total SC,Total,January 2024 - March 2024,2024-01-01,2024-03-01,209.47332444429236
+Direct Debit,Electricity - Multi-Register,Total SC,Total,January 2024 - March 2024,2024-01-01,2024-03-01,185.41845279008353
+Standard Credit,Electricity - Multi-Register,Total SC,Total,January 2024 - March 2024,2024-01-01,2024-03-01,208.5179840376149
+PPM,Electricity - Multi-Register,Total SC,Total,January 2024 - March 2024,2024-01-01,2024-03-01,209.42132751876247
+Direct Debit,Gas,Total SC,Total,January 2024 - March 2024,2024-01-01,2024-03-01,102.88956690971327
+Standard Credit,Gas,Total SC,Total,January 2024 - March 2024,2024-01-01,2024-03-01,121.55660535393956
+PPM,Gas,Total SC,Total,January 2024 - March 2024,2024-01-01,2024-03-01,140.4907246048703
+Direct Debit,Dual Fuel,Total SC,Total,January 2024 - March 2024,2024-01-01,2024-03-01,302.74928064933033
+Standard Credit,Dual Fuel,Total SC,Total,January 2024 - March 2024,2024-01-01,2024-03-01,346.66724748071715
+PPM,Dual Fuel,Total SC,Total,January 2024 - March 2024,2024-01-01,2024-03-01,367.4622515016208
+Direct Debit,Electricity Single Rate,Total UR,Total,January 2024 - March 2024,2024-01-01,2024-03-01,844.8579984807171
+Standard Credit,Electricity Single Rate,Total UR,Total,January 2024 - March 2024,2024-01-01,2024-03-01,889.3741121585841
+PPM,Electricity Single Rate,Total UR,Total,January 2024 - March 2024,2024-01-01,2024-03-01,831.8103428661502
+Direct Debit,Electricity - Multi-Register,Total UR,Total,January 2024 - March 2024,2024-01-01,2024-03-01,1104.5295992601714
+Standard Credit,Electricity - Multi-Register,Total UR,Total,January 2024 - March 2024,2024-01-01,2024-03-01,1162.5086113126606
+PPM,Electricity - Multi-Register,Total UR,Total,January 2024 - March 2024,2024-01-01,2024-03-01,1090.339051439356
+Direct Debit,Gas,Total UR,Total,January 2024 - March 2024,2024-01-01,2024-03-01,847.656047356099
+Standard Credit,Gas,Total UR,Total,January 2024 - March 2024,2024-01-01,2024-03-01,892.268596985773
+PPM,Gas,Total UR,Total,January 2024 - March 2024,2024-01-01,2024-03-01,826.9528532891468
+Direct Debit,Dual Fuel,Total UR,Total,January 2024 - March 2024,2024-01-01,2024-03-01,1777.1397481286565
+Standard Credit,Dual Fuel,Total UR,Total,January 2024 - March 2024,2024-01-01,2024-03-01,1870.7248446015753
+PPM,Dual Fuel,Total UR,Total,January 2024 - March 2024,2024-01-01,2024-03-01,1741.7013559630614
+Direct Debit,Electricity Single Rate,Total Bill,Total,January 2024 - March 2024,2024-01-01,2024-03-01,1030.3010798084613
+Standard Credit,Electricity Single Rate,Total Bill,Total,January 2024 - March 2024,2024-01-01,2024-03-01,1097.9767901196133
+PPM,Electricity Single Rate,Total Bill,Total,January 2024 - March 2024,2024-01-01,2024-03-01,1041.2836673104425
+Direct Debit,Electricity - Multi-Register,Total Bill,Total,January 2024 - March 2024,2024-01-01,2024-03-01,1289.948052050255
+Standard Credit,Electricity - Multi-Register,Total Bill,Total,January 2024 - March 2024,2024-01-01,2024-03-01,1371.0265953502756
+PPM,Electricity - Multi-Register,Total Bill,Total,January 2024 - March 2024,2024-01-01,2024-03-01,1299.7603789581183
+Direct Debit,Gas,Total Bill,Total,January 2024 - March 2024,2024-01-01,2024-03-01,950.5456142658122
+Standard Credit,Gas,Total Bill,Total,January 2024 - March 2024,2024-01-01,2024-03-01,1013.8252023397125
+PPM,Gas,Total Bill,Total,January 2024 - March 2024,2024-01-01,2024-03-01,967.4435778940172
+Direct Debit,Dual Fuel,Total Bill,Total,January 2024 - March 2024,2024-01-01,2024-03-01,2079.889028777987
+Standard Credit,Dual Fuel,Total Bill,Total,January 2024 - March 2024,2024-01-01,2024-03-01,2217.3920920822925
+PPM,Dual Fuel,Total Bill,Total,January 2024 - March 2024,2024-01-01,2024-03-01,2109.163607464682
+Direct Debit,Electricity Single Rate,Total SC,Total,April 2024 - June 2024,2024-04-01,2024-06-01,208.91301785395333
+Standard Credit,Electricity Single Rate,Total SC,Total,April 2024 - June 2024,2024-04-01,2024-06-01,229.0042329730208
+PPM,Electricity Single Rate,Total SC,Total,April 2024 - June 2024,2024-04-01,2024-06-01,208.9130638101998
+Direct Debit,Electricity - Multi-Register,Total SC,Total,April 2024 - June 2024,2024-04-01,2024-06-01,209.7361738533054
+Standard Credit,Electricity - Multi-Register,Total SC,Total,April 2024 - June 2024,2024-04-01,2024-06-01,228.87747314572712
+PPM,Electricity - Multi-Register,Total SC,Total,April 2024 - June 2024,2024-04-01,2024-06-01,209.73668465735832
+Direct Debit,Gas,Total SC,Total,April 2024 - June 2024,2024-04-01,2024-06-01,109.24583451232616
+Standard Credit,Gas,Total SC,Total,April 2024 - June 2024,2024-04-01,2024-06-01,122.3790205956831
+PPM,Gas,Total SC,Total,April 2024 - June 2024,2024-04-01,2024-06-01,109.24408055562807
+Direct Debit,Dual Fuel,Total SC,Total,April 2024 - June 2024,2024-04-01,2024-06-01,334.0667949845935
+Standard Credit,Dual Fuel,Total SC,Total,April 2024 - June 2024,2024-04-01,2024-06-01,368.9524162471391
+PPM,Dual Fuel,Total SC,Total,April 2024 - June 2024,2024-04-01,2024-06-01,334.0650015841192
+Direct Debit,Electricity Single Rate,Total UR,Total,April 2024 - June 2024,2024-04-01,2024-06-01,723.3084421791881
+Standard Credit,Electricity Single Rate,Total UR,Total,April 2024 - June 2024,2024-04-01,2024-06-01,761.3420899231216
+PPM,Electricity Single Rate,Total UR,Total,April 2024 - June 2024,2024-04-01,2024-06-01,700.2589587640757
+Direct Debit,Electricity - Multi-Register,Total UR,Total,April 2024 - June 2024,2024-04-01,2024-06-01,927.6371321499851
+Standard Credit,Electricity - Multi-Register,Total UR,Total,April 2024 - June 2024,2024-04-01,2024-06-01,976.2360475624765
+PPM,Electricity - Multi-Register,Total UR,Total,April 2024 - June 2024,2024-04-01,2024-06-01,903.7089489253184
+Direct Debit,Gas,Total UR,Total,April 2024 - June 2024,2024-04-01,2024-06-01,690.410398289898
+Standard Credit,Gas,Total UR,Total,April 2024 - June 2024,2024-04-01,2024-06-01,726.6471549831748
+PPM,Gas,Total UR,Total,April 2024 - June 2024,2024-04-01,2024-06-01,664.7946919984631
+Direct Debit,Dual Fuel,Total UR,Total,April 2024 - June 2024,2024-04-01,2024-06-01,1484.4047824925406
+Standard Credit,Dual Fuel,Total UR,Total,April 2024 - June 2024,2024-04-01,2024-06-01,1562.3887071516115
+PPM,Dual Fuel,Total UR,Total,April 2024 - June 2024,2024-04-01,2024-06-01,1433.3063333006658
+Direct Debit,Electricity Single Rate,Total Bill,Total,April 2024 - June 2024,2024-04-01,2024-06-01,932.2214600331414
+Standard Credit,Electricity Single Rate,Total Bill,Total,April 2024 - June 2024,2024-04-01,2024-06-01,990.3463228961425
+PPM,Electricity Single Rate,Total Bill,Total,April 2024 - June 2024,2024-04-01,2024-06-01,909.1720225742755
+Direct Debit,Electricity - Multi-Register,Total Bill,Total,April 2024 - June 2024,2024-04-01,2024-06-01,1137.3733060032905
+Standard Credit,Electricity - Multi-Register,Total Bill,Total,April 2024 - June 2024,2024-04-01,2024-06-01,1205.1135207082036
+PPM,Electricity - Multi-Register,Total Bill,Total,April 2024 - June 2024,2024-04-01,2024-06-01,1113.4456335826767
+Direct Debit,Gas,Total Bill,Total,April 2024 - June 2024,2024-04-01,2024-06-01,799.6562328022242
+Standard Credit,Gas,Total Bill,Total,April 2024 - June 2024,2024-04-01,2024-06-01,849.0261755788579
+PPM,Gas,Total Bill,Total,April 2024 - June 2024,2024-04-01,2024-06-01,774.0387725540912
+Direct Debit,Dual Fuel,Total Bill,Total,April 2024 - June 2024,2024-04-01,2024-06-01,1818.4715774771341
+Standard Credit,Dual Fuel,Total Bill,Total,April 2024 - June 2024,2024-04-01,2024-06-01,1931.3411233987506
+PPM,Dual Fuel,Total Bill,Total,April 2024 - June 2024,2024-04-01,2024-06-01,1767.371334884785
+Direct Debit,Electricity Single Rate,Total SC,Total,July 2024 - September 2024,2024-07-01,2024-09-01,208.97563492771732
+Standard Credit,Electricity Single Rate,Total SC,Total,July 2024 - September 2024,2024-07-01,2024-09-01,229.17361587944052
+PPM,Electricity Single Rate,Total SC,Total,July 2024 - September 2024,2024-07-01,2024-09-01,208.97738812767162
+Direct Debit,Electricity - Multi-Register,Total SC,Total,July 2024 - September 2024,2024-07-01,2024-09-01,209.6404942135594
+Standard Credit,Electricity - Multi-Register,Total SC,Total,July 2024 - September 2024,2024-07-01,2024-09-01,229.04123337749175
+PPM,Electricity - Multi-Register,Total SC,Total,July 2024 - September 2024,2024-07-01,2024-09-01,209.63882284254467
+Direct Debit,Gas,Total SC,Total,July 2024 - September 2024,2024-07-01,2024-09-01,109.19984554803742
+Standard Credit,Gas,Total SC,Total,July 2024 - September 2024,2024-07-01,2024-09-01,122.50590640265031
+PPM,Gas,Total SC,Total,July 2024 - September 2024,2024-07-01,2024-09-01,109.19989696508067
+Direct Debit,Dual Fuel,Total SC,Total,July 2024 - September 2024,2024-07-01,2024-09-01,334.0842544995425
+Standard Credit,Dual Fuel,Total SC,Total,July 2024 - September 2024,2024-07-01,2024-09-01,369.26349839619536
+PPM,Dual Fuel,Total SC,Total,July 2024 - September 2024,2024-07-01,2024-09-01,334.0861493473899
+Direct Debit,Electricity Single Rate,Total UR,Total,July 2024 - September 2024,2024-07-01,2024-09-01,660.2225635021895
+Standard Credit,Electricity Single Rate,Total UR,Total,July 2024 - September 2024,2024-07-01,2024-09-01,694.8981765310563
+PPM,Electricity Single Rate,Total UR,Total,July 2024 - September 2024,2024-07-01,2024-09-01,637.4593339716658
+Direct Debit,Electricity - Multi-Register,Total UR,Total,July 2024 - September 2024,2024-07-01,2024-09-01,838.3335163402182
+Standard Credit,Electricity - Multi-Register,Total UR,Total,July 2024 - September 2024,2024-07-01,2024-09-01,882.2076417767695
+PPM,Electricity - Multi-Register,Total UR,Total,July 2024 - September 2024,2024-07-01,2024-09-01,814.8126897892919
+Direct Debit,Gas,Total UR,Total,July 2024 - September 2024,2024-07-01,2024-09-01,626.1771211648024
+Standard Credit,Gas,Total UR,Total,July 2024 - September 2024,2024-07-01,2024-09-01,658.9946412213834
+PPM,Gas,Total UR,Total,July 2024 - September 2024,2024-07-01,2024-09-01,601.1168740442328
+Direct Debit,Dual Fuel,Total UR,Total,July 2024 - September 2024,2024-07-01,2024-09-01,1350.7196689003417
+Standard Credit,Dual Fuel,Total UR,Total,July 2024 - September 2024,2024-07-01,2024-09-01,1421.5874586400619
+PPM,Dual Fuel,Total UR,Total,July 2024 - September 2024,2024-07-01,2024-09-01,1300.5050184166937
+Direct Debit,Electricity Single Rate,Total Bill,Total,July 2024 - September 2024,2024-07-01,2024-09-01,869.1981984299068
+Standard Credit,Electricity Single Rate,Total Bill,Total,July 2024 - September 2024,2024-07-01,2024-09-01,924.0717924104968
+PPM,Electricity Single Rate,Total Bill,Total,July 2024 - September 2024,2024-07-01,2024-09-01,846.4367220993374
+Direct Debit,Electricity - Multi-Register,Total Bill,Total,July 2024 - September 2024,2024-07-01,2024-09-01,1047.9740105537776
+Standard Credit,Electricity - Multi-Register,Total Bill,Total,July 2024 - September 2024,2024-07-01,2024-09-01,1111.2488751542612
+PPM,Electricity - Multi-Register,Total Bill,Total,July 2024 - September 2024,2024-07-01,2024-09-01,1024.4515126318365
+Direct Debit,Gas,Total Bill,Total,July 2024 - September 2024,2024-07-01,2024-09-01,735.3769667128398
+Standard Credit,Gas,Total Bill,Total,July 2024 - September 2024,2024-07-01,2024-09-01,781.5005476240337
+PPM,Gas,Total Bill,Total,July 2024 - September 2024,2024-07-01,2024-09-01,710.3167710093135
+Direct Debit,Dual Fuel,Total Bill,Total,July 2024 - September 2024,2024-07-01,2024-09-01,1684.8039233998843
+Standard Credit,Dual Fuel,Total Bill,Total,July 2024 - September 2024,2024-07-01,2024-09-01,1790.8509570362571
+PPM,Dual Fuel,Total Bill,Total,July 2024 - September 2024,2024-07-01,2024-09-01,1634.5911677640836
+Direct Debit,Electricity Single Rate,Total SC,Total,October 2024 - December 2024,2024-10-01,2024-12-01,212.00253094288914
+Standard Credit,Electricity Single Rate,Total SC,Total,October 2024 - December 2024,2024-10-01,2024-12-01,233.1236976615181
+PPM,Electricity Single Rate,Total SC,Total,October 2024 - December 2024,2024-10-01,2024-12-01,212.00188613473765
+Direct Debit,Electricity - Multi-Register,Total SC,Total,October 2024 - December 2024,2024-10-01,2024-12-01,212.44572567168004
+Standard Credit,Electricity - Multi-Register,Total SC,Total,October 2024 - December 2024,2024-10-01,2024-12-01,232.964205139742
+PPM,Electricity - Multi-Register,Total SC,Total,October 2024 - December 2024,2024-10-01,2024-12-01,212.4463970515681
+Direct Debit,Gas,Total SC,Total,October 2024 - December 2024,2024-10-01,2024-12-01,110.04974257008463
+Standard Credit,Gas,Total SC,Total,October 2024 - December 2024,2024-10-01,2024-12-01,126.23219506539003
+PPM,Gas,Total SC,Total,October 2024 - December 2024,2024-10-01,2024-12-01,110.0500870797515
+Direct Debit,Dual Fuel,Total SC,Total,October 2024 - December 2024,2024-10-01,2024-12-01,338.15488718862247
+Standard Credit,Dual Fuel,Total SC,Total,October 2024 - December 2024,2024-10-01,2024-12-01,377.32368736325355
+PPM,Dual Fuel,Total SC,Total,October 2024 - December 2024,2024-10-01,2024-12-01,338.1545718752136
+Direct Debit,Electricity Single Rate,Total UR,Total,October 2024 - December 2024,2024-10-01,2024-12-01,723.3881454085904
+Standard Credit,Electricity Single Rate,Total UR,Total,October 2024 - December 2024,2024-10-01,2024-12-01,761.3980408611128
+PPM,Electricity Single Rate,Total UR,Total,October 2024 - December 2024,2024-10-01,2024-12-01,699.1764730380306
+Direct Debit,Electricity - Multi-Register,Total UR,Total,October 2024 - December 2024,2024-10-01,2024-12-01,931.2942695433105
+Standard Credit,Electricity - Multi-Register,Total UR,Total,October 2024 - December 2024,2024-10-01,2024-12-01,980.061688536169
+PPM,Electricity - Multi-Register,Total UR,Total,October 2024 - December 2024,2024-10-01,2024-12-01,906.1881655235545
+Direct Debit,Gas,Total UR,Total,October 2024 - December 2024,2024-10-01,2024-12-01,712.9476654980695
+Standard Credit,Gas,Total UR,Total,October 2024 - December 2024,2024-10-01,2024-12-01,750.3402547961816
+PPM,Gas,Total UR,Total,October 2024 - December 2024,2024-10-01,2024-12-01,686.8059778451187
+Direct Debit,Dual Fuel,Total UR,Total,October 2024 - December 2024,2024-10-01,2024-12-01,1508.1526014519927
+Standard Credit,Dual Fuel,Total UR,Total,October 2024 - December 2024,2024-10-01,2024-12-01,1587.325210440159
+PPM,Dual Fuel,Total UR,Total,October 2024 - December 2024,2024-10-01,2024-12-01,1455.281573427307
+Direct Debit,Electricity Single Rate,Total Bill,Total,October 2024 - December 2024,2024-10-01,2024-12-01,935.3906763514796
+Standard Credit,Electricity Single Rate,Total Bill,Total,October 2024 - December 2024,2024-10-01,2024-12-01,994.5217385226309
+PPM,Electricity Single Rate,Total Bill,Total,October 2024 - December 2024,2024-10-01,2024-12-01,911.1783591727683
+Direct Debit,Electricity - Multi-Register,Total Bill,Total,October 2024 - December 2024,2024-10-01,2024-12-01,1143.7399952149906
+Standard Credit,Electricity - Multi-Register,Total Bill,Total,October 2024 - December 2024,2024-10-01,2024-12-01,1213.025893675911
+PPM,Electricity - Multi-Register,Total Bill,Total,October 2024 - December 2024,2024-10-01,2024-12-01,1118.6345625751226
+Direct Debit,Gas,Total Bill,Total,October 2024 - December 2024,2024-10-01,2024-12-01,822.9974080681541
+Standard Credit,Gas,Total Bill,Total,October 2024 - December 2024,2024-10-01,2024-12-01,876.5724498615716
+PPM,Gas,Total Bill,Total,October 2024 - December 2024,2024-10-01,2024-12-01,796.8560649248702
+Direct Debit,Dual Fuel,Total Bill,Total,October 2024 - December 2024,2024-10-01,2024-12-01,1846.3074886406152
+Standard Credit,Dual Fuel,Total Bill,Total,October 2024 - December 2024,2024-10-01,2024-12-01,1964.6488978034126
+PPM,Dual Fuel,Total Bill,Total,October 2024 - December 2024,2024-10-01,2024-12-01,1793.4361453025206
+Direct Debit,Electricity Single Rate,Total SC,Total,January 2025 - March 2025,2025-01-01,2025-03-01,211.95378904569606
+Standard Credit,Electricity Single Rate,Total SC,Total,January 2025 - March 2025,2025-01-01,2025-03-01,233.09592763088943
+PPM,Electricity Single Rate,Total SC,Total,January 2025 - March 2025,2025-01-01,2025-03-01,211.95529998030045
+Direct Debit,Electricity - Multi-Register,Total SC,Total,January 2025 - March 2025,2025-01-01,2025-03-01,212.2053085173356
+Standard Credit,Electricity - Multi-Register,Total SC,Total,January 2025 - March 2025,2025-01-01,2025-03-01,232.92967279175636
+PPM,Electricity - Multi-Register,Total SC,Total,January 2025 - March 2025,2025-01-01,2025-03-01,212.20743739492488
+Direct Debit,Gas,Total SC,Total,January 2025 - March 2025,2025-01-01,2025-03-01,110.01869174919992
+Standard Credit,Gas,Total SC,Total,January 2025 - March 2025,2025-01-01,2025-03-01,126.21129068485132
+PPM,Gas,Total SC,Total,January 2025 - March 2025,2025-01-01,2025-03-01,110.02055741824563
+Direct Debit,Dual Fuel,Total SC,Total,January 2025 - March 2025,2025-01-01,2025-03-01,338.0711048346408
+Standard Credit,Dual Fuel,Total SC,Total,January 2025 - March 2025,2025-01-01,2025-03-01,377.27257923152786
+PPM,Dual Fuel,Total SC,Total,January 2025 - March 2025,2025-01-01,2025-03-01,338.07465026847336
+Direct Debit,Electricity Single Rate,Total UR,Total,January 2025 - March 2025,2025-01-01,2025-03-01,733.8317165469957
+Standard Credit,Electricity Single Rate,Total UR,Total,January 2025 - March 2025,2025-01-01,2025-03-01,772.3967433761845
+PPM,Electricity Single Rate,Total UR,Total,January 2025 - March 2025,2025-01-01,2025-03-01,709.5725699979361
+Direct Debit,Electricity - Multi-Register,Total UR,Total,January 2025 - March 2025,2025-01-01,2025-03-01,950.7290029924868
+Standard Credit,Electricity - Multi-Register,Total UR,Total,January 2025 - March 2025,2025-01-01,2025-03-01,1000.5233675086187
+PPM,Electricity - Multi-Register,Total UR,Total,January 2025 - March 2025,2025-01-01,2025-03-01,925.5340282468492
+Direct Debit,Gas,Total UR,Total,January 2025 - March 2025,2025-01-01,2025-03-01,724.2463973181885
+Standard Credit,Gas,Total UR,Total,January 2025 - March 2025,2025-01-01,2025-03-01,762.2404055306519
+PPM,Gas,Total UR,Total,January 2025 - March 2025,2025-01-01,2025-03-01,698.2445491190756
+Direct Debit,Dual Fuel,Total UR,Total,January 2025 - March 2025,2025-01-01,2025-03-01,1530.9820195584434
+Standard Credit,Dual Fuel,Total UR,Total,January 2025 - March 2025,2025-01-01,2025-03-01,1611.369006352178
+PPM,Dual Fuel,Total UR,Total,January 2025 - March 2025,2025-01-01,2025-03-01,1478.2079750728622
+Direct Debit,Electricity Single Rate,Total Bill,Total,January 2025 - March 2025,2025-01-01,2025-03-01,945.7855055926918
+Standard Credit,Electricity Single Rate,Total Bill,Total,January 2025 - March 2025,2025-01-01,2025-03-01,1005.492671007074
+PPM,Electricity Single Rate,Total Bill,Total,January 2025 - March 2025,2025-01-01,2025-03-01,921.5278699782365
+Direct Debit,Electricity - Multi-Register,Total Bill,Total,January 2025 - March 2025,2025-01-01,2025-03-01,1162.9343115098225
+Standard Credit,Electricity - Multi-Register,Total Bill,Total,January 2025 - March 2025,2025-01-01,2025-03-01,1233.453040300375
+PPM,Electricity - Multi-Register,Total Bill,Total,January 2025 - March 2025,2025-01-01,2025-03-01,1137.741465641774
+Direct Debit,Gas,Total Bill,Total,January 2025 - March 2025,2025-01-01,2025-03-01,834.2650890673884
+Standard Credit,Gas,Total Bill,Total,January 2025 - March 2025,2025-01-01,2025-03-01,888.4516962155031
+PPM,Gas,Total Bill,Total,January 2025 - March 2025,2025-01-01,2025-03-01,808.2651065373212
+Direct Debit,Dual Fuel,Total Bill,Total,January 2025 - March 2025,2025-01-01,2025-03-01,1869.0531243930843
+Standard Credit,Dual Fuel,Total Bill,Total,January 2025 - March 2025,2025-01-01,2025-03-01,1988.641585583706
+PPM,Dual Fuel,Total Bill,Total,January 2025 - March 2025,2025-01-01,2025-03-01,1816.2826253413355
+Direct Debit,Electricity Single Rate,Total SC,Total,April 2025 - June 2025,2025-04-01,2025-06-01,187.03130697874545
+Standard Credit,Electricity Single Rate,Total SC,Total,April 2025 - June 2025,2025-04-01,2025-06-01,207.1953852712787
+PPM,Electricity Single Rate,Total SC,Total,April 2025 - June 2025,2025-04-01,2025-06-01,187.03216511686827
+Direct Debit,Electricity - Multi-Register,Total SC,Total,April 2025 - June 2025,2025-04-01,2025-06-01,187.15882942444583
+Standard Credit,Electricity - Multi-Register,Total SC,Total,April 2025 - June 2025,2025-04-01,2025-06-01,207.0981603733829
+PPM,Electricity - Multi-Register,Total SC,Total,April 2025 - June 2025,2025-04-01,2025-06-01,187.15898855422756
+Direct Debit,Gas,Total SC,Total,April 2025 - June 2025,2025-04-01,2025-06-01,113.55575111293922
+Standard Credit,Gas,Total SC,Total,April 2025 - June 2025,2025-04-01,2025-06-01,130.60846044843666
+PPM,Gas,Total SC,Total,April 2025 - June 2025,2025-04-01,2025-06-01,113.55404768689094
+Direct Debit,Dual Fuel,Total SC,Total,April 2025 - June 2025,2025-04-01,2025-06-01,315.61641099626894
+Standard Credit,Dual Fuel,Total SC,Total,April 2025 - June 2025,2025-04-01,2025-06-01,354.69403800570115
+PPM,Dual Fuel,Total SC,Total,April 2025 - June 2025,2025-04-01,2025-06-01,315.6155234439472
+Direct Debit,Electricity Single Rate,Total UR,Total,April 2025 - June 2025,2025-04-01,2025-06-01,798.0140898008038
+Standard Credit,Electricity Single Rate,Total UR,Total,April 2025 - June 2025,2025-04-01,2025-06-01,839.9736133396538
+PPM,Electricity Single Rate,Total UR,Total,April 2025 - June 2025,2025-04-01,2025-06-01,773.4146647645416
+Direct Debit,Electricity - Multi-Register,Total UR,Total,April 2025 - June 2025,2025-04-01,2025-06-01,1030.2318140838254
+Standard Credit,Electricity - Multi-Register,Total UR,Total,April 2025 - June 2025,2025-04-01,2025-06-01,1084.2145399147123
+PPM,Electricity - Multi-Register,Total UR,Total,April 2025 - June 2025,2025-04-01,2025-06-01,1004.6271577402454
+Direct Debit,Gas,Total UR,Total,April 2025 - June 2025,2025-04-01,2025-06-01,798.5032316922684
+Standard Credit,Gas,Total UR,Total,April 2025 - June 2025,2025-04-01,2025-06-01,840.4534801295347
+PPM,Gas,Total UR,Total,April 2025 - June 2025,2025-04-01,2025-06-01,774.8778575204004
+Direct Debit,Dual Fuel,Total UR,Total,April 2025 - June 2025,2025-04-01,2025-06-01,1676.3431875677259
+Standard Credit,Dual Fuel,Total UR,Total,April 2025 - June 2025,2025-04-01,2025-06-01,1764.448448142648
+PPM,Dual Fuel,Total UR,Total,April 2025 - June 2025,2025-04-01,2025-06-01,1625.7071483991888
+Direct Debit,Electricity Single Rate,Total Bill,Total,April 2025 - June 2025,2025-04-01,2025-06-01,985.0453967795493
+Standard Credit,Electricity Single Rate,Total Bill,Total,April 2025 - June 2025,2025-04-01,2025-06-01,1047.1689986109325
+PPM,Electricity Single Rate,Total Bill,Total,April 2025 - June 2025,2025-04-01,2025-06-01,960.4468298814099
+Direct Debit,Electricity - Multi-Register,Total Bill,Total,April 2025 - June 2025,2025-04-01,2025-06-01,1217.3906435082713
+Standard Credit,Electricity - Multi-Register,Total Bill,Total,April 2025 - June 2025,2025-04-01,2025-06-01,1291.3127002880951
+PPM,Electricity - Multi-Register,Total Bill,Total,April 2025 - June 2025,2025-04-01,2025-06-01,1191.786146294473
+Direct Debit,Gas,Total Bill,Total,April 2025 - June 2025,2025-04-01,2025-06-01,912.0589828052076
+Standard Credit,Gas,Total Bill,Total,April 2025 - June 2025,2025-04-01,2025-06-01,971.0619405779713
+PPM,Gas,Total Bill,Total,April 2025 - June 2025,2025-04-01,2025-06-01,888.4319052072914
+Direct Debit,Dual Fuel,Total Bill,Total,April 2025 - June 2025,2025-04-01,2025-06-01,1991.9595985639949
+Standard Credit,Dual Fuel,Total Bill,Total,April 2025 - June 2025,2025-04-01,2025-06-01,2119.1424861483492
+PPM,Dual Fuel,Total Bill,Total,April 2025 - June 2025,2025-04-01,2025-06-01,1941.322671843136
+Direct Debit,Electricity Single Rate,Total SC,Total,July 2025 - September 2025,2025-07-01,2025-09-01,178.5802060262444
+Standard Credit,Electricity Single Rate,Total SC,Total,July 2025 - September 2025,2025-07-01,2025-09-01,205.99370878441624
+PPM,Electricity Single Rate,Total SC,Total,July 2025 - September 2025,2025-07-01,2025-09-01,178.58075191058828
+Direct Debit,Electricity - Multi-Register,Total SC,Total,July 2025 - September 2025,2025-07-01,2025-09-01,178.53082345499053
+Standard Credit,Electricity - Multi-Register,Total SC,Total,July 2025 - September 2025,2025-07-01,2025-09-01,205.79358333442514
+PPM,Electricity - Multi-Register,Total SC,Total,July 2025 - September 2025,2025-07-01,2025-09-01,178.53076291970774
+Direct Debit,Gas,Total SC,Total,July 2025 - September 2025,2025-07-01,2025-09-01,103.67724737942441
+Standard Credit,Gas,Total SC,Total,July 2025 - September 2025,2025-07-01,2025-09-01,131.05060067070704
+PPM,Gas,Total SC,Total,July 2025 - September 2025,2025-07-01,2025-09-01,103.67566327667306
+Direct Debit,Dual Fuel,Total SC,Total,July 2025 - September 2025,2025-07-01,2025-09-01,296.37032607595216
+Standard Credit,Dual Fuel,Total SC,Total,July 2025 - September 2025,2025-07-01,2025-09-01,353.8965249278795
+PPM,Dual Fuel,Total SC,Total,July 2025 - September 2025,2025-07-01,2025-09-01,296.3692359466244
+Direct Debit,Electricity Single Rate,Total UR,Total,July 2025 - September 2025,2025-07-01,2025-09-01,759.7295535465223
+Standard Credit,Electricity Single Rate,Total UR,Total,July 2025 - September 2025,2025-07-01,2025-09-01,802.4159742174797
+PPM,Electricity Single Rate,Total UR,Total,July 2025 - September 2025,2025-07-01,2025-09-01,735.6603038322103
+Direct Debit,Electricity - Multi-Register,Total UR,Total,July 2025 - September 2025,2025-07-01,2025-09-01,981.586068279355
+Standard Credit,Electricity - Multi-Register,Total UR,Total,July 2025 - September 2025,2025-07-01,2025-09-01,1036.389518627469
+PPM,Electricity - Multi-Register,Total UR,Total,July 2025 - September 2025,2025-07-01,2025-09-01,950.8794196286344
+Direct Debit,Gas,Total UR,Total,July 2025 - September 2025,2025-07-01,2025-09-01,723.8434490283528
+Standard Credit,Gas,Total UR,Total,July 2025 - September 2025,2025-07-01,2025-09-01,762.9332064186902
+PPM,Gas,Total UR,Total,July 2025 - September 2025,2025-07-01,2025-09-01,698.7876993470267
+Direct Debit,Dual Fuel,Total UR,Total,July 2025 - September 2025,2025-07-01,2025-09-01,1557.751652703619
+Standard Credit,Dual Fuel,Total UR,Total,July 2025 - September 2025,2025-07-01,2025-09-01,1643.6166396679785
+PPM,Dual Fuel,Total UR,Total,July 2025 - September 2025,2025-07-01,2025-09-01,1506.1704033381986
+Direct Debit,Electricity Single Rate,Total Bill,Total,July 2025 - September 2025,2025-07-01,2025-09-01,938.3097595727667
+Standard Credit,Electricity Single Rate,Total Bill,Total,July 2025 - September 2025,2025-07-01,2025-09-01,1008.4096830018959
+PPM,Electricity Single Rate,Total Bill,Total,July 2025 - September 2025,2025-07-01,2025-09-01,914.2410557427986
+Direct Debit,Electricity - Multi-Register,Total Bill,Total,July 2025 - September 2025,2025-07-01,2025-09-01,1160.1168917343455
+Standard Credit,Electricity - Multi-Register,Total Bill,Total,July 2025 - September 2025,2025-07-01,2025-09-01,1242.1831019618942
+PPM,Electricity - Multi-Register,Total Bill,Total,July 2025 - September 2025,2025-07-01,2025-09-01,1129.4101825483422
+Direct Debit,Gas,Total Bill,Total,July 2025 - September 2025,2025-07-01,2025-09-01,827.5206964077772
+Standard Credit,Gas,Total Bill,Total,July 2025 - September 2025,2025-07-01,2025-09-01,893.9838070893973
+PPM,Gas,Total Bill,Total,July 2025 - September 2025,2025-07-01,2025-09-01,802.4633626236997
+Direct Debit,Dual Fuel,Total Bill,Total,July 2025 - September 2025,2025-07-01,2025-09-01,1854.121978779571
+Standard Credit,Dual Fuel,Total Bill,Total,July 2025 - September 2025,2025-07-01,2025-09-01,1997.513164595858
+PPM,Dual Fuel,Total Bill,Total,July 2025 - September 2025,2025-07-01,2025-09-01,1802.5396392848231
+Direct Debit,Electricity Single Rate,Total SC,Total,October 2025 - December 2025,2025-10-01,2025-12-01,186.5968092068498
+Standard Credit,Electricity Single Rate,Total SC,Total,October 2025 - December 2025,2025-10-01,2025-12-01,214.8820600453183
+PPM,Electricity Single Rate,Total SC,Total,October 2025 - December 2025,2025-10-01,2025-12-01,186.59625978036033
+Direct Debit,Electricity - Multi-Register,Total SC,Total,October 2025 - December 2025,2025-10-01,2025-12-01,186.38757597945443
+Standard Credit,Electricity - Multi-Register,Total SC,Total,October 2025 - December 2025,2025-10-01,2025-12-01,214.6947875587799
+PPM,Electricity - Multi-Register,Total SC,Total,October 2025 - December 2025,2025-10-01,2025-12-01,186.38696502672389
+Direct Debit,Gas,Total SC,Total,October 2025 - December 2025,2025-10-01,2025-12-01,118.29435428422516
+Standard Credit,Gas,Total SC,Total,October 2025 - December 2025,2025-10-01,2025-12-01,145.15528482378238
+PPM,Gas,Total SC,Total,October 2025 - December 2025,2025-10-01,2025-12-01,118.29402904334955
+Direct Debit,Dual Fuel,Total SC,Total,October 2025 - December 2025,2025-10-01,2025-12-01,320.13572166562864
+Standard Credit,Dual Fuel,Total SC,Total,October 2025 - December 2025,2025-10-01,2025-12-01,378.03921211255573
+PPM,Dual Fuel,Total SC,Total,October 2025 - December 2025,2025-10-01,2025-12-01,320.1348032648954
+Direct Debit,Electricity Single Rate,Total UR,Total,October 2025 - December 2025,2025-10-01,2025-12-01,777.9450407934729
+Standard Credit,Electricity Single Rate,Total UR,Total,October 2025 - December 2025,2025-10-01,2025-12-01,820.9245395146405
+PPM,Electricity Single Rate,Total UR,Total,October 2025 - December 2025,2025-10-01,2025-12-01,754.0844753743119
+Direct Debit,Electricity - Multi-Register,Total UR,Total,October 2025 - December 2025,2025-10-01,2025-12-01,1008.1599754788249
+Standard Credit,Electricity - Multi-Register,Total UR,Total,October 2025 - December 2025,2025-10-01,2025-12-01,1063.4848055860286
+PPM,Electricity - Multi-Register,Total UR,Total,October 2025 - December 2025,2025-10-01,2025-12-01,977.2759762001199
+Direct Debit,Gas,Total UR,Total,October 2025 - December 2025,2025-10-01,2025-12-01,718.5901387976822
+Standard Credit,Gas,Total UR,Total,October 2025 - December 2025,2025-10-01,2025-12-01,756.7464933374805
+PPM,Gas,Total UR,Total,October 2025 - December 2025,2025-10-01,2025-12-01,692.9818033907422
+Direct Debit,Dual Fuel,Total UR,Total,October 2025 - December 2025,2025-10-01,2025-12-01,1571.3619385707132
+Standard Credit,Dual Fuel,Total UR,Total,October 2025 - December 2025,2025-10-01,2025-12-01,1656.5545844947271
+PPM,Dual Fuel,Total UR,Total,October 2025 - December 2025,2025-10-01,2025-12-01,1519.4195927033068
+Direct Debit,Electricity Single Rate,Total Bill,Total,October 2025 - December 2025,2025-10-01,2025-12-01,964.5418500003227
+Standard Credit,Electricity Single Rate,Total Bill,Total,October 2025 - December 2025,2025-10-01,2025-12-01,1035.8065995599588
+PPM,Electricity Single Rate,Total Bill,Total,October 2025 - December 2025,2025-10-01,2025-12-01,940.6807351546722
+Direct Debit,Electricity - Multi-Register,Total Bill,Total,October 2025 - December 2025,2025-10-01,2025-12-01,1194.5475514582793
+Standard Credit,Electricity - Multi-Register,Total Bill,Total,October 2025 - December 2025,2025-10-01,2025-12-01,1278.1795931448085
+PPM,Electricity - Multi-Register,Total Bill,Total,October 2025 - December 2025,2025-10-01,2025-12-01,1163.6629412268437
+Direct Debit,Gas,Total Bill,Total,October 2025 - December 2025,2025-10-01,2025-12-01,836.8844930819074
+Standard Credit,Gas,Total Bill,Total,October 2025 - December 2025,2025-10-01,2025-12-01,901.9017781612629
+PPM,Gas,Total Bill,Total,October 2025 - December 2025,2025-10-01,2025-12-01,811.2758324340919
+Direct Debit,Dual Fuel,Total Bill,Total,October 2025 - December 2025,2025-10-01,2025-12-01,1891.4976602363417
+Standard Credit,Dual Fuel,Total Bill,Total,October 2025 - December 2025,2025-10-01,2025-12-01,2034.593796607283
+PPM,Dual Fuel,Total Bill,Total,October 2025 - December 2025,2025-10-01,2025-12-01,1839.5543959682022
+Direct Debit,Electricity Single Rate,Total SC,Total,January 2026 - March 2026,2026-01-01,2026-03-01,190.3173224360642
+Standard Credit,Electricity Single Rate,Total SC,Total,January 2026 - March 2026,2026-01-01,2026-03-01,218.89643317267547
+PPM,Electricity Single Rate,Total SC,Total,January 2026 - March 2026,2026-01-01,2026-03-01,190.31693240359613
+Direct Debit,Electricity - Multi-Register,Total SC,Total,January 2026 - March 2026,2026-01-01,2026-03-01,189.64951892730872
+Standard Credit,Electricity - Multi-Register,Total SC,Total,January 2026 - March 2026,2026-01-01,2026-03-01,218.5833855047794
+PPM,Electricity - Multi-Register,Total SC,Total,January 2026 - March 2026,2026-01-01,2026-03-01,189.64912989473473
+Direct Debit,Gas,Total SC,Total,January 2026 - March 2026,2026-01-01,2026-03-01,121.98373681675322
+Standard Credit,Gas,Total SC,Total,January 2026 - March 2026,2026-01-01,2026-03-01,149.16277196698385
+PPM,Gas,Total SC,Total,January 2026 - March 2026,2026-01-01,2026-03-01,121.98509662114787
+Direct Debit,Dual Fuel,Total SC,Total,January 2026 - March 2026,2026-01-01,2026-03-01,327.91611221545827
+Standard Credit,Dual Fuel,Total SC,Total,January 2026 - March 2026,2026-01-01,2026-03-01,386.46216539664226
+PPM,Dual Fuel,Total SC,Total,January 2026 - March 2026,2026-01-01,2026-03-01,327.9171304759813
+Direct Debit,Electricity Single Rate,Total UR,Total,January 2026 - March 2026,2026-01-01,2026-03-01,712.1216136714213
+Standard Credit,Electricity Single Rate,Total UR,Total,January 2026 - March 2026,2026-01-01,2026-03-01,751.5652604505385
+PPM,Electricity Single Rate,Total UR,Total,January 2026 - March 2026,2026-01-01,2026-03-01,690.2653470196876
+Direct Debit,Electricity - Multi-Register,Total UR,Total,January 2026 - March 2026,2026-01-01,2026-03-01,981.252360848704
+Standard Credit,Electricity - Multi-Register,Total UR,Total,January 2026 - March 2026,2026-01-01,2026-03-01,1035.1297714978998
+PPM,Electricity - Multi-Register,Total UR,Total,January 2026 - March 2026,2026-01-01,2026-03-01,951.1922099709019
+Direct Debit,Gas,Total UR,Total,January 2026 - March 2026,2026-01-01,2026-03-01,649.841355936378
+Standard Credit,Gas,Total UR,Total,January 2026 - March 2026,2026-01-01,2026-03-01,684.3634606666411
+PPM,Gas,Total UR,Total,January 2026 - March 2026,2026-01-01,2026-03-01,626.7222241504408
+Direct Debit,Dual Fuel,Total UR,Total,January 2026 - March 2026,2026-01-01,2026-03-01,1430.0611180881895
+Standard Credit,Dual Fuel,Total UR,Total,January 2026 - March 2026,2026-01-01,2026-03-01,1507.725157173039
+PPM,Dual Fuel,Total UR,Total,January 2026 - March 2026,2026-01-01,2026-03-01,1382.8369497286346
+Direct Debit,Electricity Single Rate,Total Bill,Total,January 2026 - March 2026,2026-01-01,2026-03-01,902.4389361074855
+Standard Credit,Electricity Single Rate,Total Bill,Total,January 2026 - March 2026,2026-01-01,2026-03-01,970.461693623214
+PPM,Electricity Single Rate,Total Bill,Total,January 2026 - March 2026,2026-01-01,2026-03-01,880.5822794232837
+Direct Debit,Electricity - Multi-Register,Total Bill,Total,January 2026 - March 2026,2026-01-01,2026-03-01,1170.9018797760127
+Standard Credit,Electricity - Multi-Register,Total Bill,Total,January 2026 - March 2026,2026-01-01,2026-03-01,1253.7131570026793
+PPM,Electricity - Multi-Register,Total Bill,Total,January 2026 - March 2026,2026-01-01,2026-03-01,1140.8413398656367
+Direct Debit,Gas,Total Bill,Total,January 2026 - March 2026,2026-01-01,2026-03-01,771.8250927531312
+Standard Credit,Gas,Total Bill,Total,January 2026 - March 2026,2026-01-01,2026-03-01,833.526232633625
+PPM,Gas,Total Bill,Total,January 2026 - March 2026,2026-01-01,2026-03-01,748.7073207715886
+Direct Debit,Dual Fuel,Total Bill,Total,January 2026 - March 2026,2026-01-01,2026-03-01,1757.9772303036477
+Standard Credit,Dual Fuel,Total Bill,Total,January 2026 - March 2026,2026-01-01,2026-03-01,1894.187322569681
+PPM,Dual Fuel,Total Bill,Total,January 2026 - March 2026,2026-01-01,2026-03-01,1710.754080204616
+Direct Debit,Electricity Single Rate,Total SC,Total,April 2026 - June 2026,2026-04-01,2026-06-01,198.85941561359513
+Standard Credit,Electricity Single Rate,Total SC,Total,April 2026 - June 2026,2026-04-01,2026-06-01,228.49674669883487
+PPM,Electricity Single Rate,Total SC,Total,April 2026 - June 2026,2026-04-01,2026-06-01,198.85878725144607
+Direct Debit,Electricity - Multi-Register,Total SC,Total,April 2026 - June 2026,2026-04-01,2026-06-01,198.09237745747615
+Standard Credit,Electricity - Multi-Register,Total SC,Total,April 2026 - June 2026,2026-04-01,2026-06-01,228.15341677056412
+PPM,Electricity - Multi-Register,Total SC,Total,April 2026 - June 2026,2026-04-01,2026-06-01,198.09312788756816
+Direct Debit,Gas,Total SC,Total,April 2026 - June 2026,2026-04-01,2026-06-01,101.11243041721296
+Standard Credit,Gas,Total SC,Total,April 2026 - June 2026,2026-04-01,2026-06-01,127.6296538329543
+PPM,Gas,Total SC,Total,April 2026 - June 2026,2026-04-01,2026-06-01,101.11310428499769
+Direct Debit,Dual Fuel,Total SC,Total,April 2026 - June 2026,2026-04-01,2026-06-01,314.9704383323485
+Standard Credit,Dual Fuel,Total SC,Total,April 2026 - June 2026,2026-04-01,2026-06-01,373.9327205583786
+PPM,Dual Fuel,Total SC,Total,April 2026 - June 2026,2026-04-01,2026-06-01,314.97048611326596
+Direct Debit,Electricity Single Rate,Total UR,Total,April 2026 - June 2026,2026-04-01,2026-06-01,634.4856416780281
+Standard Credit,Electricity Single Rate,Total UR,Total,April 2026 - June 2026,2026-04-01,2026-06-01,669.7903642438673
+PPM,Electricity Single Rate,Total UR,Total,April 2026 - June 2026,2026-04-01,2026-06-01,615.3064482424819
+Direct Debit,Electricity - Multi-Register,Total UR,Total,April 2026 - June 2026,2026-04-01,2026-06-01,857.1624391932968
+Standard Credit,Electricity - Multi-Register,Total UR,Total,April 2026 - June 2026,2026-04-01,2026-06-01,904.407345252583
+PPM,Electricity - Multi-Register,Total UR,Total,April 2026 - June 2026,2026-04-01,2026-06-01,831.1963719765716
+Direct Debit,Gas,Total UR,Total,April 2026 - June 2026,2026-04-01,2026-06-01,628.6075895538017
+Standard Credit,Gas,Total UR,Total,April 2026 - June 2026,2026-04-01,2026-06-01,662.006094425872
+PPM,Gas,Total UR,Total,April 2026 - June 2026,2026-04-01,2026-06-01,605.8316631411997
+Direct Debit,Dual Fuel,Total UR,Total,April 2026 - June 2026,2026-04-01,2026-06-01,1326.2478927934217
+Standard Credit,Dual Fuel,Total UR,Total,April 2026 - June 2026,2026-04-01,2026-06-01,1398.3862816032263
+PPM,Dual Fuel,Total UR,Total,April 2026 - June 2026,2026-04-01,2026-06-01,1282.195016952866
+Direct Debit,Electricity Single Rate,Total Bill,Total,April 2026 - June 2026,2026-04-01,2026-06-01,833.3450572916232
+Standard Credit,Electricity Single Rate,Total Bill,Total,April 2026 - June 2026,2026-04-01,2026-06-01,898.2871109427022
+PPM,Electricity Single Rate,Total Bill,Total,April 2026 - June 2026,2026-04-01,2026-06-01,814.165235493928
+Direct Debit,Electricity - Multi-Register,Total Bill,Total,April 2026 - June 2026,2026-04-01,2026-06-01,1055.254816650773
+Standard Credit,Electricity - Multi-Register,Total Bill,Total,April 2026 - June 2026,2026-04-01,2026-06-01,1132.5607620231472
+PPM,Electricity - Multi-Register,Total Bill,Total,April 2026 - June 2026,2026-04-01,2026-06-01,1029.2894998641398
+Direct Debit,Gas,Total Bill,Total,April 2026 - June 2026,2026-04-01,2026-06-01,729.7200199710147
+Standard Credit,Gas,Total Bill,Total,April 2026 - June 2026,2026-04-01,2026-06-01,789.6357482588263
+PPM,Gas,Total Bill,Total,April 2026 - June 2026,2026-04-01,2026-06-01,706.9447674261974
+Direct Debit,Dual Fuel,Total Bill,Total,April 2026 - June 2026,2026-04-01,2026-06-01,1641.2183311257702
+Standard Credit,Dual Fuel,Total Bill,Total,April 2026 - June 2026,2026-04-01,2026-06-01,1772.3190021616049
+PPM,Dual Fuel,Total Bill,Total,April 2026 - June 2026,2026-04-01,2026-06-01,1597.1655030661318
+Direct Debit,Electricity Single Rate,Total SC,Total,July 2026 - September 2026,2026-07-01,2026-09-01,198.80729948046357
+Standard Credit,Electricity Single Rate,Total SC,Total,July 2026 - September 2026,2026-07-01,2026-09-01,228.53941243913658
+PPM,Electricity Single Rate,Total SC,Total,July 2026 - September 2026,2026-07-01,2026-09-01,198.80742031283106
+Direct Debit,Electricity - Multi-Register,Total SC,Total,July 2026 - September 2026,2026-07-01,2026-09-01,197.96075503821666
+Standard Credit,Electricity - Multi-Register,Total SC,Total,July 2026 - September 2026,2026-07-01,2026-09-01,228.29720647660739
+PPM,Electricity - Multi-Register,Total SC,Total,July 2026 - September 2026,2026-07-01,2026-09-01,197.96005479348332
+Direct Debit,Gas,Total SC,Total,July 2026 - September 2026,2026-07-01,2026-09-01,100.93589951371024
+Standard Credit,Gas,Total SC,Total,July 2026 - September 2026,2026-07-01,2026-09-01,127.55406185910877
+PPM,Gas,Total SC,Total,July 2026 - September 2026,2026-07-01,2026-09-01,100.9354722755703
+Direct Debit,Dual Fuel,Total SC,Total,July 2026 - September 2026,2026-07-01,2026-09-01,314.73035894388255
+Standard Credit,Dual Fuel,Total SC,Total,July 2026 - September 2026,2026-07-01,2026-09-01,373.89814801315765
+PPM,Dual Fuel,Total SC,Total,July 2026 - September 2026,2026-07-01,2026-09-01,314.73003721782146
+Direct Debit,Electricity Single Rate,Total UR,Total,July 2026 - September 2026,2026-07-01,2026-09-01,621.6682231147016
+Standard Credit,Electricity Single Rate,Total UR,Total,July 2026 - September 2026,2026-07-01,2026-09-01,656.2798670652555
+PPM,Electricity Single Rate,Total UR,Total,July 2026 - September 2026,2026-07-01,2026-09-01,602.8808996188648
+Direct Debit,Electricity - Multi-Register,Total UR,Total,July 2026 - September 2026,2026-07-01,2026-09-01,791.4053570333904
+Standard Credit,Electricity - Multi-Register,Total UR,Total,July 2026 - September 2026,2026-07-01,2026-09-01,835.1126774018225
+PPM,Electricity - Multi-Register,Total UR,Total,July 2026 - September 2026,2026-07-01,2026-09-01,767.444363022076
+Direct Debit,Gas,Total UR,Total,July 2026 - September 2026,2026-07-01,2026-09-01,662.7463466640479
+Standard Credit,Gas,Total UR,Total,July 2026 - September 2026,2026-07-01,2026-09-01,697.9210781533338
+PPM,Gas,Total UR,Total,July 2026 - September 2026,2026-07-01,2026-09-01,640.0142638825556
+Direct Debit,Dual Fuel,Total UR,Total,July 2026 - September 2026,2026-07-01,2026-09-01,1348.6352982676872
+Standard Credit,Dual Fuel,Total UR,Total,July 2026 - September 2026,2026-07-01,2026-09-01,1421.9109924795189
+PPM,Dual Fuel,Total UR,Total,July 2026 - September 2026,2026-07-01,2026-09-01,1305.0399216764918
+Direct Debit,Electricity Single Rate,Total Bill,Total,July 2026 - September 2026,2026-07-01,2026-09-01,820.4755225951652
+Standard Credit,Electricity Single Rate,Total Bill,Total,July 2026 - September 2026,2026-07-01,2026-09-01,884.8192795043922
+PPM,Electricity Single Rate,Total Bill,Total,July 2026 - September 2026,2026-07-01,2026-09-01,801.6883199316958
+Direct Debit,Electricity - Multi-Register,Total Bill,Total,July 2026 - September 2026,2026-07-01,2026-09-01,989.3661120716071
+Standard Credit,Electricity - Multi-Register,Total Bill,Total,July 2026 - September 2026,2026-07-01,2026-09-01,1063.4098838784298
+PPM,Electricity - Multi-Register,Total Bill,Total,July 2026 - September 2026,2026-07-01,2026-09-01,965.4044178155593
+Direct Debit,Gas,Total Bill,Total,July 2026 - September 2026,2026-07-01,2026-09-01,763.6822461777582
+Standard Credit,Gas,Total Bill,Total,July 2026 - September 2026,2026-07-01,2026-09-01,825.4751400124426
+PPM,Gas,Total Bill,Total,July 2026 - September 2026,2026-07-01,2026-09-01,740.9497361581259
+Direct Debit,Dual Fuel,Total Bill,Total,July 2026 - September 2026,2026-07-01,2026-09-01,1663.3656572115697
+Standard Credit,Dual Fuel,Total Bill,Total,July 2026 - September 2026,2026-07-01,2026-09-01,1795.8091404926765
+PPM,Dual Fuel,Total Bill,Total,July 2026 - September 2026,2026-07-01,2026-09-01,1619.7699588943133
