@@ -114,6 +114,12 @@ def load_and_combine_data(folder_path):
         if os.path.exists(filepath):
             df = pd.read_csv(filepath)
             
+            # A. SCRUB WHITESPACES FIRST: Strip hidden spaces from key columns
+            for col in ['Fuel Type', 'Charge Type', 'Payment Method', 'Allowance']:
+                if col in df.columns:
+                    df[col] = df[col].astype(str).str.strip()
+            
+            # B. Apply Standardization Mappings
             if 'Fuel Type' in df.columns:
                 df['Fuel Type'] = df['Fuel Type'].replace(FUEL_MAPPING)
                 
@@ -130,7 +136,8 @@ def load_and_combine_data(folder_path):
             if 'Allowance' in df.columns:
                 df['Allowance_Full'] = df['Allowance'].map(ALLOWANCE_DICT).fillna(df['Allowance'])
                 
-            if 'Payment Method' not in df.columns or df['Payment Method'].isnull().all():
+            # If payment method is entirely missing or was converted to string 'nan', set to 'All'
+            if 'Payment Method' not in df.columns or df['Payment Method'].isnull().all() or (df['Payment Method'] == 'nan').all():
                 df['Payment Method'] = 'All' 
                 
             dfs.append(df)
@@ -146,6 +153,12 @@ def load_benchmark(folder_path):
     filepath = os.path.join(folder_path, 'total_bill_cleaned.csv')
     if os.path.exists(filepath):
         df = pd.read_csv(filepath)
+        
+        # Scrub whitespaces here too
+        for col in ['Fuel Type', 'Charge Type', 'Payment Method']:
+            if col in df.columns:
+                df[col] = df[col].astype(str).str.strip()
+                
         if 'Fuel Type' in df.columns:
             df['Fuel Type'] = df['Fuel Type'].replace(FUEL_MAPPING)
         df['Start Date'] = pd.to_datetime(df['Start Date'], errors='coerce')
@@ -162,7 +175,7 @@ df_bench = load_benchmark(folder_path)
 st.sidebar.header("Global Filters")
 fuel_types = ["Electricity Single-Rate", "Electricity Multi-Register", "Gas", "Dual Fuel (implied)"]
 payment_methods = ["Direct Debit", "Standard Credit", "PPM"]
-charge_types = ["Standing Charge", "Unit Rate"]
+charge_types = ["Standing Charge", "Unit Rate", "Total (Both)"]
 
 selected_fuel = st.sidebar.selectbox("Fuel Type", options=fuel_types)
 selected_payment = st.sidebar.selectbox("Payment Method", options=payment_methods)
@@ -183,11 +196,17 @@ def render_tab_content(tab_title):
         st.error("Master dataset is empty. Please check your data files.")
         return
 
-    # Strict, exact matching to prevent jagged graph lines
-    filtered = df_master[(df_master['Fuel Type'] == selected_fuel) & 
-                         (df_master['Charge Type'] == selected_charge)]
+    # 1. Filter by Fuel Type
+    filtered = df_master[df_master['Fuel Type'] == selected_fuel]
+    
+    # 2. Filter by Charge Type (Bypass this if "Total (Both)" is selected)
+    if selected_charge != "Total (Both)":
+        filtered = filtered[filtered['Charge Type'] == selected_charge]
+        
+    # 3. Filter by Payment Method (allowing for datasets that didn't specify one)
     filtered = filtered[(filtered['Payment Method'] == selected_payment) | (filtered['Payment Method'] == 'All')]
     
+    # 4. Filter by the specific tab's allowances
     tab_allowances = TAB_GROUPINGS[tab_title]
     filtered = filtered[filtered['Allowance_Full'].isin(tab_allowances)]
 
@@ -196,6 +215,7 @@ def render_tab_content(tab_title):
         return
 
     # --- UI: Check and Uncheck Allowances ---
+    # We use 'Allowance_Full' here so the dropdown remains clean and deduplicated
     available_allowances = sorted(filtered['Allowance_Full'].unique())
     selected_allowances = st.multiselect(
         f"Select {tab_title} Allowances to view:", 
@@ -232,6 +252,12 @@ def render_tab_content(tab_title):
     chart_data = chart_data[(chart_data['Start Date'] >= start_date) & (chart_data['Start Date'] <= end_date)]
     chart_data = chart_data.sort_values('Start Date')
 
+    # DYNAMIC LABELING: If "Total" is selected, append the charge type so Plotly doesn't overlap them
+    if selected_charge == "Total (Both)":
+        chart_data['Plot_Label'] = chart_data['Allowance_Full'] + " (" + chart_data['Charge Type'] + ")"
+    else:
+        chart_data['Plot_Label'] = chart_data['Allowance_Full']
+
     # --- UI: Visualization Toggle ---
     chart_style = st.radio(
         "Chart Style (Left Axis):", 
@@ -243,15 +269,16 @@ def render_tab_content(tab_title):
     # --- Build Plotly Figure with Secondary Y-Axis ---
     fig = make_subplots(specs=[[{"secondary_y": True}]])
     
-    for allowance in selected_allowances:
-        allowance_data = chart_data[chart_data['Allowance_Full'] == allowance]
+    # Iterate through the dynamically created labels
+    for label in chart_data['Plot_Label'].unique():
+        allowance_data = chart_data[chart_data['Plot_Label'] == label]
         custom_hover = "<b>%{customdata}</b><br>Value: £%{y:.2f}<extra></extra>"
         
         if chart_style == "Line Graph":
             fig.add_trace(
                 go.Scatter(
                     x=allowance_data['Start Date'], y=allowance_data['Cost Value'], 
-                    mode='lines+markers', name=allowance,
+                    mode='lines+markers', name=label,
                     customdata=allowance_data['Cap Period'], hovertemplate=custom_hover
                 ), 
                 secondary_y=False
@@ -260,7 +287,7 @@ def render_tab_content(tab_title):
             fig.add_trace(
                 go.Bar(
                     x=allowance_data['Start Date'], y=allowance_data['Cost Value'], 
-                    name=allowance,
+                    name=label,
                     customdata=allowance_data['Cap Period'], hovertemplate=custom_hover
                 ), 
                 secondary_y=False
@@ -271,6 +298,7 @@ def render_tab_content(tab_title):
     elif chart_style == "Grouped Bar":
         fig.update_layout(barmode='group')
 
+    # --- Benchmark Overlay ---
     if selected_benchmark != "None" and not df_bench.empty:
         bench_data = df_bench[(df_bench['Fuel Type'] == selected_fuel) & 
                               (df_bench['Payment Method'] == selected_payment) & 
@@ -294,9 +322,8 @@ def render_tab_content(tab_title):
     show_events = st.checkbox(f"Show {tab_title} Policy Events (Hover over stars for details)", value=True, key=f"chk_{tab_title}")
     if show_events:
         date_to_events = {}
-        # Group events by date that match this specific tab
         for event in POLICY_EVENTS:
-            if tab_title in event["category"]:
+            if tab_title in event["category"] or "ALL TABS" in event["category"]:
                 event_date = pd.to_datetime(event["date"])
                 if start_date <= event_date <= end_date:
                     if event_date not in date_to_events:
@@ -306,7 +333,6 @@ def render_tab_content(tab_title):
         event_dates, event_texts = [], []
         for e_date, texts in date_to_events.items():
             event_dates.append(e_date)
-            # Create a clean bulleted list if there are multiple events on the same day
             bullet_points = "<br>".join([f"• {t}" for t in texts])
             event_texts.append(f"{e_date.strftime('%d %b %Y')}<br>{bullet_points}")
             
