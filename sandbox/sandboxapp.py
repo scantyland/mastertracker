@@ -242,7 +242,7 @@ with col_visuals:
     )
     st.plotly_chart(fig_bar, use_container_width=True)
 
-    # --- GRAPH 2: WATERFALL CHART (COLOR CODED) ---
+    # --- GRAPH 2: WATERFALL CHART (PLOTLY NATIVE COLORS) ---
     x_labels = ["Baseline Bill"]
     y_values = [total_baseline_bill]
     measure = ["absolute"]
@@ -260,28 +260,22 @@ with col_visuals:
     x_labels.append("Simulated Bill")
     y_values.append(total_simulated_bill)
     measure.append("total")
-    
-    # Custom color mapping for exactly what you asked for
-    wf_colors = []
-    for i, m in enumerate(measure):
-        if i == 0:
-            wf_colors.append('#1f77b4') # Blue for Baseline Total
-        elif i == len(measure) - 1:
-            wf_colors.append('#9467bd') # Purple for Simulated Total
-        else:
-            wf_colors.append('#2ca02c' if y_values[i] < 0 else '#d62728') # Green/Red for Deltas
 
+    # Native Plotly Waterfall Initialization
     fig_wf = go.Figure(go.Waterfall(
-        name = "Impact", 
-        orientation = "v",
-        measure = measure,
-        x = x_labels,
-        textposition = "outside",
-        text = [f"{'+' if v > 0 and m == 'relative' else ''}£{v:,.0f}" for v, m in zip(y_values, measure)],
-        y = y_values,
-        connector = {"line":{"color":"rgb(63, 63, 63)", "width": 2}},
-        marker = dict(color=wf_colors)
+        name="Impact", 
+        orientation="v",
+        measure=measure,
+        x=x_labels,
+        textposition="outside",
+        text=[f"{'+' if v > 0 and m == 'relative' else ''}£{v:,.0f}" for v, m in zip(y_values, measure)],
+        y=y_values,
+        connector={"line": {"color": "rgb(63, 63, 63)", "width": 2}},
+        decreasing={"marker": {"color": "#2ca02c"}}, # Green for savings
+        increasing={"marker": {"color": "#d62728"}}, # Red for price hikes
+        totals={"marker": {"color": "#1f77b4"}}      # Blue for the Totals
     ))
+    
     fig_wf.update_layout(
         title="Policy Impact Journey (Deltas)",
         waterfallgap=0.3,
