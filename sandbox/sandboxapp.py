@@ -242,15 +242,16 @@ with col_visuals:
     )
     st.plotly_chart(fig_bar, use_container_width=True)
 
-    # --- GRAPH 2: WATERFALL CHART (PLOTLY NATIVE COLORS) ---
+    # --- GRAPH 2: WATERFALL CHART (COLOR CODED) ---
     x_labels = ["Baseline Bill"]
     y_values = [total_baseline_bill]
-    measure = ["absolute"]
+    measure = ["absolute"] # Starts the chart
     
+    # Add the deltas
     for step in waterfall_steps:
         x_labels.append(step['name'])
         y_values.append(step['delta'])
-        measure.append("relative")
+        measure.append("relative") 
         
     if not waterfall_steps:
         x_labels.append("No Changes")
@@ -259,10 +260,12 @@ with col_visuals:
         
     x_labels.append("Simulated Bill")
     y_values.append(total_simulated_bill)
-    measure.append("total")
+    measure.append("total") # Calculates the final Simulated bar
 
-    # Native Plotly Waterfall Initialization
-    fig_wf = go.Figure(go.Waterfall(
+    fig_wf = go.Figure()
+    
+    # Draw the main Waterfall
+    fig_wf.add_trace(go.Waterfall(
         name="Impact", 
         orientation="v",
         measure=measure,
@@ -273,10 +276,20 @@ with col_visuals:
         connector={"line": {"color": "rgb(63, 63, 63)", "width": 2}},
         decreasing={"marker": {"color": "#2ca02c"}}, # Green for savings
         increasing={"marker": {"color": "#d62728"}}, # Red for price hikes
-        totals={"marker": {"color": "#1f77b4"}}      # Blue for the Totals
+        totals={"marker": {"color": "#9467bd"}}      # PURPLE for the Simulated Bill
+    ))
+    
+    # PLOTLY WORKAROUND: Overlay a Blue bar strictly over the Baseline 
+    fig_wf.add_trace(go.Bar(
+        x=[x_labels[0]],
+        y=[y_values[0]],
+        marker_color="#1f77b4", # Blue
+        showlegend=False,
+        hoverinfo="skip"
     ))
     
     fig_wf.update_layout(
+        barmode="overlay", # Required for the Blue bar overlay to work
         title="Policy Impact Journey (Deltas)",
         waterfallgap=0.3,
         height=500,
