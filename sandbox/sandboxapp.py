@@ -16,7 +16,7 @@ st.markdown("Play with the July 2026 price cap allowances. Add, edit, or remove 
 @st.cache_data
 def load_sandbox_data():
     try:
-        df = pd.read_csv("sandbox/Sandbox_Master_Allowances_July2026 (1).csv")
+        df = pd.read_csv("sandbox/Sandbox_Master_Allowances_July2026 (2).csv")
         return df
     except FileNotFoundError:
         st.error("Missing 'Sandbox_Master_Allowances_July2026.csv'. Please run the Colab extraction script first.")
@@ -177,16 +177,20 @@ with col_visuals:
     
     # Process existing allowances
     for key, data in simulated_values.items():
+        # 1. Baseline ALWAYS stays locked to Standard TDCV (Multiplier = 1.0)
+        base_mult = 1.0
+        
+        # 2. Simulated Bill scales with user inputs
         if data['charge_type'] == 'Standing Charge':
-            mult = 1.0
+            sim_mult = 1.0
         else:
             if selected_fuel == 'Dual Fuel (implied)':
-                mult = usage_multiplier_gas if data['fuel_type'] == 'Gas' else usage_multiplier_elec
+                sim_mult = usage_multiplier_gas if data['fuel_type'] == 'Gas' else usage_multiplier_elec
             else:
-                mult = usage_multiplier_single
+                sim_mult = usage_multiplier_single
                 
-        adj_base = data['baseline'] * mult
-        adj_sim = data['simulated'] * mult
+        adj_base = data['baseline'] * base_mult
+        adj_sim = data['simulated'] * sim_mult
         delta = adj_sim - adj_base
         
         if data['charge_type'] == 'Standing Charge':
@@ -200,11 +204,11 @@ with col_visuals:
     # Process custom policies
     for cp in st.session_state.custom_policies:
         if cp['charge_type'] == 'Standing Charge':
-            mult = 1.0
+            sim_mult = 1.0
         else:
-            mult = usage_multiplier_elec if selected_fuel == 'Dual Fuel (implied)' else usage_multiplier_single
+            sim_mult = usage_multiplier_elec if selected_fuel == 'Dual Fuel (implied)' else usage_multiplier_single
             
-        adj_sim = cp['simulated'] * mult
+        adj_sim = cp['simulated'] * sim_mult
         
         if cp['charge_type'] == 'Standing Charge':
             sim_sc += adj_sim
@@ -221,7 +225,7 @@ with col_visuals:
     # --- RENDER KPIs ---
     st.subheader("📊 Simulation Results")
     kpi1, kpi2, kpi3 = st.columns(3)
-    kpi1.metric("Baseline Bill (July 2026)", f"£{total_baseline_bill:,.2f}")
+    kpi1.metric("Headline Cap (Standard TDCV)", f"£{total_baseline_bill:,.2f}")
     kpi2.metric("Simulated Bill", f"£{total_simulated_bill:,.2f}", delta=f"£{net_impact:,.2f}", delta_color="inverse")
     impact_pct = (net_impact / total_baseline_bill * 100) if total_baseline_bill > 0 else 0
     kpi3.metric("Percentage Change", f"{impact_pct:,.2f}%", delta=f"{impact_pct:,.2f}%", delta_color="inverse")
@@ -290,7 +294,7 @@ with col_visuals:
     
     fig_wf.update_layout(
         barmode="overlay", # Required for the Blue bar overlay to work
-        title="Policy Impact Journey (Deltas)",
+        title="Policy & Usage Impact Journey (Deltas)",
         waterfallgap=0.3,
         height=500,
         margin=dict(t=40, b=100),
