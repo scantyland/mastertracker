@@ -120,13 +120,16 @@ with col_controls:
     for category in categories:
         with st.expander(f"📁 {category}", expanded=False):
             cat_data = df_filtered[df_filtered['Tab Category'] == category]
-            for _, row in cat_data.iterrows():
+            
+            # We now grab 'idx' (the unique row number) to ensure perfect key uniqueness
+            for idx, row in cat_data.iterrows():
                 allowance_name = row['Allowance']
                 charge_type = row['Charge Type']
                 fuel_type_row = row['Fuel Type']
                 base_val = float(row['Allowance Value'])
                 
-                widget_key = f"{category}_{allowance_name}_{charge_type}"
+                # Inject 'idx' into the key so it is 100% unique, even if names match
+                widget_key = f"{category}_{allowance_name}_{charge_type}_{idx}"
                 
                 sim_val = st.number_input(
                     label=f"{allowance_name} ({'SC' if charge_type == 'Standing Charge' else 'UR'})",
@@ -164,7 +167,6 @@ with col_controls:
         if st.button("🗑️ Clear Custom Policies"):
             st.session_state.custom_policies = []
             st.rerun()
-
 # ==========================================
 # 6. CALCULATE IMPACTS & RENDER VISUALS
 # ==========================================
