@@ -8,7 +8,7 @@ import os
 # ==========================================
 st.set_page_config(page_title="Scenario Engine", layout="wide", page_icon="📈")
 st.title("📈 Regulatory Consultation Scenario Engine")
-st.markdown("Build and compare up to 4 distinct regulatory scenarios simultaneously. Edit the grid directly to alter existing allowances or add new rows for hypothetical policies.")
+st.markdown("Test up to 4 specific scenarios for a target policy, while applying up to 2 interacting global changes to the baseline bill.")
 
 ALLOWANCE_DICT = {
     'DF': 'Direct Fuel Cost', 'Direct Fuel': 'Direct Fuel Cost', 
@@ -60,16 +60,11 @@ DEFAULT_TDCV = {"Gas": 11500, "Electricity Single-Rate": 2900, "Electricity Mult
 BUCKETS = ["Wholesale", "Policy", "Network", "OPEX", "Other Costs"]
 
 # ==========================================
-# 2. DATA LOADING
+# 2. DATA LOADING & FILTERING
 # ==========================================
 @st.cache_data
 def load_baseline_data():
-    files = [
-        'Cleaned_Price_Cap_Data.csv', 
-        'wholesale_allowances_cleaned.csv', 
-        'policy_costs_cleaned.csv', 
-        'network_costs_cleaned.csv'
-    ]
+    files = ['Cleaned_Price_Cap_Data.csv', 'wholesale_allowances_cleaned.csv', 'policy_costs_cleaned.csv', 'network_costs_cleaned.csv']
     possible_folders = ['', 'mastertrackerapp/']
     dfs = []
     
@@ -105,7 +100,7 @@ def load_baseline_data():
 df_baseline = load_baseline_data()
 
 # ==========================================
-# 3. SIDEBAR FILTERS
+# 3. SIDEBAR (GLOBAL SETTINGS & TDCV)
 # ==========================================
 st.sidebar.header("1. Global Settings")
 fuel_options = ["Dual Fuel", "Electricity Single-Rate", "Electricity Multi-Register", "Gas"]
@@ -127,12 +122,11 @@ else:
     custom_tdcv = st.sidebar.number_input(f"New TDCV ({selected_fuel})", value=baseline_tdcv, step=100)
     target_fuels = [selected_fuel]
 
-# Filter baseline data
+# Filter Baseline Data
 df_filtered = df_baseline[
     (df_baseline['Fuel Type'].isin(target_fuels)) & 
     ((df_baseline['Payment Method'] == selected_payment) | (df_baseline['Payment Method'] == 'All'))
 ].copy()
-
 valid_allowances = [item for sublist in TAB_GROUPINGS.values() for item in sublist]
 df_filtered = df_filtered[df_filtered['Allowance_Full'].isin(valid_allowances)]
 
@@ -146,115 +140,163 @@ df_filtered['Bucket'] = df_filtered['Allowance_Full'].apply(get_bucket)
 df_filtered['Charge Type'] = df_filtered['Charge Type'].replace({'UR': 'Unit Rate', 'SC': 'Standing Charge'})
 df_filtered = df_filtered.groupby(['Bucket', 'Allowance_Full', 'Charge Type', 'Fuel Type'], as_index=False)['Cost Value'].sum()
 
-# ==========================================
-# 4. INTERACTIVE SCENARIO BUILDER (GRID)
-# ==========================================
-st.markdown("### 🎛️ The Scenario Grid")
-st.markdown("Double-click any cell in the Scenario columns to edit values. Click the bottom row to add a completely new policy.")
-
-# Prepare the Editor DataFrame
-editor_df = df_filtered[['Bucket', 'Allowance_Full', 'Charge Type', 'Fuel Type', 'Cost Value']].copy()
-editor_df.rename(columns={'Allowance_Full': 'Allowance', 'Cost Value': 'Baseline (£)'}, inplace=True)
-editor_df['Scenario 1 (£)'] = editor_df['Baseline (£)']
-editor_df['Scenario 2 (£)'] = editor_df['Baseline (£)']
-editor_df['Scenario 3 (£)'] = editor_df['Baseline (£)']
-editor_df['Scenario 4 (£)'] = editor_df['Baseline (£)']
-editor_df = editor_df.sort_values(['Bucket', 'Allowance', 'Fuel Type']).reset_index(drop=True)
-
-# Render the Data Editor
-edited_df = st.data_editor(
-    editor_df,
-    num_rows="dynamic",
-    use_container_width=True,
-    hide_index=True,
-    disabled=['Baseline (£)'], 
-    column_config={
-        "Bucket": st.column_config.SelectboxColumn("Bucket", options=BUCKETS, required=True),
-        "Allowance": st.column_config.TextColumn("Allowance Name", required=True),
-        "Charge Type": st.column_config.SelectboxColumn("Charge Type", options=["Standing Charge", "Unit Rate"], required=True),
-        "Fuel Type": st.column_config.SelectboxColumn("Fuel Type", options=["Electricity Single-Rate", "Gas"], required=True) if is_dual_fuel else st.column_config.TextColumn("Fuel Type", disabled=True),
-        "Baseline (£)": st.column_config.NumberColumn("Baseline (£)", format="£%.2f"),
-        "Scenario 1 (£)": st.column_config.NumberColumn("Scenario 1 (£)", format="£%.2f"),
-        "Scenario 2 (£)": st.column_config.NumberColumn("Scenario 2 (£)", format="£%.2f"),
-        "Scenario 3 (£)": st.column_config.NumberColumn("Scenario 3 (£)", format="£%.2f"),
-        "Scenario 4 (£)": st.column_config.NumberColumn("Scenario 4 (£)", format="£%.2f")
-    }
-)
-
-# Fill NaNs if a user adds a new row and leaves some columns blank
-edited_df = edited_df.fillna({'Baseline (£)': 0, 'Scenario 1 (£)': 0, 'Scenario 2 (£)': 0, 'Scenario 3 (£)': 0, 'Scenario 4 (£)': 0})
-
-# ==========================================
-# 5. TDCV MATH & CALCULATIONS
-# ==========================================
-def apply_tdcv_scaling(row, val_col):
-    if row['Charge Type'] == 'Unit Rate':
+# Helper for TDCV scaling
+def apply_tdcv_scaling(val, charge_type, fuel_type):
+    if charge_type == 'Unit Rate':
         if is_dual_fuel:
-            if row['Fuel Type'] == 'Gas':
-                return row[val_col] * (custom_tdcv_gas / DEFAULT_TDCV['Gas'])
-            else:
-                return row[val_col] * (custom_tdcv_elec / DEFAULT_TDCV['Electricity Single-Rate'])
+            if fuel_type == 'Gas': return val * (custom_tdcv_gas / DEFAULT_TDCV['Gas'])
+            else: return val * (custom_tdcv_elec / DEFAULT_TDCV['Electricity Single-Rate'])
         else:
-            return row[val_col] * (custom_tdcv / baseline_tdcv)
-    return row[val_col]
+            return val * (custom_tdcv / baseline_tdcv)
+    return val
 
-columns_to_scale = ['Baseline (£)', 'Scenario 1 (£)', 'Scenario 2 (£)', 'Scenario 3 (£)', 'Scenario 4 (£)']
-scaled_df = edited_df.copy()
-
-for col in columns_to_scale:
-    scaled_df[col] = scaled_df.apply(lambda r: apply_tdcv_scaling(r, col), axis=1)
+# Create readable list of existing allowances for dropdowns
+df_filtered['Dropdown_Label'] = df_filtered['Allowance_Full'] + " - " + df_filtered['Fuel Type'].str[:4] + " (" + df_filtered['Charge Type'] + ")"
+allowance_lookup = df_filtered.set_index('Dropdown_Label').to_dict('index')
+dropdown_options = ["None", "Create New Policy..."] + list(df_filtered['Dropdown_Label'].unique())
 
 # ==========================================
-# 6. VISUALISATION (SCENARIO COMPARISON)
+# 4. SCENARIO BUILDER UI
 # ==========================================
 st.divider()
-st.markdown("### 📊 Scenario Impact Analysis")
 
-# Macro Totals
-totals = scaled_df[columns_to_scale].sum()
+# --- PART A: GLOBAL INTERACTING ALLOWANCES ---
+st.markdown("### 🔄 1. Global Interacting Allowances")
+st.markdown("Select up to **two** policies you want to change alongside your scenarios. These changes apply equally to ALL scenarios.")
 
-col_m1, col_m2, col_m3, col_m4, col_m5 = st.columns(5)
-col_m1.metric("Baseline Total", f"£{totals['Baseline (£)']:,.2f}")
-col_m2.metric("Scenario 1", f"£{totals['Scenario 1 (£)']:,.2f}", delta=f"£{totals['Scenario 1 (£)'] - totals['Baseline (£)']:,.2f}")
-col_m3.metric("Scenario 2", f"£{totals['Scenario 2 (£)']:,.2f}", delta=f"£{totals['Scenario 2 (£)'] - totals['Baseline (£)']:,.2f}")
-col_m4.metric("Scenario 3", f"£{totals['Scenario 3 (£)']:,.2f}", delta=f"£{totals['Scenario 3 (£)'] - totals['Baseline (£)']:,.2f}")
-col_m5.metric("Scenario 4", f"£{totals['Scenario 4 (£)']:,.2f}", delta=f"£{totals['Scenario 4 (£)'] - totals['Baseline (£)']:,.2f}")
+global_adjustments = []
+col_g1, col_g2 = st.columns(2)
 
-chart_col1, chart_col2 = st.columns(2)
+def render_allowance_editor(col_block, identifier):
+    with col_block.container():
+        selection = st.selectbox(f"Select Interacting Policy {identifier}", options=dropdown_options, key=f"sel_{identifier}")
+        
+        if selection == "Create New Policy...":
+            with st.container():
+                c1, c2, c3, c4 = st.columns(4)
+                pol_name = c1.text_input("Name", value=f"New Policy {identifier}", key=f"n_{identifier}")
+                pol_charge = c2.selectbox("Charge Type", ["Standing Charge", "Unit Rate"], key=f"c_{identifier}")
+                pol_fuel = c3.selectbox("Fuel", ["Electricity Single-Rate", "Gas"] if is_dual_fuel else [selected_fuel], key=f"f_{identifier}")
+                pol_val = c4.number_input("Value (£)", value=0.0, step=1.0, key=f"v_{identifier}")
+                
+                if pol_val != 0.0:
+                    scaled_val = apply_tdcv_scaling(pol_val, pol_charge, pol_fuel)
+                    global_adjustments.append({"Name": pol_name, "Change": scaled_val})
+                    st.caption(f"**Applied globally:** +£{scaled_val:.2f} (scaled)")
+                    
+        elif selection != "None":
+            base_data = allowance_lookup[selection]
+            base_val = base_data['Cost Value']
+            new_val = st.number_input(f"New Value for {selection}", value=float(base_val), step=1.0, key=f"v_{identifier}")
+            
+            # Calculate the Delta
+            diff = new_val - base_val
+            if diff != 0:
+                scaled_diff = apply_tdcv_scaling(diff, base_data['Charge Type'], base_data['Fuel Type'])
+                global_adjustments.append({"Name": base_data['Allowance_Full'], "Change": scaled_diff})
+                st.caption(f"**Applied globally:** {('+£' if scaled_diff > 0 else '-£')}{abs(scaled_diff):.2f} variance (scaled)")
 
-# Chart 1: Stacked Bar (SC vs UR)
-with chart_col1:
-    charge_agg = scaled_df.groupby('Charge Type')[columns_to_scale].sum()
-    
-    fig_stack = go.Figure()
-    sc_vals = charge_agg.loc['Standing Charge'] if 'Standing Charge' in charge_agg.index else [0]*5
-    ur_vals = charge_agg.loc['Unit Rate'] if 'Unit Rate' in charge_agg.index else [0]*5
-    
-    x_labels = ['Baseline', 'Scenario 1', 'Scenario 2', 'Scenario 3', 'Scenario 4']
-    
-    fig_stack.add_trace(go.Bar(name='Standing Charge', x=x_labels, y=sc_vals, marker_color='#a855f7'))
-    fig_stack.add_trace(go.Bar(name='Unit Rate', x=x_labels, y=ur_vals, marker_color='#14b8a6'))
-    
-    fig_stack.update_layout(title="Total Bill: Standing Charge vs Unit Rate", barmode='stack', yaxis_title="Annualised Cost (£)", hovermode="x unified")
-    st.plotly_chart(fig_stack, use_container_width=True)
+render_allowance_editor(col_g1, "A")
+render_allowance_editor(col_g2, "B")
 
-# Chart 2: Net Variance from Baseline
-with chart_col2:
-    fig_var = go.Figure()
-    variances = [
-        totals['Scenario 1 (£)'] - totals['Baseline (£)'],
-        totals['Scenario 2 (£)'] - totals['Baseline (£)'],
-        totals['Scenario 3 (£)'] - totals['Baseline (£)'],
-        totals['Scenario 4 (£)'] - totals['Baseline (£)']
-    ]
-    var_labels = ['Scenario 1', 'Scenario 2', 'Scenario 3', 'Scenario 4']
-    colors = ['#10b981' if v < 0 else '#ef4444' for v in variances]
-    
-    fig_var.add_trace(go.Bar(
-        x=var_labels, y=variances, 
-        marker_color=colors,
-        hovertemplate="<b>%{x}</b><br>Net Change: £%{y:.2f}<extra></extra>"
-    ))
-    
-    fig_var.update_layout(title="Total Net Variance vs Baseline", yaxis_title="Change in Cost (£)", hovermode="x unified")
-    st.plotly_chart(fig_var, use_container_width=True)
+total_global_adj = sum(item["Change"] for item in global_adjustments)
+
+# --- PART B: THE SCENARIO VARIABLE ---
+st.divider()
+st.markdown("### 🎯 2. The Scenario Variable")
+st.markdown("Select **one specific policy** (e.g., Debt-Related Costs) to test across 4 different regulatory scenarios.")
+
+scenario_var_sel = st.selectbox("Select Target Scenario Policy", options=dropdown_options, index=0)
+
+scen_base_val = 0.0
+scen_charge_type = "Standing Charge"
+scen_fuel_type = selected_fuel
+
+if scenario_var_sel == "Create New Policy...":
+    sc1, sc2, sc3 = st.columns(3)
+    scen_name = sc1.text_input("New Scenario Policy Name", value="Consultation Policy X")
+    scen_charge_type = sc2.selectbox("Charge Type", ["Standing Charge", "Unit Rate"], key="scen_charge")
+    scen_fuel_type = sc3.selectbox("Fuel", ["Electricity Single-Rate", "Gas"] if is_dual_fuel else [selected_fuel], key="scen_fuel")
+elif scenario_var_sel != "None":
+    scen_data = allowance_lookup[scenario_var_sel]
+    scen_base_val = float(scen_data['Cost Value'])
+    scen_charge_type = scen_data['Charge Type']
+    scen_fuel_type = scen_data['Fuel Type']
+    st.info(f"**Current Baseline for this policy:** £{scen_base_val:.2f}")
+
+st.markdown("#### Input Scenario Values (£)")
+scen_col1, scen_col2, scen_col3, scen_col4 = st.columns(4)
+s1_val = scen_col1.number_input("Scenario 1 (£)", value=scen_base_val, step=1.0)
+s2_val = scen_col2.number_input("Scenario 2 (£)", value=scen_base_val, step=1.0)
+s3_val = scen_col3.number_input("Scenario 3 (£)", value=scen_base_val, step=1.0)
+s4_val = scen_col4.number_input("Scenario 4 (£)", value=scen_base_val, step=1.0)
+
+# ==========================================
+# 5. MATHEMATICAL AGGREGATION
+# ==========================================
+# Calculate Baseline Total
+df_filtered['Scaled Value'] = df_filtered.apply(lambda r: apply_tdcv_scaling(r['Cost Value'], r['Charge Type'], r['Fuel Type']), axis=1)
+raw_baseline_total = df_filtered['Scaled Value'].sum()
+
+# Baseline WITH Global Adjustments applied (so all scenarios start from the same adjusted floor)
+adjusted_baseline = raw_baseline_total + total_global_adj
+
+# Calculate Scenarios
+def calc_scenario(scen_val):
+    if scenario_var_sel == "None":
+        return adjusted_baseline
+    # Calculate the variance for this specific scenario
+    diff = scen_val - scen_base_val
+    scaled_diff = apply_tdcv_scaling(diff, scen_charge_type, scen_fuel_type)
+    return adjusted_baseline + scaled_diff
+
+s1_total = calc_scenario(s1_val)
+s2_total = calc_scenario(s2_val)
+s3_total = calc_scenario(s3_val)
+s4_total = calc_scenario(s4_val)
+
+# ==========================================
+# 6. VISUALISATION
+# ==========================================
+st.divider()
+st.markdown("### 📊 Scenario Impact Results")
+
+# Output metrics
+mc1, mc2, mc3, mc4, mc5 = st.columns(5)
+mc1.metric("1. Adjusted Baseline", f"£{adjusted_baseline:,.2f}", help="Original Baseline + Your Global Interacting Allowances")
+mc2.metric("2. Scenario 1 Total", f"£{s1_total:,.2f}", delta=f"£{s1_total - adjusted_baseline:,.2f}")
+mc3.metric("3. Scenario 2 Total", f"£{s2_total:,.2f}", delta=f"£{s2_total - adjusted_baseline:,.2f}")
+mc4.metric("4. Scenario 3 Total", f"£{s3_total:,.2f}", delta=f"£{s3_total - adjusted_baseline:,.2f}")
+mc5.metric("5. Scenario 4 Total", f"£{s4_total:,.2f}", delta=f"£{s4_total - adjusted_baseline:,.2f}")
+
+# Chart
+fig = go.Figure()
+
+x_labels = ['Adjusted Baseline', 'Scenario 1', 'Scenario 2', 'Scenario 3', 'Scenario 4']
+y_vals = [adjusted_baseline, s1_total, s2_total, s3_total, s4_total]
+
+# Highlight the Baseline in a different color
+colors = ['#94a3b8', '#3b82f6', '#8b5cf6', '#ec4899', '#f59e0b']
+
+fig.add_trace(go.Bar(
+    x=x_labels, 
+    y=y_vals,
+    marker_color=colors,
+    text=[f"£{v:,.2f}" for v in y_vals],
+    textposition='auto',
+    hovertemplate="<b>%{x}</b><br>Total Bill: £%{y:.2f}<extra></extra>"
+))
+
+fig.update_layout(
+    title="Total Annualised Bill Projection Across Scenarios",
+    yaxis_title="Annualised Cost (£)",
+    hovermode="x unified",
+    showlegend=False,
+    yaxis=dict(range=[min(y_vals)*0.95, max(y_vals)*1.02]) # Zooms in to make variances visually obvious
+)
+
+st.plotly_chart(fig, use_container_width=True)
+
+# Clarification Box
+if total_global_adj != 0:
+    st.info(f"💡 **Note on Math:** The 'Adjusted Baseline' above includes your global interacting changes totaling **£{total_global_adj:,.2f}**. The Delta (red/green) beneath Scenarios 1-4 shows the isolated impact of your Scenario Variable.")
