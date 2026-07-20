@@ -22,6 +22,7 @@ ALLOWANCE_DICT = {
     'WHD (unit rate)': 'Warm Home Discount (Unit Rate)', 
     'AAHEDC': 'Assistance for Areas with High Electricity Distribution Costs', 
     'NCC': 'Network Charging Compensation', 'nRAB': 'Nuclear Regulated Asset Base', 
+    'GGL': 'Green Gas Levy (GGL)', # Added missing GGL mapping
     'CfD': 'Contracts for Difference (CfD)', 'Backwardation': 'Backwardation', 
     'Gas Transmission': 'Gas Transmission', 'Gas Distribution': 'Gas Distribution', 
     'TNUoS': 'Transmission Network Use of System (TNUoS)', 
@@ -34,7 +35,7 @@ TAB_GROUPINGS = {
     "Wholesale": ['Direct Fuel Cost', 'Backwardation', 'Capacity Market', 'Contracts for Difference (CfD)'],
     "Policy": ['Renewables Obligation (RO)', 'Feed-in Tariff (FiT)', 'Energy Company Obligation (ECO)', 
                'Warm Home Discount (WHD)', 'Warm Home Discount (Unit Rate)', 'Assistance for Areas with High Electricity Distribution Costs', 
-               'Network Charging Compensation', 'Nuclear Regulated Asset Base'],
+               'Network Charging Compensation', 'Nuclear Regulated Asset Base', 'Green Gas Levy (GGL)'],
     "Network": ['Transmission Network Use of System (TNUoS)', 'Distribution Use of System (DUoS)', 
                 'Balancing Services Use of System (BSUoS)', 'Gas Distribution', 'Gas Transmission'],
     "OPEX": ['Operating Costs (Legacy)', 'Core Operating Costs', 'Debt-Related Costs', 'Industry Charges', 
@@ -42,11 +43,12 @@ TAB_GROUPINGS = {
     "Other Costs": ['Adjustment Allowance', 'Payment Method Uplift (Fixed)', 'Payment Method Uplift (Variable)', 'Levelisation']
 }
 
-# Standardize messy fuel names
+# Standardize messy fuel names to cast a wide net across all CSV files
 FUEL_MAPPING = {
     'Electricity Single Rate': 'Electricity Single-Rate',
     'Electricity- Single-Rate': 'Electricity Single-Rate',
     'Electricity - Single-Rate': 'Electricity Single-Rate',
+    'Electricity - Single Rate': 'Electricity Single-Rate', # Catches DUoS & BSUoS
     'Electricity - Multi-Register': 'Electricity Multi-Register',
     'Electricity Multi Register': 'Electricity Multi-Register',
     'Non-PPM gas': 'Gas',
@@ -73,8 +75,8 @@ def load_baseline_data():
         if os.path.exists(f):
             df = pd.read_csv(f)
             
-            # Scrub Whitespaces
-            for col in ['Fuel Type', 'Charge Type', 'Payment Method', 'Allowance']:
+            # Scrub Whitespaces first to prevent mapping errors
+            for col in ['Fuel Type', 'Charge Type', 'Payment Method', 'Allowance', 'Cap Period']:
                 if col in df.columns:
                     df[col] = df[col].astype(str).str.strip()
             
@@ -86,7 +88,7 @@ def load_baseline_data():
             if 'Allowance' in df.columns:
                 df['Allowance_Full'] = df['Allowance'].map(ALLOWANCE_DICT).fillna(df['Allowance'])
             
-            # Fill missing Payment Methods
+            # Fill missing Payment Methods for universal items (like Policy Costs)
             if 'Payment Method' not in df.columns or df['Payment Method'].isnull().all() or (df['Payment Method'] == 'nan').all():
                 df['Payment Method'] = 'All' 
                 
