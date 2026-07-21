@@ -255,3 +255,18 @@ st.dataframe(df_results.style.format(format_dict).background_gradient(
     subset=['Net Margin Impact (£/cust)', 'Portfolio Impact (£)'], 
     cmap='RdYlGn'
 ), use_container_width=True)
+# Visual 2: Full Portfolio Economics Table
+st.markdown("### 📑 Portfolio Economics Ledger")
+st.markdown("Breaks down the absolute financial exposure based on your specific customer distribution.")
+
+format_dict = {
+    'Baseline Bill': '£{:.2f}',
+    'Simulated Bill': '£{:.2f}',
+    'Net Margin Impact (£/cust)': '£{:.2f}',
+    'Portfolio Impact (£)': '£{:,.0f}'
+}
+
+st.dataframe(df_results.style.format(format_dict).background_gradient(
+    subset=['Net Margin Impact (£/cust)', 'Portfolio Impact (£)'], 
+    cmap='RdYlGn'
+), use_container_width=True)
