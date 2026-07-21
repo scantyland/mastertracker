@@ -7,9 +7,9 @@ import os
 # ==========================================
 # 1. PAGE CONFIGURATION & METADATA
 # ==========================================
-st.set_page_config(page_title="Margin Analyser", layout="wide", page_icon="🎯")
-st.title("🎯 Customer Decile & Margin Impact Analyser")
-st.markdown("Analyse how shifting fixed Standing Charges to volumetric Unit Rates impacts profitability across different customer consumption profiles.")
+st.set_page_config(page_title="Margin Analyzer", layout="wide", page_icon="🎯")
+st.title("🎯 Customer Decile & Margin Impact Analyzer")
+st.markdown("Analyze how shifting fixed Standing Charges to volumetric Unit Rates impacts your profitability across different customer consumption profiles.")
 
 ALLOWANCE_DICT = {
     'DF': 'Direct Fuel Cost', 'Direct Fuel': 'Direct Fuel Cost', 
@@ -145,7 +145,10 @@ st.markdown("Simulate Ofgem shifting costs from the Standing Charge to the Unit 
 col1, col2, col3 = st.columns(3)
 shift_amount = col1.number_input("Amount to shift off Standing Charge (£)", min_value=0.0, max_value=float(sc_baseline_total), value=0.0, step=5.0)
 
-shift_fuel_target = col2.selectbox("Apply Volumetric Shift to:", options=["Electricity", "Gas", "Split Evenly (50/50)"]) if is_dual_fuel else selected_fuel
+shift_fuel_target = col2.selectbox(
+    "Apply Volumetric Shift to:", 
+    options=["Electricity", "Gas", "Split (70% Elec / 30% Gas)"]
+) if is_dual_fuel else selected_fuel
 
 # Math: Converting the SC £ drop into a UR p/kWh increase based on TDCV
 sc_simulated_total = sc_baseline_total - shift_amount
@@ -157,9 +160,9 @@ if shift_amount > 0:
         ur_simulated_elec += (shift_amount / DEFAULT_TDCV['Electricity Single-Rate'])
     elif shift_fuel_target == "Gas" or (not is_dual_fuel and selected_fuel == 'Gas'):
         ur_simulated_gas += (shift_amount / DEFAULT_TDCV['Gas'])
-    elif shift_fuel_target == "Split Evenly (50/50)":
-        ur_simulated_elec += ((shift_amount / 2) / DEFAULT_TDCV['Electricity Single-Rate'])
-        ur_simulated_gas += ((shift_amount / 2) / DEFAULT_TDCV['Gas'])
+    elif shift_fuel_target == "Split (70% Elec / 30% Gas)":
+        ur_simulated_elec += ((shift_amount * 0.70) / DEFAULT_TDCV['Electricity Single-Rate'])
+        ur_simulated_gas += ((shift_amount * 0.30) / DEFAULT_TDCV['Gas'])
 
 # ==========================================
 # 5. DECILE IMPACT CALCULATION
@@ -242,13 +245,16 @@ st.plotly_chart(fig_bar, use_container_width=True)
 st.markdown("### 📑 Portfolio Economics Ledger")
 st.markdown("Breaks down the absolute financial exposure based on your specific customer distribution.")
 
-format_dict = {
-    'Baseline Bill': '£{:.2f}',
-    'Simulated Bill': '£{:.2f}',
-    'Net Margin Impact (£/cust)': '£{:.2f}',
-    'Portfolio Impact (£)': '£{:,.0f}'
-}
-st.dataframe(df_results.style.format(format_dict).background_gradient(
-    subset=['Net Margin Impact (£/cust)', 'Portfolio Impact (£)'], 
-    cmap='RdYlGn'
-), use_container_width=True)
+st.dataframe(
+    df_results,
+    use_container_width=True,
+    hide_index=True,
+    column_config={
+        "Decile": st.column_config.TextColumn("Decile"),
+        "Profile": st.column_config.TextColumn("Profile"),
+        "Baseline Bill": st.column_config.NumberColumn("Baseline Bill", format="£%.2f"),
+        "Simulated Bill": st.column_config.NumberColumn("Simulated Bill", format="£%.2f"),
+        "Net Margin Impact (£/cust)": st.column_config.NumberColumn("Net Margin Impact (£/cust)", format="£%.2f"),
+        "Portfolio Impact (£)": st.column_config.NumberColumn("Portfolio Impact (£)", format="£%d")
+    }
+)
